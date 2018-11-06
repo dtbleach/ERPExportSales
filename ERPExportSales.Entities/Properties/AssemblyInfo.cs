@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Abp")]
+[assembly: AssemblyTitle("ERPExportSales.Entities")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Abp")]
+[assembly: AssemblyProduct("ERPExportSales.Entities")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("fd144b12-0f89-4260-aa1b-ab448a0016b3")]
+[assembly: Guid("e25d3c86-92d8-4c3d-ba71-a00a42bd949a")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
