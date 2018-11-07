@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ERPExportSales.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,7 @@ namespace ERPExportSales.Web.Controllers
     {
         public ActionResult Index()
         {
+            ApplicationDbContext db = new ApplicationDbContext();
             return View();
         }
 

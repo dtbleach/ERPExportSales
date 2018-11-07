@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Web", "ERPExportSales.Web\ERPExportSales.Web.csproj", "{A641340B-1442-4356-B178-DA366442A3FC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Entities", "ERPExportSales.Entities\ERPExportSales.Entities.csproj", "{E25D3C86-92D8-4C3D-BA71-A00A42BD949A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Repositories", "ERPExportSales.Repositories\ERPExportSales.Repositories.csproj", "{615FA5BC-08A6-4E69-AE56-5AB4BAB3604F}"
@@ -19,16 +17,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Configuratio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Framework", "ERPExportSales.Framework\ERPExportSales.Framework.csproj", "{72842D55-5AA9-4634-A981-DF3EE68F8A01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Web", "ERPExportSales.Web\ERPExportSales.Web.csproj", "{828608C8-F461-4797-A45D-B024DE66C644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Tests", "ERPExportSales.Tests\ERPExportSales.Tests.csproj", "{735B5A45-4B9B-4F70-825F-A843CB89F1D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A641340B-1442-4356-B178-DA366442A3FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A641340B-1442-4356-B178-DA366442A3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A641340B-1442-4356-B178-DA366442A3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A641340B-1442-4356-B178-DA366442A3FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E25D3C86-92D8-4C3D-BA71-A00A42BD949A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E25D3C86-92D8-4C3D-BA71-A00A42BD949A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E25D3C86-92D8-4C3D-BA71-A00A42BD949A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +55,14 @@ Global
 		{72842D55-5AA9-4634-A981-DF3EE68F8A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72842D55-5AA9-4634-A981-DF3EE68F8A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72842D55-5AA9-4634-A981-DF3EE68F8A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828608C8-F461-4797-A45D-B024DE66C644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828608C8-F461-4797-A45D-B024DE66C644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828608C8-F461-4797-A45D-B024DE66C644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828608C8-F461-4797-A45D-B024DE66C644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735B5A45-4B9B-4F70-825F-A843CB89F1D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735B5A45-4B9B-4F70-825F-A843CB89F1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735B5A45-4B9B-4F70-825F-A843CB89F1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735B5A45-4B9B-4F70-825F-A843CB89F1D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

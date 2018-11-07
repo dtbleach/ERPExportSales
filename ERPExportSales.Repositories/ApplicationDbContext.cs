@@ -11,7 +11,7 @@ namespace ERPExportSales.Repositories
     public class ApplicationDbContext:DbContext
     {
         public ApplicationDbContext()
-          : base("")
+          : base("ERP4")
         {
         }
         public ApplicationDbContext(string nameOrConnectionString)
@@ -32,6 +32,12 @@ namespace ERPExportSales.Repositories
         {
 
         }
+
+        static ApplicationDbContext()
+        {
+
+        }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
@@ -60,6 +66,7 @@ namespace ERPExportSales.Repositories
             // modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
 
             //modelBuilder.Configurations.Add(new ReleasePlanConfiguration());
+            modelBuilder.Conventions.Add(new FunctionsConvention("dbo", typeof(Functions)));
         }
 
 
