@@ -1,13 +1,13 @@
 ﻿using ERPExportSales.Core;
+using ERPExportSales.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
 namespace ERPExportSales.Repositories
 {
-    public class ERPExportSalesRepositoryFactory : Disposable, IDatabaseFactory
+    public class ERPExportSalesDatabaseFactory : Disposable, IDatabaseFactory
     {
         private ApplicationDbContext dataContext;
 

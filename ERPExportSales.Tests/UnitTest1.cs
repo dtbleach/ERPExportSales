@@ -13,10 +13,9 @@ namespace ERPExportSales.Tests
         public void Login_Test()
         {
             ApplicationDbContext context = new ApplicationDbContext();
-
-
-            var obj = context.Database.SqlQuery<int>("SELECT [dbo].[f外销_登陆校验]('llh','1qazxsw2')").FirstOrDefaultAsync();
-            Assert.AreEqual(1, obj.Result);
+            //var obj = context.Database.SqlQuery<int>("SELECT [dbo].[f外销_登陆校验]('llh','1qazxsw2')").FirstOrDefaultAsync();
+            var obj = context.ExportSales_Login("llh", "1qazxsw2");
+            Assert.AreEqual(1, obj);
         }
 
     }

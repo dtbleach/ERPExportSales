@@ -1,6 +1,7 @@
 ﻿using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
+using ERPExportSales.Configuration;
 
 namespace ERPExportSales.Infrastructure
 {
@@ -9,7 +10,7 @@ namespace ERPExportSales.Infrastructure
 		#region IWindsorInstaller
 		public void Install(IWindsorContainer container, IConfigurationStore store)
 		{
-			//container.Register(Component.For<IOpsPortalConfiguration>().ImplementedBy<OpsPortalConfiguration>().LifestyleSingleton());
+			container.Register(Component.For<IExportSalesConfiguration>().ImplementedBy<ExportSalesConfiguration>().LifestyleSingleton());
 		}
 
 		#endregion

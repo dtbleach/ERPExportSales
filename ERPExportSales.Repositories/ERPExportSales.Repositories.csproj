@@ -35,6 +35,10 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework.Functions, Version=1.3.1.0, Culture=neutral, PublicKeyToken=dbe58f97a0872a64, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Functions.1.4.1\lib\net46\EntityFramework.Functions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
@@ -51,20 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="DbFunctionDetailsAttribute.cs" />
-    <Compile Include="ERPExportSalesRepositoryFactory.cs" />
-    <Compile Include="FunctionDescriptor.cs" />
-    <Compile Include="FunctionDiscovery.cs" />
+    <Compile Include="ERPExportSalesDatabaseFactory.cs" />
+    <Compile Include="ERPExportSalesUnitOfWork.cs" />
     <Compile Include="Functions.cs" />
-    <Compile Include="FunctionsConvention.cs" />
-    <Compile Include="FunctionsConvention`1.cs" />
-    <Compile Include="ParameterDescriptor.cs" />
-    <Compile Include="ParameterTypeAttribute.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryBase.cs" />
-    <Compile Include="StoreFunctionBuilder.cs" />
-    <Compile Include="StoreFunctionKind.cs" />
-    <Compile Include="Tools.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,19 +1,23 @@
-﻿using System;
+﻿using EntityFramework.Functions;
+using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ERPExportSales.Repositories
 {
-    public class ApplicationDbContext:DbContext
+    public partial class ApplicationDbContext:DbContext
     {
         public ApplicationDbContext()
           : base("ERP4")
         {
         }
+
         public ApplicationDbContext(string nameOrConnectionString)
             : base(nameOrConnectionString)
         {
@@ -29,11 +33,6 @@ namespace ERPExportSales.Repositories
 
         public ApplicationDbContext(DbConnection existingConnection, bool contextOwnsConnection)
          : base(existingConnection, contextOwnsConnection)
-        {
-
-        }
-
-        static ApplicationDbContext()
         {
 
         }
@@ -66,7 +65,7 @@ namespace ERPExportSales.Repositories
             // modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
 
             //modelBuilder.Configurations.Add(new ReleasePlanConfiguration());
-            modelBuilder.Conventions.Add(new FunctionsConvention("dbo", typeof(Functions)));
+            modelBuilder.Conventions.Add(new FunctionConvention<ApplicationDbContext>());
         }
 
 
@@ -81,5 +80,6 @@ namespace ERPExportSales.Repositories
         //public DbSet<ReleasePlanEntity> ReleasePlanEntities { get; set; }
 
         //public DbSet<JenkinsJobEntity> JenkinsJobEntities { get; set; }
+   
     }
 }
