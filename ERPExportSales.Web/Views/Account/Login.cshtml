@@ -1,16 +1,21 @@
-﻿
-@{
-    Layout = null;
-}
-
+﻿@using ERPExportSales.Web.Models
+@using ERPExportSales.Web.Helpers
+@model LoginViewModel
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-3.3.1.js")"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#ValidatedCodeUrl").click(function () {
+                var curTime = new Date();
+                this.src = '/ValidateCode/GetValidateCode?data=' + curTime;
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -24,16 +29,30 @@
         <div class="login-container">
             <div class="login-info">
                 <h1>Login</h1>
-                <form>
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
                     <div>
-                        Username：<input type="text" class="form-group user-name" placeholder="Username" required />
+                        Username：
+                        @Html.TextBoxFor(m => m.LoginName, new { @class = "form-group user-name", placeholder = "Username" })
+                        @Html.ValidationMessageFor(m => m.LoginName, "", new { @class = "text-danger" })
                     </div>
                     <div>
-                        Password：<input type="password" class="form-group mail" placeholder="Password" required />
+                        Password：
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-group mail", placeholder = "Password" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                     </div>
-                    <label class="checkbox"><input type="checkbox" name="checkbox" checked><i> </i>Keep me signed in(Uncheck when using a shared computer)</label>
-                    <input type="submit" value="Sign In">
-                </form>
+                    <div>
+                        ValidatedCode：
+                        @Html.TextBoxFor(m => m.ValidatedCode, new { @class = "form-group user-name", placeholder = "ValidatedCode" })
+                        @Html.ImageFor(m => m.ValidatedCodeUrl, new { @class = "form-group", id = "ValidatedCodeUrl" })
+                        @Html.ValidationMessageFor(m => m.ValidatedCode, "", new { @class = "text-danger" })
+                    </div>
+                    <div>
+                        @Html.CheckBoxFor(m => m.RememberMe)
+                        <i> </i>Keep me signed in(Uncheck when using a shared computer)
+                        <input type="submit" value="Sign In">
+                    </div>
+                }
             </div>
             <div class="clearfix"></div>
         </div>

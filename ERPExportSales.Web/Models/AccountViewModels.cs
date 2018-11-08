@@ -49,14 +49,21 @@ namespace ERPExportSales.Web.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "电子邮件")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "用户名")]
+        public string LoginName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "密码")]
         public string Password { get; set; }
+
+        [Required]
+        [Display(Name = "验证码")]
+        public string ValidatedCode { get; set; }
+
+        [Required]
+        [Display(Name = "验证码图片")]
+        public string ValidatedCodeUrl { get { return "/ValidateCode/GetValidateCode"; } }
 
         [Display(Name = "记住我?")]
         public bool RememberMe { get; set; }
@@ -85,8 +92,8 @@ namespace ERPExportSales.Web.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "电子邮件")]
-        public string Email { get; set; }
+        [Display(Name = "用户名")]
+        public string LoginName { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "{0} 必须至少包含 {2} 个字符。", MinimumLength = 6)]
