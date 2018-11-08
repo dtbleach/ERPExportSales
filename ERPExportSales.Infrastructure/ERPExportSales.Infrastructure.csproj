@@ -92,15 +92,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiControllerInstaller.cs" />
-    <Compile Include="ControllerInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoriesInstaller.cs" />
-    <Compile Include="ServiceConfigurationInstaller.cs" />
-    <Compile Include="ValidationResult.cs" />
-    <Compile Include="WindsorControllerFactory.cs" />
-    <Compile Include="WindsorDependencyResolver.cs" />
-    <Compile Include="WindsorDependencyScope.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -118,6 +110,10 @@
     <ProjectReference Include="..\ERPExportSales.Repositories\ERPExportSales.Repositories.csproj">
       <Project>{615fa5bc-08a6-4e69-ae56-5ab4bab3604f}</Project>
       <Name>ERPExportSales.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERPExportSales.Services\ERPExportSales.Services.csproj">
+      <Project>{6c55c7d2-9deb-430c-afdb-1625fdaee7fc}</Project>
+      <Name>ERPExportSales.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

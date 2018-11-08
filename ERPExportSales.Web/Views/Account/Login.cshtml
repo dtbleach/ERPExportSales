@@ -1,63 +1,42 @@
-﻿@using ERPExportSales.Web.Models
-@model LoginViewModel
+﻿
 @{
-    ViewBag.Title = "登录";
+    Layout = null;
 }
 
-<h2>@ViewBag.Title。</h2>
-<div class="row">
-    <div class="col-md-8">
-        <section id="loginForm">
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-            {
-                @Html.AntiForgeryToken()
-                <h4>使用本地帐户登录。</h4>
-                <hr />
-                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                <div class="form-group">
-                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-                    <div class="col-md-10">
-                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-                    <div class="col-md-10">
-                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <div class="checkbox">
-                            @Html.CheckBoxFor(m => m.RememberMe)
-                            @Html.LabelFor(m => m.RememberMe)
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="登录" class="btn btn-default" />
-                    </div>
-                </div>
-                <p>
-                    @Html.ActionLink("注册为新用户", "Register")
-                </p>
-                @* 在为密码重置功能启用帐户确认后启用此项
-                    <p>
-                        @Html.ActionLink("忘记了密码?", "ForgotPassword")
-                    </p>*@
-            }
-        </section>
-    </div>
-    <div class="col-md-4">
-        <section id="socialLoginForm">
-            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-        </section>
-    </div>
-</div>
+<!DOCTYPE html>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="header">
+        <div id="sfc-logo" class="login-logo-left">
+            <a href="//www.sfiec.com">www.sfiec.com</a>
+        </div>
+    </header>
+    <hr>
+    <div class="login" id="login">
+        <div class="login-container">
+            <div class="login-info">
+                <h1>Login</h1>
+                <form>
+                    <div>
+                        Username：<input type="text" class="form-group user-name" placeholder="Username" required />
+                    </div>
+                    <div>
+                        Password：<input type="password" class="form-group mail" placeholder="Password" required />
+                    </div>
+                    <label class="checkbox"><input type="checkbox" name="checkbox" checked><i> </i>Keep me signed in(Uncheck when using a shared computer)</label>
+                    <input type="submit" value="Sign In">
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+</html>
