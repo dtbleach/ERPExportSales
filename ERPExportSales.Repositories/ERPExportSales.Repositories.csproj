@@ -55,8 +55,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="EmployeeRepository.cs" />
     <Compile Include="ERPExportSalesDatabaseFactory.cs" />
     <Compile Include="ERPExportSalesUnitOfWork.cs" />
+    <Compile Include="ExportSalesLoginTokenRepository.cs" />
     <Compile Include="Functions.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

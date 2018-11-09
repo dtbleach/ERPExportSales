@@ -237,10 +237,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValidateCodeController.cs" />
+    <Compile Include="Core\SecurityManager.cs" />
+    <Compile Include="Filter\AuthorizeUserFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="Infrastructure\ApiControllerInstaller.cs" />
     <Compile Include="Infrastructure\ControllerInstaller.cs" />
     <Compile Include="Infrastructure\RepositoriesInstaller.cs" />

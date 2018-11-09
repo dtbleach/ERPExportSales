@@ -8,22 +8,21 @@ using System.Threading.Tasks;
 
 namespace ERPExportSales.Entities
 {
-    [Table("员工", Schema = "dbo")]
-    public class Employee
+    [Table("外销登录令牌", Schema = "dbo")]
+    public class ExportSalesLoginToken
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("fID")]
         public int FID { get; set; }
 
         [Column("姓名")]
-        public string Name { get; set; }
+        public string UserName { get; set; }
 
-        [Column("登陆名")]
-        public string LoginName { get; set; }
+        [Column("登录令牌")]
+        public string Token { get; set; }
 
-        [Column("登陆密码")]
-        public byte[] Password { get; set; }
+        [Column("过期时间")]
+        public DateTime ExpiresTime { get; set; }
     }
 }

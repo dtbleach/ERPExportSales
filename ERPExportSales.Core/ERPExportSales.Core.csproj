@@ -44,6 +44,12 @@
     <Compile Include="Disposable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERPExportSales.Framework\ERPExportSales.Framework.csproj">
+      <Project>{72842d55-5aa9-4634-a981-df3ee68f8a01}</Project>
+      <Name>ERPExportSales.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

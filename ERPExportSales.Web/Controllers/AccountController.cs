@@ -1,4 +1,8 @@
-﻿using ERPExportSales.Services;
+﻿using ERPExportSales.Core;
+using ERPExportSales.Entities;
+using ERPExportSales.Framework;
+using ERPExportSales.Services;
+using ERPExportSales.Web.Core;
 using ERPExportSales.Web.Models;
 using System;
 using System.Collections.Generic;
@@ -11,9 +15,13 @@ namespace ERPExportSales.Web.Controllers
     public class AccountController : Controller
     {
         public IExportSalesUserService userService;
-        public AccountController(IExportSalesUserService userService)
+        public IEmployeeService employeeService;
+        public IExportSalesLoginTokenService tokenService;
+        public AccountController(IExportSalesUserService userService, IEmployeeService employeeService,IExportSalesLoginTokenService tokenService)
         {
             this.userService = userService;
+            this.employeeService = employeeService;
+            this.tokenService = tokenService;
         }
         public ActionResult Login()
         {
@@ -24,10 +32,25 @@ namespace ERPExportSales.Web.Controllers
         [HttpPost]
         public ActionResult Login(LoginViewModel model)
         {
-            var result=userService.Login(model.LoginName, model.Password);
+            var result = userService.Login(model.LoginName, model.Password);
             if (result.Result)
             {
-               return RedirectToAction("Index", "Home");
+                long ticks = new DateTime().Ticks;
+                string ip = CommonManager.GetIP(Request);
+                string userAgent = CommonManager.GetUserAgent(Request);
+
+                string shaPassword = employeeService.GetEmployeeSHAPassword(model.LoginName);
+
+                string token=SecurityManager.GenerateToken(model.LoginName, shaPassword, ip, userAgent, ticks);
+                DateTime expries = DateTime.Now.AddDays(1.0);
+                CookieHelper.SetCookie("token", token, expries);
+
+                ExportSalesLoginToken loginToken = new ExportSalesLoginToken();
+                loginToken.ExpiresTime = expries;
+                loginToken.Token = token;
+                loginToken.UserName = model.LoginName;
+                tokenService.SaveLoginToken(loginToken);
+                return RedirectToAction("Index", "Home");
             }
             else
             {

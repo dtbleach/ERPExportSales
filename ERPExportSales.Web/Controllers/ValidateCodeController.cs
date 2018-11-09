@@ -1,4 +1,5 @@
-﻿using ERPExportSales.Web.Tools;
+﻿using ERPExportSales.Framework;
+using ERPExportSales.Web.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,8 @@ namespace ERPExportSales.Web.Controllers
             ValidatedCode v = new ValidatedCode();
             string code = v.CreateVerifyCode();            //取随机码  
             var data=v.CreateImageOnPage(code);       // 输出图片  
-            Session["CheckCode"] = code.ToLower();                   //Session 取出验证码  
+            SessionHelper.Add("CheckCode", code.ToLower());
+            //Session["CheckCode"] = code.ToLower();                   //Session 取出验证码  
             return File(data, "image/jpeg");
         }
     }

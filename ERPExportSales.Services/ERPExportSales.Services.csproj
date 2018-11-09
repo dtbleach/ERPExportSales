@@ -50,7 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BizResult.cs" />
+    <Compile Include="EmployeeService.cs" />
+    <Compile Include="ExportSalesLoginTokenService.cs" />
     <Compile Include="ExportSalesUserService.cs" />
+    <Compile Include="IEmployeeService.cs" />
+    <Compile Include="IExportSalesLoginTokenService.cs" />
     <Compile Include="IExportSalesUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,6 +66,10 @@
     <ProjectReference Include="..\ERPExportSales.Entities\ERPExportSales.Entities.csproj">
       <Project>{e25d3c86-92d8-4c3d-ba71-a00a42bd949a}</Project>
       <Name>ERPExportSales.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERPExportSales.Framework\ERPExportSales.Framework.csproj">
+      <Project>{72842d55-5aa9-4634-a981-df3ee68f8a01}</Project>
+      <Name>ERPExportSales.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\ERPExportSales.Repositories\ERPExportSales.Repositories.csproj">
       <Project>{615fa5bc-08a6-4e69-ae56-5ab4bab3604f}</Project>

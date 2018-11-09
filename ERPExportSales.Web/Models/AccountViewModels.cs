@@ -10,6 +10,14 @@ namespace ERPExportSales.Web.Models
         public string Email { get; set; }
     }
 
+
+    public class UserViewModel
+    {
+        [Required]
+        [Display(Name = "用户名")]
+        public string LoginName { get; set; }
+    }
+
     public class ExternalLoginListViewModel
     {
         public string ReturnUrl { get; set; }

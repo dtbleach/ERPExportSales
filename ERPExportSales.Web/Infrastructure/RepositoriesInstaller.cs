@@ -18,6 +18,14 @@ namespace ERPExportSales.Web.Infrastructure
                 .ImplementedBy<ERPExportSalesDatabaseFactory>()
                 .LifestylePerWebRequest());
 
+            container.Register(Component.For<IEmployeeRepository>()
+               .ImplementedBy<EmployeeRepository>()
+               .LifestyleTransient());
+
+            container.Register(Component.For<IExportSalesLoginTokenRepository>()
+              .ImplementedBy<ExportSalesLoginTokenRepository>()
+              .LifestyleTransient());
+            
         }
     }
 }

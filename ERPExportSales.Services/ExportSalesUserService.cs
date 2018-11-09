@@ -33,12 +33,14 @@ namespace ERPExportSales.Services
             {
                 result.Result = false;
                 result.Message = "用户名为空";
+                return result;
             }
 
             if (string.IsNullOrEmpty(password))
             {
                 result.Result = false;
                 result.Message = "密码为空";
+                return result;
             }
 
             var db = databaseFactory.Get();

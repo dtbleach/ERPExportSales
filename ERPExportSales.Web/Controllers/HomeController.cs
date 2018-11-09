@@ -1,4 +1,8 @@
-﻿using ERPExportSales.Services;
+﻿using ERPExportSales.Entities;
+using ERPExportSales.Framework;
+using ERPExportSales.Services;
+using ERPExportSales.Web.Filter;
+using ERPExportSales.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +18,14 @@ namespace ERPExportSales.Web.Controllers
         {
             this.userService = userService;
         }
-        // GET: Home
+
+        [AuthorizeUser]
         public ActionResult Index()
         {
-            return View();
+            var user = SessionHelper.Get<Employee>("User");
+            UserViewModel model = new UserViewModel();
+            model.LoginName = user.LoginName;
+            return View(model);
         }
     }
 }

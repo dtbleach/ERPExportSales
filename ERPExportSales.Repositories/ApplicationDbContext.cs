@@ -1,4 +1,5 @@
 ﻿using EntityFramework.Functions;
+using ERPExportSales.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -75,11 +76,15 @@ namespace ERPExportSales.Repositories
         //    return Bootstrap.ServiceConfiguration.OpsPortalDbConnectionString;
         //}
 
+        public DbSet<Employee> EmployeeEntities { get; set; }
+
+        public DbSet<ExportSalesLoginToken> ExportSalesLoginTokenEntities { get; set; }
+
         //public DbSet<ReleaseJobEntity> ReleaseJobEntities { get; set; }
 
         //public DbSet<ReleasePlanEntity> ReleasePlanEntities { get; set; }
 
         //public DbSet<JenkinsJobEntity> JenkinsJobEntities { get; set; }
-   
+
     }
 }
