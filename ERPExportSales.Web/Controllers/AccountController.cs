@@ -35,21 +35,30 @@ namespace ERPExportSales.Web.Controllers
             var result = userService.Login(model.LoginName, model.Password);
             if (result.Result)
             {
-                long ticks = new DateTime().Ticks;
-                string ip = CommonManager.GetIP(Request);
-                string userAgent = CommonManager.GetUserAgent(Request);
+                if (model.RememberMe)
+                {
+                    long ticks = new DateTime().Ticks;
+                    string ip = CommonManager.GetIP(Request);
+                    string userAgent = CommonManager.GetUserAgent(Request);
 
-                string shaPassword = employeeService.GetEmployeeSHAPassword(model.LoginName);
+                    string shaPassword = employeeService.GetEmployeeSHAPassword(model.LoginName);
 
-                string token=SecurityManager.GenerateToken(model.LoginName, shaPassword, ip, userAgent, ticks);
-                DateTime expries = DateTime.Now.AddDays(1.0);
-                CookieHelper.SetCookie("token", token, expries);
-
-                ExportSalesLoginToken loginToken = new ExportSalesLoginToken();
-                loginToken.ExpiresTime = expries;
-                loginToken.Token = token;
-                loginToken.UserName = model.LoginName;
-                tokenService.SaveLoginToken(loginToken);
+                    string token = SecurityManager.GenerateToken(model.LoginName, shaPassword, ip, userAgent, ticks);
+                    DateTime expries = DateTime.Now.AddDays(1.0);
+                    CookieHelper.SetCookie("token", token, expries);
+                    CookieHelper.SetCookie("rememberLogin", "true");
+                    ExportSalesLoginToken loginToken = new ExportSalesLoginToken();
+                    loginToken.ExpiresTime = expries;
+                    loginToken.Token = token;
+                    loginToken.UserName = model.LoginName;
+                    tokenService.SaveLoginToken(loginToken);
+                }else
+                {
+                    var employee = employeeService.GetEmployee(model.LoginName);
+                    SessionHelper.Add("User", employee);
+                    CookieHelper.SetCookie("rememberLogin", "false");
+                    CookieHelper.ClearCookie("token");
+                }
                 return RedirectToAction("Index", "Home");
             }
             else

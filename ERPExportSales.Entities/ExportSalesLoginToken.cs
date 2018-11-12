@@ -24,5 +24,8 @@ namespace ERPExportSales.Entities
 
         [Column("过期时间")]
         public DateTime ExpiresTime { get; set; }
+
+        [Column("是否记住")]
+        public int Remember { get; set; }
     }
 }

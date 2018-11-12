@@ -62,6 +62,10 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -235,10 +239,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValidateCodeController.cs" />
+    <Compile Include="Core\ErrorMessage.cs" />
     <Compile Include="Core\SecurityManager.cs" />
+    <Compile Include="Filter\ApiTrackerFilter.cs" />
     <Compile Include="Filter\AuthorizeUserFilter.cs" />
+    <Compile Include="Filter\CustomErrorAttribute.cs" />
+    <Compile Include="Filter\TrackerFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -254,6 +263,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MonitorLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Tools\ValidatedCode.cs" />
@@ -269,6 +279,36 @@
     <Content Include="Content\img\in-3.gif" />
     <Content Include="Content\img\logo.gif" />
     <Content Include="Content\img\tick.png" />
+    <Content Include="Scripts\plugins\html2canvas\html2canvas.js" />
+    <Content Include="Scripts\plugins\html2canvas\html2canvas.min.js" />
+    <Content Include="Scripts\plugins\html2canvas\html2canvas.svg.js" />
+    <Content Include="Scripts\plugins\html2canvas\html2canvas.svg.min.js" />
+    <Content Include="Scripts\plugins\layer\extend\layer.ext.js" />
+    <Content Include="Scripts\plugins\layer\laydate\laydate.js" />
+    <Content Include="Scripts\plugins\layer\laydate\need\laydate.css" />
+    <Content Include="Scripts\plugins\layer\laydate\skins\default\icon.png" />
+    <Content Include="Scripts\plugins\layer\laydate\skins\default\laydate.css" />
+    <Content Include="Scripts\plugins\layer\layer.min.js" />
+    <Content Include="Scripts\plugins\layer\layim\layim.css" />
+    <Content Include="Scripts\plugins\layer\layim\layim.js" />
+    <Content Include="Scripts\plugins\layer\layim\loading.gif" />
+    <Content Include="Scripts\plugins\layer\skin\default\icon-ext.png" />
+    <Content Include="Scripts\plugins\layer\skin\default\icon.png" />
+    <Content Include="Scripts\plugins\layer\skin\default\icon_ext.png" />
+    <Content Include="Scripts\plugins\layer\skin\default\loading-0.gif" />
+    <Content Include="Scripts\plugins\layer\skin\default\loading-1.gif" />
+    <Content Include="Scripts\plugins\layer\skin\default\loading-2.gif" />
+    <Content Include="Scripts\plugins\layer\skin\default\textbg.png" />
+    <Content Include="Scripts\plugins\layer\skin\default\xubox_ico0.png" />
+    <Content Include="Scripts\plugins\layer\skin\default\xubox_loading0.gif" />
+    <Content Include="Scripts\plugins\layer\skin\default\xubox_loading1.gif" />
+    <Content Include="Scripts\plugins\layer\skin\default\xubox_loading2.gif" />
+    <Content Include="Scripts\plugins\layer\skin\default\xubox_loading3.gif" />
+    <Content Include="Scripts\plugins\layer\skin\default\xubox_title0.png" />
+    <Content Include="Scripts\plugins\layer\skin\layer.css" />
+    <Content Include="Scripts\plugins\layer\skin\layer.ext.css" />
+    <Content Include="Scripts\plugins\layer\skin\moon\default.png" />
+    <Content Include="Scripts\plugins\layer\skin\moon\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
@@ -288,6 +328,11 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="log4net.config" />
+    <Content Include="Scripts\plugins\layer\layim\data\chatlog.json" />
+    <Content Include="Scripts\plugins\layer\layim\data\friend.json" />
+    <Content Include="Scripts\plugins\layer\layim\data\group.json" />
+    <Content Include="Scripts\plugins\layer\layim\data\groups.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -313,10 +358,14 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Error\ISE.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\js\" />
+    <Folder Include="Log\LogError\" />
+    <Folder Include="Log\LogInfo\" />
     <Folder Include="Views\ValidateCode\" />
   </ItemGroup>
   <ItemGroup>

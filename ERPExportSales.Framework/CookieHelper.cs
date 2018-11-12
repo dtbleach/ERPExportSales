@@ -63,6 +63,12 @@ namespace ERPExportSales.Framework
         public static bool CookieExpires(string cookiename)
         {
             HttpCookie cookie = HttpContext.Current.Request.Cookies[cookiename];
+
+            if (cookie == null)
+            {
+                return false;
+            }
+
             if (DateTime.Now.CompareTo(cookie.Expires) > 0)
             {
                 return false;

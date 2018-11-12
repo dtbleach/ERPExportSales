@@ -37,11 +37,24 @@ namespace ERPExportSales.Web.Filter
         {
             try
             {
-                HttpRequestBase request = actionContext.RequestContext.HttpContext.Request;
-                string token = CookieHelper.GetCookieValue(_securityToken);
-                return SecurityManager.VerifyToken(token, request);
+                bool rememberLogin = false;
+                bool.TryParse(CookieHelper.GetCookieValue("rememberLogin"), out rememberLogin);
+                if (rememberLogin)
+                {
+                    HttpRequestBase request = actionContext.RequestContext.HttpContext.Request;
+                    string token = CookieHelper.GetCookieValue(_securityToken);
+                    return SecurityManager.VerifyToken(token, request);
+                }else
+                {
+                    var employee = SessionHelper.Get<Employee>("User");
+                    if (employee != null)
+                    {
+                        return true;
+                    }
+                    return false;
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }

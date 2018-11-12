@@ -19,6 +19,7 @@ namespace ERPExportSales.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            log4net.Config.XmlConfigurator.Configure();
             GlobalConfiguration.Configuration.DependencyResolver = new WindsorDependencyResolver(Bootstrap.IocContainer.Kernel);
             ControllerBuilder.Current.SetControllerFactory(new WindsorControllerFactory(Bootstrap.IocContainer.Kernel));
         }
