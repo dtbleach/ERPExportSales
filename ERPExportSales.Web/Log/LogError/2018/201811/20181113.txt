@@ -1,0 +1,285 @@
+
+ 
+记录时间：2018-11-13 14:36:37,150 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "实体类型 VPublicHoliday 不是当前上下文的模型的一部分。",
+  "Path": "/Home/Index",
+  "Assembly": "EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)\r\n   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()\r\n   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()\r\n   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\r\n   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\r\n   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Repositories\\RepositoryBase.cs:行号 84\r\n   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Services\\ExportSalesService.cs:行号 36\r\n   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\HomeController.cs:行号 42\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "EntityFramework",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-13 14:36:37",
+  "Method": "UpdateEntitySetMappingsForType"
+}
+ 
+System.InvalidOperationException: 实体类型 VPublicHoliday 不是当前上下文的模型的一部分。
+   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Repositories\RepositoryBase.cs:行号 84
+   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Services\ExportSalesService.cs:行号 36
+   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\HomeController.cs:行号 42
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-13 14:37:20,731 
+线程ID:[13] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "实体类型 VPublicHoliday 不是当前上下文的模型的一部分。",
+  "Path": "/",
+  "Assembly": "EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)\r\n   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()\r\n   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()\r\n   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\r\n   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\r\n   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Repositories\\RepositoryBase.cs:行号 84\r\n   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Services\\ExportSalesService.cs:行号 36\r\n   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\HomeController.cs:行号 42\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "EntityFramework",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-13 14:37:20",
+  "Method": "UpdateEntitySetMappingsForType"
+}
+ 
+System.InvalidOperationException: 实体类型 VPublicHoliday 不是当前上下文的模型的一部分。
+   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Repositories\RepositoryBase.cs:行号 84
+   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Services\ExportSalesService.cs:行号 36
+   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\HomeController.cs:行号 42
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-13 14:45:58,153 
+线程ID:[12] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "实体类型 VPublicHoliday 不是当前上下文的模型的一部分。",
+  "Path": "/",
+  "Assembly": "EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)\r\n   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()\r\n   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()\r\n   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\r\n   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\r\n   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Repositories\\RepositoryBase.cs:行号 84\r\n   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Services\\ExportSalesService.cs:行号 36\r\n   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\HomeController.cs:行号 42\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "EntityFramework",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-13 14:45:58",
+  "Method": "UpdateEntitySetMappingsForType"
+}
+ 
+System.InvalidOperationException: 实体类型 VPublicHoliday 不是当前上下文的模型的一部分。
+   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Repositories\RepositoryBase.cs:行号 84
+   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Services\ExportSalesService.cs:行号 36
+   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\HomeController.cs:行号 42
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-13 14:46:28,811 
+线程ID:[23] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "实体类型 VPublicHoliday 不是当前上下文的模型的一部分。",
+  "Path": "/Home",
+  "Assembly": "EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)\r\n   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()\r\n   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()\r\n   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\r\n   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\r\n   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Repositories\\RepositoryBase.cs:行号 84\r\n   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Services\\ExportSalesService.cs:行号 36\r\n   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\HomeController.cs:行号 42\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "EntityFramework",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-13 14:46:28",
+  "Method": "UpdateEntitySetMappingsForType"
+}
+ 
+System.InvalidOperationException: 实体类型 VPublicHoliday 不是当前上下文的模型的一部分。
+   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Repositories\RepositoryBase.cs:行号 84
+   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Services\ExportSalesService.cs:行号 36
+   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\HomeController.cs:行号 42
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-13 14:48:55,971 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "实体类型 VPublicHoliday 不是当前上下文的模型的一部分。",
+  "Path": "/",
+  "Assembly": "EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)\r\n   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()\r\n   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()\r\n   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\r\n   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\r\n   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Repositories\\RepositoryBase.cs:行号 84\r\n   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Services\\ExportSalesService.cs:行号 36\r\n   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\HomeController.cs:行号 42\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "EntityFramework",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-13 14:48:55",
+  "Method": "UpdateEntitySetMappingsForType"
+}
+ 
+System.InvalidOperationException: 实体类型 VPublicHoliday 不是当前上下文的模型的一部分。
+   在 System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   在 System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   在 System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Repositories\RepositoryBase.cs:行号 84
+   在 ERPExportSales.Services.ExportSalesService.GetPublicHoliday() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Services\ExportSalesService.cs:行号 36
+   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\HomeController.cs:行号 42
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)

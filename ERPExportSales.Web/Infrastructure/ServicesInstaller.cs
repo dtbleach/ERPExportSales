@@ -27,6 +27,10 @@ namespace ERPExportSales.Web.Infrastructure
                 .ImplementedBy<ExportSalesLoginTokenService>()
                 .LifestylePerWebRequest());
 
+            container.Register(Component.For<IExportSalesService>()
+             .ImplementedBy<ExportSalesService>()
+             .LifestylePerWebRequest());
+
         }
     }
 }

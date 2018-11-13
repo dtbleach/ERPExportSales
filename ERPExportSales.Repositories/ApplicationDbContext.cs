@@ -80,6 +80,10 @@ namespace ERPExportSales.Repositories
 
         public DbSet<ExportSalesLoginToken> ExportSalesLoginTokenEntities { get; set; }
 
+        public DbSet<VExportSalesOceanFreight> VExportSalesOceanFreightEntities { get; set; }
+
+        public DbSet<VPublicHoliday> VPublicHolidayEntities { get; set; }
+
         //public DbSet<ReleaseJobEntity> ReleaseJobEntities { get; set; }
 
         //public DbSet<ReleasePlanEntity> ReleasePlanEntities { get; set; }

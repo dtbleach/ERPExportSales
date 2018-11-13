@@ -1,0 +1,295 @@
+/*!
+ *   AdminLTE v2.3.2
+ *   Author: Almsaeed Studio
+ *   Website: Almsaeed Studio <http://almsaeedstudio.com>
+ *   License: Open source - MIT
+ *           Please visit http://opensource.org/licenses/MIT for more information
+!*/
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+
+.fixhub {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fixhub-success:before {
+    content: "\F121"
+}
+
+.fixhub-group:before {
+    content: "\F3EF"
+}
+
+.fixhub-project:before {
+    content: "\F4DC"
+}
+
+.fixhub-template:before {
+    content: "\F471"
+}
+
+.fixhub-environment:before {
+    content: "\F22E"
+}
+
+.fixhub-server:before {
+    content: "\F228"
+}
+
+.fixhub-cabinet:before {
+    content: "\F3C9"
+}
+
+.fixhub-provider:before {
+    content: "\F35C"
+}
+
+.fixhub-key:before {
+    content: "\F296"
+}
+
+.fixhub-tip:before {
+    content: "\F451"
+}
+
+.fixhub-link:before {
+    content: "\F1FE"
+}
+
+.fixhub-variable:before {
+    content: "\F353"
+}
+
+.fixhub-command:before {
+    content: "\F271"
+}
+
+.fixhub-config-file:before {
+    content: "\F12F"
+}
+
+.fixhub-shared-file:before {
+    content: "\F434"
+}
+
+.fixhub-hook:before {
+    content: "\F30B"
+}
+
+.ion-commit:before {
+    content: "\F33F"
+}
+
+.fixhub-deploy:before {
+    content: "\F40B"
+}
+
+.fixhub-admin:before {
+    content: "\F2BA"
+}
+
+.fixhub-log:before {
+    content: "\F493"
+}
+
+.fixhub-load:before {
+    content: "\F29A"
+}
+
+.fixhub-save:before {
+    content: "\F2C3"
+}
+
+.fixhub-user:before {
+    content: "\F47E"
+}
+
+.fixhub-users:before {
+    content: "\F212"
+}
+
+.fixhub-warning:before {
+    content: "\F101"
+}
+
+.fixhub-help:before {
+    content: "\F143"
+}
+
+.fixhub-clock:before {
+    content: "\F402"
+}
+
+.fixhub-plus:before {
+    content: "\F217"
+}
+
+.fixhub-drag:before {
+    content: "\F130"
+}
+
+.fixhub-chatbox:before {
+    content: "\F3F9"
+}
+
+.fixhub-edit:before {
+    content: "\F12C"
+}
+
+.fixhub-delete:before {
+    content: "\F252"
+}
+
+.fixhub-check:before {
+    content: "\F121"
+}
+
+.fixhub-close:before {
+    content: "\F129"
+}
+
+.fixhub-cancel:before {
+    content: "\F306"
+}
+
+.fixhub-go:before {
+    content: "\F10B"
+}
+
+.fixhub-rollback:before {
+    content: "\F265"
+}
+
+.fixhub-refresh:before {
+    content: "\F21C"
+}
+
+.fixhub-left:before {
+    content: "\F108"
+}
+
+.fixhub-right:before {
+    content: "\F10B"
+}
+
+.fixhub-up:before {
+    content: "\F10E"
+}
+
+.fixhub-down:before {
+    content: "\F105"
+}
+
+.fixhub-copy:before {
+    content: "\F41B"
+}
+
+.fixhub-email:before {
+    content: "\F132"
+}
+
+.fixhub-cube:before {
+    content: "\F318"
+}
+
+.fixhub-bell:before {
+    content: "\F39B"
+}
+
+.fixhub-home:before {
+    content: "\F448"
+}
+
+.fixhub-addon:before {
+    content: "\F2A0"
+}
+
+.fixhub-disabled:before {
+    content: "\F3A9"
+}
+
+.fixhub-ping:before {
+    content: "\F268"
+}
+
+.fixhub-code:before {
+    content: "\F271"
+}
+
+.fixhub-preview:before {
+    content: "\F133"
+}
+
+.fixhub-leave:before {
+    content: "\F385"
+}
+
+.fixhub-checkbox:before {
+    content: "\F373"
+}
+
+.fixhub-checkbox-blank:before {
+    content: "\F372"
+}
+
+.fixhub-lock:before {
+    content: "\F200"
+}
+
+.fixhub-circle:before {
+    content: "\F21B"
+}
+
+.fixhub-setting:before {
+    content: "\F13D"
+}
+
+.fixhub-image:before {
+    content: "\F147"
+}
+
+.fixhub-pin:before {
+    content: "\F2A6"
+}
+
+.fixhub-logout:before {
+    content: "\F29F"
+}
+
+.fixhub-info:before {
+    content: "\F44C"
+}
+
+.fixhub-more:before {
+    content: "\F20B"
+}
+
+.fixhub-github:before {
+    content: "\F233"
+}
+
+.fixhub-gitlab:before {
+    content: "\F430"
+}
+
+.fixhub-bitbucket:before {
+    content: "\F2AE"
+}
+
+.fixhub-amazon:before {
+    content: "\F4D8"
+}
+
+.fixhub-slack:before {
+    content: "\F219"
+}

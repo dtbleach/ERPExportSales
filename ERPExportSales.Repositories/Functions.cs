@@ -28,5 +28,6 @@ namespace ERPExportSales.Repositories
             ObjectParameter passwordParameter = new ObjectParameter("密码", password);
             return this.ObjectContext().ExecuteFunction<int>("f外销_登陆校验", loginNameParameter, passwordParameter).SingleOrDefault();
         }
+
     }
 }

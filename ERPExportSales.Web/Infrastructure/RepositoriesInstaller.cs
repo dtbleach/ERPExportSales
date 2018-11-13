@@ -25,7 +25,15 @@ namespace ERPExportSales.Web.Infrastructure
             container.Register(Component.For<IExportSalesLoginTokenRepository>()
               .ImplementedBy<ExportSalesLoginTokenRepository>()
               .LifestyleTransient());
-            
+
+            container.Register(Component.For<IVExportSalesOceanFreightRepository>()
+              .ImplementedBy<VExportSalesOceanFreightRepository>()
+              .LifestyleTransient());
+
+            container.Register(Component.For<IVPublicHolidayRepository>()
+                 .ImplementedBy<VPublicHolidayRepository>()
+                 .LifestyleTransient());
+
         }
     }
 }
