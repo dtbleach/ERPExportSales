@@ -34,6 +34,14 @@ namespace ERPExportSales.Web.Infrastructure
                  .ImplementedBy<VPublicHolidayRepository>()
                  .LifestyleTransient());
 
+            container.Register(Component.For<IIPWhiteListRepository>()
+                .ImplementedBy<IPWhiteListRepository>()
+                .LifestyleTransient());
+
+            container.Register(Component.For<IOrderRepository>()
+              .ImplementedBy<OrderRepository>()
+              .LifestyleTransient());
+
         }
     }
 }

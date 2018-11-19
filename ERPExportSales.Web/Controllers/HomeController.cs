@@ -52,6 +52,8 @@ namespace ERPExportSales.Web.Controllers
             model.UserModel = userModel;
             model.FreightList = list;
             model.PublicHoliday = publicHolidayList;
+
+           // exportSalesService.RequestIPWhiteList()
             return View(model);
         }
     }

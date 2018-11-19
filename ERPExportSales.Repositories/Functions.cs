@@ -29,5 +29,18 @@ namespace ERPExportSales.Repositories
             return this.ObjectContext().ExecuteFunction<int>("f外销_登陆校验", loginNameParameter, passwordParameter).SingleOrDefault();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        [Function(FunctionType.NonComposableScalarValuedFunction, "f获取员工级别", Schema = dbo)]
+        [return: Parameter(DbType = "int")]
+        public int GetEmployeeLevel([Parameter(DbType = "varchar", Name = "姓名")]string name)
+        {
+            ObjectParameter nameParameter = new ObjectParameter("姓名", name);
+
+            return this.ObjectContext().ExecuteFunction<int>("f获取员工级别", nameParameter).SingleOrDefault();
+        }
     }
 }

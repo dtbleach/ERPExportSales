@@ -8,6 +8,6 @@ namespace ERPExportSales.Entities
 {
     public class Customer
     {
-
+        public int fID { get; set; }
     }
 }

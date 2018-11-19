@@ -61,28 +61,28 @@
                     <div class="box-body box-profile">
                         <div class="box">
                             @*<div class="box-header">
-                                <h3 class="box-title">数据信息</h3>
-                            </div>*@
+                                    <h3 class="box-title">数据信息</h3>
+                                </div>*@
                             <!-- /.box-header -->
                             <div class="box-body">
                                 <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-                               <div class="row">
+                                    <div class="row">
                                         <div class="col-sm-12">
                                             <table id="tbFreight" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                                                 <thead>
                                                     <tr role="row"><th>FID</th><th>Port</th><th>Freight</th><th>Schedule</th><th>Days to port</th></tr>
                                                 </thead>
                                                 <tbody>
-                                                   @foreach (var item in Model.FreightList)
-                                                   {
-                                                    <tr role="row" >
-                                                        <td class="sorting_1">@item.FID</td>
-                                                        <td>@item.Port</td>
-                                                        <td>@item.Freight</td>
-                                                        <td>@item.Schedule</td>
-                                                        <td>@item.DaysToPort</td>
-                                                    </tr>
-                                                   }
+                                                    @foreach (var item in Model.FreightList)
+                                                    {
+                                                        <tr role="row">
+                                                            <td class="sorting_1">@item.FID</td>
+                                                            <td>@item.Port</td>
+                                                            <td>@item.Freight</td>
+                                                            <td>@item.Schedule</td>
+                                                            <td>@item.DaysToPort</td>
+                                                        </tr>
+                                                    }
                                                 </tbody>
                                             </table>
                                         </div>
@@ -115,14 +115,14 @@
                     <div class="box-body box-profile">
                         <div class="box">
                             @*<div class="box-header">
-                        <h3 class="box-title">数据信息</h3>
-                    </div>*@
+                                    <h3 class="box-title">数据信息</h3>
+                                </div>*@
                             <!-- /.box-header -->
                             <div class="box-body">
                                 <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <table id="tbHoliday" class="table table-bordered table-striped dataTable" role="grid" >
+                                            <table id="tbHoliday" class="table table-bordered table-striped dataTable" role="grid">
                                                 <thead>
                                                     <tr role="row"><th>Holiday</th><th>Date</th></tr>
                                                 </thead>
@@ -149,6 +149,10 @@
             <!-- /.col -->
         </div>
         <!-- /.row -->
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
     </form>
 </section>
 @section Scripts{

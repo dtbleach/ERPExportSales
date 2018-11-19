@@ -84,11 +84,9 @@ namespace ERPExportSales.Repositories
 
         public DbSet<VPublicHoliday> VPublicHolidayEntities { get; set; }
 
-        //public DbSet<ReleaseJobEntity> ReleaseJobEntities { get; set; }
+        public DbSet<IPWhiteList> IPWhiteListEntities { get; set; }
 
-        //public DbSet<ReleasePlanEntity> ReleasePlanEntities { get; set; }
-
-        //public DbSet<JenkinsJobEntity> JenkinsJobEntities { get; set; }
+        public DbSet<Order> OrderEntities { get; set; }
 
     }
 }

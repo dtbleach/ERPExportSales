@@ -13,5 +13,7 @@ namespace ERPExportSales.Web.Models
         public IList<ExportSalesOceanFreightViewModel> FreightList { get; set; }
 
         public IList<PublicHolidayViewModel> PublicHoliday { get; set; }
+
+        public IList<OrderViewModel> OrderList { get; set; }
     }
 }

@@ -60,7 +60,9 @@
     <Compile Include="ERPExportSalesUnitOfWork.cs" />
     <Compile Include="ExportSalesLoginTokenRepository.cs" />
     <Compile Include="Functions.cs" />
+    <Compile Include="IPWhiteListRepository.cs" />
     <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="OrderRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryBase.cs" />
     <Compile Include="VExportSalesOceanFreightRepository.cs" />

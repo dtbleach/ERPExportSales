@@ -266,6 +266,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MonitorLog.cs" />
+    <Compile Include="Models\OrderViewModel.cs" />
     <Compile Include="Models\PublicHolidayViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
