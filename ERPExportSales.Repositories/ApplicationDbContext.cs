@@ -66,6 +66,7 @@ namespace ERPExportSales.Repositories
             // modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
 
             //modelBuilder.Configurations.Add(new ReleasePlanConfiguration());
+
             modelBuilder.Conventions.Add(new FunctionConvention<ApplicationDbContext>());
         }
 

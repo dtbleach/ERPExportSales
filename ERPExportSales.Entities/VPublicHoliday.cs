@@ -13,7 +13,7 @@ namespace ERPExportSales.Entities
     {
         [Key]
         [Column("ID")]
-        public Guid ID { get; set; }
+        public int ID { get; set; }
 
         [Column("Holiday")]
         public string Holiday { get; set; }

@@ -42,5 +42,6 @@ namespace ERPExportSales.Repositories
 
             return this.ObjectContext().ExecuteFunction<int>("f获取员工级别", nameParameter).SingleOrDefault();
         }
+
     }
 }

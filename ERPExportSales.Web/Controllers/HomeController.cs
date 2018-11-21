@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Webdiyer.WebControls.Mvc;
 
 namespace ERPExportSales.Web.Controllers
 {
@@ -22,8 +23,14 @@ namespace ERPExportSales.Web.Controllers
         }
 
         [AuthorizeUser]
-        public ActionResult Index()
+        public ActionResult Index(int pageNum=1)
         {
+            
+            ViewBag.PageNum = pageNum;
+            if (pageNum < 1)
+            {
+                ViewBag.PageNum = 1;
+            }
             var user = SessionHelper.Get<Employee>("User");
             UserViewModel userModel = new UserViewModel();
             userModel.LoginName = user.LoginName;
@@ -52,9 +59,20 @@ namespace ERPExportSales.Web.Controllers
             model.UserModel = userModel;
             model.FreightList = list;
             model.PublicHoliday = publicHolidayList;
-
-           // exportSalesService.RequestIPWhiteList()
+            //int count = 0;
+             var orders = exportSalesService.GetOrdersByEmployeeName("周晓东", 50,pageNum);
+            IList<OrderViewModel> orderList = new List<OrderViewModel>();
+            foreach (var item in orders)
+            {
+                var order = ConvertHelper.Trans<Order, OrderViewModel>(item);
+                orderList.Add(order);
+            }
+            //var orderViewModels = new PagedList<OrderViewModel>(orderList, pageNum, 10, count);
+            model.OrderList = orderList;
+          
             return View(model);
         }
+
+
     }
 }

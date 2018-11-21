@@ -1,0 +1,223 @@
+
+ 
+记录时间：2018-11-21 10:45:16,883 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "EntityCommandExecutionException",
+  "Message": "数据读取器与指定的“ERPExportSales.Repositories.Order”不兼容。类型“FID”的成员在同名的数据读取器中没有对应的列。",
+  "Path": "/",
+  "Assembly": "EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)\r\n   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)\r\n   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.InternalTranslate[TElement](DbDataReader reader, String entitySetName, MergeOption mergeOption, Boolean streaming, EntitySet& entitySet, TypeUsage& edmType)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()\r\n   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, ExecutionOptions executionOptions, Object[] parameters)\r\n   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClass14`1.<ExecuteSqlQuery>b__13()\r\n   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()\r\n   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\r\n   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\r\n   在 ERPExportSales.Services.ExportSalesService.GetOrdersByEmployeeName(String name, Int32 pageNum, Int32 pageSize, Int32& totalCount) 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Services\\ExportSalesService.cs:行号 90\r\n   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\HomeController.cs:行号 56\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "EntityFramework",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-21 10:45:16",
+  "Method": "GetMemberOrdinalFromReader"
+}
+ 
+System.Data.Entity.Core.EntityCommandExecutionException: 数据读取器与指定的“ERPExportSales.Repositories.Order”不兼容。类型“FID”的成员在同名的数据读取器中没有对应的列。
+   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   在 System.Data.Entity.Core.Objects.ObjectContext.InternalTranslate[TElement](DbDataReader reader, String entitySetName, MergeOption mergeOption, Boolean streaming, EntitySet& entitySet, TypeUsage& edmType)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, ExecutionOptions executionOptions, Object[] parameters)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClass14`1.<ExecuteSqlQuery>b__13()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 ERPExportSales.Services.ExportSalesService.GetOrdersByEmployeeName(String name, Int32 pageNum, Int32 pageSize, Int32& totalCount) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Services\ExportSalesService.cs:行号 90
+   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\HomeController.cs:行号 56
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-21 10:56:07,280 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "EntityCommandExecutionException",
+  "Message": "数据读取器与指定的“ERPExportSales.Repositories.Order”不兼容。类型“FID”的成员在同名的数据读取器中没有对应的列。",
+  "Path": "/",
+  "Assembly": "EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)\r\n   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)\r\n   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.InternalTranslate[TElement](DbDataReader reader, String entitySetName, MergeOption mergeOption, Boolean streaming, EntitySet& entitySet, TypeUsage& edmType)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()\r\n   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClass11.<ExecuteSqlQuery>b__10()\r\n   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()\r\n   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\r\n   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\r\n   在 ERPExportSales.Services.ExportSalesService.GetOrdersByEmployeeName(String name, Int32 pageNum, Int32 pageSize, Int32& totalCount) 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Services\\ExportSalesService.cs:行号 90\r\n   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\HomeController.cs:行号 56\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "EntityFramework",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-21 10:56:07",
+  "Method": "GetMemberOrdinalFromReader"
+}
+ 
+System.Data.Entity.Core.EntityCommandExecutionException: 数据读取器与指定的“ERPExportSales.Repositories.Order”不兼容。类型“FID”的成员在同名的数据读取器中没有对应的列。
+   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   在 System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   在 System.Data.Entity.Core.Objects.ObjectContext.InternalTranslate[TElement](DbDataReader reader, String entitySetName, MergeOption mergeOption, Boolean streaming, EntitySet& entitySet, TypeUsage& edmType)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClass11.<ExecuteSqlQuery>b__10()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 ERPExportSales.Services.ExportSalesService.GetOrdersByEmployeeName(String name, Int32 pageNum, Int32 pageSize, Int32& totalCount) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Services\ExportSalesService.cs:行号 90
+   在 ERPExportSales.Web.Controllers.HomeController.Index() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\HomeController.cs:行号 56
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-21 14:14:29,114 
+线程ID:[5] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpException",
+  "Message": "节已定义:“Scripts”。",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.WebPages.WebPageBase.DefineSection(String name, SectionWriter action)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 212\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web.WebPages",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-21 14:14:29",
+  "Method": "DefineSection"
+}
+ 
+System.Web.HttpException (0x80004005): 节已定义:“Scripts”。
+   在 System.Web.WebPages.WebPageBase.DefineSection(String name, SectionWriter action)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 212
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-21 16:19:45,681 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml(261): error CS1061: “System.Web.Mvc.HtmlHelper<ERPExportSales.Web.Models.ExportSalesModel>”不包含“RegisterMvcPagerScriptResource”的定义，并且找不到可接受类型为“System.Web.Mvc.HtmlHelper<ERPExportSales.Web.Models.ExportSalesModel>”的第一个参数的扩展方法“RegisterMvcPagerScriptResource”(是否缺少 using 指令或程序集引用?)",
+  "Path": "/",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.AssemblyBuilder.Compile()\r\n   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()\r\n   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-21 16:19:45",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml(261): error CS1061: “System.Web.Mvc.HtmlHelper<ERPExportSales.Web.Models.ExportSalesModel>”不包含“RegisterMvcPagerScriptResource”的定义，并且找不到可接受类型为“System.Web.Mvc.HtmlHelper<ERPExportSales.Web.Models.ExportSalesModel>”的第一个参数的扩展方法“RegisterMvcPagerScriptResource”(是否缺少 using 指令或程序集引用?)
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)

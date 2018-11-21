@@ -1,0 +1,2828 @@
+
+ 
+记录时间：2018-11-21 08:34:07,082 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/21 8:34:07
+      结束时间：2018/11/21 8:34:07
+      总 时 间：39秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:34:07,426 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/21 8:34:07
+      结束时间：2018/11/21 8:34:07
+      总 时 间：39秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:34:07,614 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/21 8:34:07
+      结束时间：2018/11/21 8:34:07
+      总 时 间：100秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:34:07,615 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/21 8:34:07
+      结束时间：2018/11/21 8:34:07
+      总 时 间：100秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:34:17,802 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/21 8:34:16
+      结束时间：2018/11/21 8:34:17
+      总 时 间：906秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=qa2t&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-21 08:34:17,815 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/21 8:34:17
+      结束时间：2018/11/21 8:34:17
+      总 时 间：906秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=qa2t&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-21 08:34:32,493 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:34:17
+      结束时间：2018/11/21 8:34:32
+      总 时 间：14663秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:34:33,953 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:34:32
+      结束时间：2018/11/21 8:34:33
+      总 时 间：14663秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:35:42,688 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:35:33
+      结束时间：2018/11/21 8:35:42
+      总 时 间：9407秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:35:43,854 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:35:42
+      结束时间：2018/11/21 8:35:43
+      总 时 间：9407秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:37:08,550 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:36:55
+      结束时间：2018/11/21 8:37:08
+      总 时 间：12667秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:37:09,933 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:37:08
+      结束时间：2018/11/21 8:37:09
+      总 时 间：12667秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:37:45,984 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:37:38
+      结束时间：2018/11/21 8:37:45
+      总 时 间：7970秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:37:47,024 
+线程ID:[25] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:37:45
+      结束时间：2018/11/21 8:37:47
+      总 时 间：7970秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:38:29,407 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:38:21
+      结束时间：2018/11/21 8:38:29
+      总 时 间：8057秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:38:30,396 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:38:29
+      结束时间：2018/11/21 8:38:30
+      总 时 间：8057秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:43:10,450 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:42:56
+      结束时间：2018/11/21 8:43:10
+      总 时 间：13671秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:43:11,483 
+线程ID:[49] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:43:10
+      结束时间：2018/11/21 8:43:11
+      总 时 间：13671秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:43:49,187 
+线程ID:[47] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:43:37
+      结束时间：2018/11/21 8:43:49
+      总 时 间：11655秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:43:51,234 
+线程ID:[47] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:43:49
+      结束时间：2018/11/21 8:43:51
+      总 时 间：11655秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:44:33,250 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:44:24
+      结束时间：2018/11/21 8:44:33
+      总 时 间：8393秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:44:33,516 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:44:33
+      结束时间：2018/11/21 8:44:33
+      总 时 间：8393秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:46:28,909 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:46:21
+      结束时间：2018/11/21 8:46:28
+      总 时 间：7767秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:46:30,929 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:46:28
+      结束时间：2018/11/21 8:46:30
+      总 时 间：7767秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:47:11,049 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/21 8:47:10
+      结束时间：2018/11/21 8:47:11
+      总 时 间：53秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:47:11,389 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/21 8:47:11
+      结束时间：2018/11/21 8:47:11
+      总 时 间：53秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:47:11,701 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/21 8:47:11
+      结束时间：2018/11/21 8:47:11
+      总 时 间：119秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:47:11,702 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/21 8:47:11
+      结束时间：2018/11/21 8:47:11
+      总 时 间：119秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:47:21,500 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/21 8:47:20
+      结束时间：2018/11/21 8:47:21
+      总 时 间：968秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=chvp&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-21 08:47:21,512 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/21 8:47:21
+      结束时间：2018/11/21 8:47:21
+      总 时 间：968秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=chvp&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-21 08:47:38,915 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:47:21
+      结束时间：2018/11/21 8:47:38
+      总 时 间：17389秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:47:40,476 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:47:38
+      结束时间：2018/11/21 8:47:40
+      总 时 间：17389秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:49:04,920 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:48:56
+      结束时间：2018/11/21 8:49:04
+      总 时 间：8768秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:49:05,994 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:49:04
+      结束时间：2018/11/21 8:49:05
+      总 时 间：8768秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:51:11,554 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 8:51:04
+      结束时间：2018/11/21 8:51:11
+      总 时 间：7138秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 08:51:11,759 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 8:51:11
+      结束时间：2018/11/21 8:51:11
+      总 时 间：7138秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:04:57,728 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/21 9:04:57
+      结束时间：2018/11/21 9:04:57
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:05:00,491 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/21 9:04:57
+      结束时间：2018/11/21 9:05:00
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:05:00,727 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/21 9:05:00
+      结束时间：2018/11/21 9:05:00
+      总 时 间：136秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:05:00,727 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/21 9:05:00
+      结束时间：2018/11/21 9:05:00
+      总 时 间：136秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:05:05,525 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/21 9:05:05
+      结束时间：2018/11/21 9:05:05
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:05:05,527 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/21 9:05:05
+      结束时间：2018/11/21 9:05:05
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:05:05,801 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/21 9:05:05
+      结束时间：2018/11/21 9:05:05
+      总 时 间：143秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:05:05,801 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/21 9:05:05
+      结束时间：2018/11/21 9:05:05
+      总 时 间：143秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:05:15,591 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/21 9:05:14
+      结束时间：2018/11/21 9:05:15
+      总 时 间：897秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=kdxq&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-21 09:05:15,604 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/21 9:05:15
+      结束时间：2018/11/21 9:05:15
+      总 时 间：897秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=kdxq&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-21 09:25:50,162 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/21 9:25:50
+      结束时间：2018/11/21 9:25:50
+      总 时 间：47秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:25:52,765 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/21 9:25:50
+      结束时间：2018/11/21 9:25:52
+      总 时 间：47秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:25:52,994 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/21 9:25:52
+      结束时间：2018/11/21 9:25:52
+      总 时 间：148秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:25:52,995 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/21 9:25:52
+      结束时间：2018/11/21 9:25:52
+      总 时 间：148秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 09:26:06,590 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/21 9:26:04
+      结束时间：2018/11/21 9:26:06
+      总 时 间：1688秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=q852&RememberMe=true,false
+ 
+
+ 
+记录时间：2018-11-21 09:26:06,602 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/21 9:26:06
+      结束时间：2018/11/21 9:26:06
+      总 时 间：1688秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=q852&RememberMe=true,false
+ 
+
+ 
+记录时间：2018-11-21 10:45:16,803 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 10:44:37
+      结束时间：2018/11/21 10:45:16
+      总 时 间：39234秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 10:56:07,234 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 10:55:48
+      结束时间：2018/11/21 10:56:07
+      总 时 间：18568秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 11:23:34,853 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 11:23:23
+      结束时间：2018/11/21 11:23:34
+      总 时 间：11026秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 11:23:38,247 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 11:23:34
+      结束时间：2018/11/21 11:23:38
+      总 时 间：11026秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 13:47:17,811 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 13:47:03
+      结束时间：2018/11/21 13:47:17
+      总 时 间：14020秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 13:47:21,327 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 13:47:17
+      结束时间：2018/11/21 13:47:21
+      总 时 间：14020秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 13:48:37,007 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 13:48:22
+      结束时间：2018/11/21 13:48:36
+      总 时 间：14259秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 13:48:40,424 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 13:48:37
+      结束时间：2018/11/21 13:48:40
+      总 时 间：14259秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:14:00,429 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 14:13:49
+      结束时间：2018/11/21 14:14:00
+      总 时 间：11213秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:14:29,068 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 14:14:00
+      结束时间：2018/11/21 14:14:29
+      总 时 间：11213秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:15:27,441 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 14:15:16
+      结束时间：2018/11/21 14:15:27
+      总 时 间：10850秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:15:29,437 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 14:15:27
+      结束时间：2018/11/21 14:15:29
+      总 时 间：10850秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:16:15,922 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 14:16:04
+      结束时间：2018/11/21 14:16:15
+      总 时 间：11608秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:16:15,925 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 14:16:15
+      结束时间：2018/11/21 14:16:15
+      总 时 间：11608秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:20:56,742 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 14:20:45
+      结束时间：2018/11/21 14:20:56
+      总 时 间：11267秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:21:00,509 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 14:20:56
+      结束时间：2018/11/21 14:21:00
+      总 时 间：11267秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:21:19,085 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 14:21:08
+      结束时间：2018/11/21 14:21:19
+      总 时 间：10820秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:21:19,088 
+线程ID:[7] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 14:21:19
+      结束时间：2018/11/21 14:21:19
+      总 时 间：10820秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:26:23,036 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 14:26:11
+      结束时间：2018/11/21 14:26:23
+      总 时 间：11090秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:26:24,734 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 14:26:23
+      结束时间：2018/11/21 14:26:24
+      总 时 间：11090秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:52:19,734 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 14:52:03
+      结束时间：2018/11/21 14:52:19
+      总 时 间：16444秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 14:52:23,839 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 14:52:19
+      结束时间：2018/11/21 14:52:23
+      总 时 间：16444秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:00:42,969 
+线程ID:[45] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 15:00:31
+      结束时间：2018/11/21 15:00:42
+      总 时 间：11472秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:00:43,871 
+线程ID:[45] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 15:00:42
+      结束时间：2018/11/21 15:00:43
+      总 时 间：11472秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:02:20,389 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 15:02:08
+      结束时间：2018/11/21 15:02:20
+      总 时 间：11448秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:02:21,285 
+线程ID:[52] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 15:02:20
+      结束时间：2018/11/21 15:02:21
+      总 时 间：11448秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:11:31,097 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 15:11:09
+      结束时间：2018/11/21 15:11:31
+      总 时 间：21634秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:11:34,933 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 15:11:31
+      结束时间：2018/11/21 15:11:34
+      总 时 间：21634秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:12:13,536 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 15:12:00
+      结束时间：2018/11/21 15:12:13
+      总 时 间：13503秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:12:13,541 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 15:12:13
+      结束时间：2018/11/21 15:12:13
+      总 时 间：13503秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:15:45,863 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 15:15:31
+      结束时间：2018/11/21 15:15:45
+      总 时 间：13910秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:15:47,665 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 15:15:45
+      结束时间：2018/11/21 15:15:47
+      总 时 间：13910秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:16:13,371 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 15:15:52
+      结束时间：2018/11/21 15:16:13
+      总 时 间：20864秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:16:13,374 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 15:16:13
+      结束时间：2018/11/21 15:16:13
+      总 时 间：20864秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:18:01,493 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 15:17:42
+      结束时间：2018/11/21 15:18:01
+      总 时 间：19058秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:18:02,576 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 15:18:01
+      结束时间：2018/11/21 15:18:02
+      总 时 间：19058秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:19:09,398 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 15:18:58
+      结束时间：2018/11/21 15:19:09
+      总 时 间：10632秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 15:19:10,532 
+线程ID:[28] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 15:19:09
+      结束时间：2018/11/21 15:19:10
+      总 时 间：10632秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:19:43,194 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:19:42
+      结束时间：2018/11/21 16:19:43
+      总 时 间：1060秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:19:45,630 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:19:43
+      结束时间：2018/11/21 16:19:45
+      总 时 间：1060秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:20:26,842 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:20:26
+      结束时间：2018/11/21 16:20:26
+      总 时 间：617秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:20:28,701 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:20:26
+      结束时间：2018/11/21 16:20:28
+      总 时 间：617秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:20:31,878 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:20:31
+      结束时间：2018/11/21 16:20:31
+      总 时 间：521秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:20:31,881 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:20:31
+      结束时间：2018/11/21 16:20:31
+      总 时 间：521秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:20:36,418 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:20:35
+      结束时间：2018/11/21 16:20:36
+      总 时 间：533秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:20:36,420 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:20:36
+      结束时间：2018/11/21 16:20:36
+      总 时 间：533秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:33,758 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:33
+      结束时间：2018/11/21 16:21:33
+      总 时 间：693秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:37,228 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:33
+      结束时间：2018/11/21 16:21:37
+      总 时 间：693秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:42,071 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:41
+      结束时间：2018/11/21 16:21:42
+      总 时 间：518秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:42,074 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:42
+      结束时间：2018/11/21 16:21:42
+      总 时 间：518秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:44,465 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:43
+      结束时间：2018/11/21 16:21:44
+      总 时 间：598秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:44,467 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:44
+      结束时间：2018/11/21 16:21:44
+      总 时 间：598秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:46,565 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:45
+      结束时间：2018/11/21 16:21:46
+      总 时 间：879秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:46,568 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:46
+      结束时间：2018/11/21 16:21:46
+      总 时 间：879秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:49,684 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:49
+      结束时间：2018/11/21 16:21:49
+      总 时 间：561秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:49,687 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:49
+      结束时间：2018/11/21 16:21:49
+      总 时 间：561秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:52,881 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:52
+      结束时间：2018/11/21 16:21:52
+      总 时 间：212秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:52,883 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:52
+      结束时间：2018/11/21 16:21:52
+      总 时 间：212秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:54,823 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:54
+      结束时间：2018/11/21 16:21:54
+      总 时 间：221秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:54,827 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:54
+      结束时间：2018/11/21 16:21:54
+      总 时 间：221秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:56,130 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:55
+      结束时间：2018/11/21 16:21:56
+      总 时 间：211秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:56,132 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:56
+      结束时间：2018/11/21 16:21:56
+      总 时 间：211秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:57,389 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:57
+      结束时间：2018/11/21 16:21:57
+      总 时 间：339秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:57,390 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:57
+      结束时间：2018/11/21 16:21:57
+      总 时 间：339秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:58,768 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:21:58
+      结束时间：2018/11/21 16:21:58
+      总 时 间：203秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:21:58,770 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:21:58
+      结束时间：2018/11/21 16:21:58
+      总 时 间：203秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:22:01,199 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:22:01
+      结束时间：2018/11/21 16:22:01
+      总 时 间：187秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:22:01,201 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:22:01
+      结束时间：2018/11/21 16:22:01
+      总 时 间：187秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:22:04,433 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:22:04
+      结束时间：2018/11/21 16:22:04
+      总 时 间：194秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:22:04,435 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:22:04
+      结束时间：2018/11/21 16:22:04
+      总 时 间：194秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:22:05,392 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:22:05
+      结束时间：2018/11/21 16:22:05
+      总 时 间：201秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:22:05,394 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:22:05
+      结束时间：2018/11/21 16:22:05
+      总 时 间：201秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:23:18,973 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:23:16
+      结束时间：2018/11/21 16:23:18
+      总 时 间：2428秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:23:22,534 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:23:18
+      结束时间：2018/11/21 16:23:22
+      总 时 间：2428秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:23:38,009 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:23:35
+      结束时间：2018/11/21 16:23:38
+      总 时 间：2043秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:23:38,013 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:23:38
+      结束时间：2018/11/21 16:23:38
+      总 时 间：2043秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:23:44,526 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:23:42
+      结束时间：2018/11/21 16:23:44
+      总 时 间：2098秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:23:44,529 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:23:44
+      结束时间：2018/11/21 16:23:44
+      总 时 间：2098秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:23:51,205 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:23:49
+      结束时间：2018/11/21 16:23:51
+      总 时 间：2135秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:23:51,209 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:23:51
+      结束时间：2018/11/21 16:23:51
+      总 时 间：2135秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:24:45,870 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:24:45
+      结束时间：2018/11/21 16:24:45
+      总 时 间：540秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:24:46,851 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:24:45
+      结束时间：2018/11/21 16:24:46
+      总 时 间：540秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:24:57,871 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:24:57
+      结束时间：2018/11/21 16:24:57
+      总 时 间：441秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:24:57,875 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:24:57
+      结束时间：2018/11/21 16:24:57
+      总 时 间：441秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:00,110 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:24:59
+      结束时间：2018/11/21 16:25:00
+      总 时 间：411秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:00,114 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:25:00
+      结束时间：2018/11/21 16:25:00
+      总 时 间：411秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:02,397 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:25:02
+      结束时间：2018/11/21 16:25:02
+      总 时 间：237秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:02,402 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:25:02
+      结束时间：2018/11/21 16:25:02
+      总 时 间：237秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:05,389 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:25:03
+      结束时间：2018/11/21 16:25:05
+      总 时 间：1851秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:05,393 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:25:05
+      结束时间：2018/11/21 16:25:05
+      总 时 间：1851秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:08,461 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:25:08
+      结束时间：2018/11/21 16:25:08
+      总 时 间：256秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:08,467 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:25:08
+      结束时间：2018/11/21 16:25:08
+      总 时 间：256秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:49,468 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:25:49
+      结束时间：2018/11/21 16:25:49
+      总 时 间：234秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:50,457 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:25:49
+      结束时间：2018/11/21 16:25:50
+      总 时 间：234秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:59,475 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:25:59
+      结束时间：2018/11/21 16:25:59
+      总 时 间：280秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:25:59,481 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:25:59
+      结束时间：2018/11/21 16:25:59
+      总 时 间：280秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:02,568 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:02
+      结束时间：2018/11/21 16:26:02
+      总 时 间：440秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:02,574 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:02
+      结束时间：2018/11/21 16:26:02
+      总 时 间：440秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:07,028 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:06
+      结束时间：2018/11/21 16:26:07
+      总 时 间：402秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:07,032 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:07
+      结束时间：2018/11/21 16:26:07
+      总 时 间：402秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:10,086 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:09
+      结束时间：2018/11/21 16:26:10
+      总 时 间：382秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:10,091 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:10
+      结束时间：2018/11/21 16:26:10
+      总 时 间：382秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:12,682 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:12
+      结束时间：2018/11/21 16:26:12
+      总 时 间：394秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:12,687 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:12
+      结束时间：2018/11/21 16:26:12
+      总 时 间：394秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:15,222 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:14
+      结束时间：2018/11/21 16:26:15
+      总 时 间：470秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:15,225 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:15
+      结束时间：2018/11/21 16:26:15
+      总 时 间：470秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:17,715 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:17
+      结束时间：2018/11/21 16:26:17
+      总 时 间：448秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:17,723 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:17
+      结束时间：2018/11/21 16:26:17
+      总 时 间：448秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:20,037 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:19
+      结束时间：2018/11/21 16:26:20
+      总 时 间：483秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:20,045 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:20
+      结束时间：2018/11/21 16:26:20
+      总 时 间：483秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:35,152 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:34
+      结束时间：2018/11/21 16:26:35
+      总 时 间：264秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:36,232 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:35
+      结束时间：2018/11/21 16:26:36
+      总 时 间：264秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:39,158 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:38
+      结束时间：2018/11/21 16:26:39
+      总 时 间：407秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:39,163 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:39
+      结束时间：2018/11/21 16:26:39
+      总 时 间：407秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:40,651 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:40
+      结束时间：2018/11/21 16:26:40
+      总 时 间：242秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:40,659 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:40
+      结束时间：2018/11/21 16:26:40
+      总 时 间：242秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:42,070 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:41
+      结束时间：2018/11/21 16:26:42
+      总 时 间：289秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:42,074 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:42
+      结束时间：2018/11/21 16:26:42
+      总 时 间：289秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:44,258 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:43
+      结束时间：2018/11/21 16:26:44
+      总 时 间：404秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:44,262 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:44
+      结束时间：2018/11/21 16:26:44
+      总 时 间：404秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:45,646 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:45
+      结束时间：2018/11/21 16:26:45
+      总 时 间：544秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:45,651 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:45
+      结束时间：2018/11/21 16:26:45
+      总 时 间：544秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:47,015 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:46
+      结束时间：2018/11/21 16:26:47
+      总 时 间：601秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:47,020 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:47
+      结束时间：2018/11/21 16:26:47
+      总 时 间：601秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:52,950 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:52
+      结束时间：2018/11/21 16:26:52
+      总 时 间：456秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:52,955 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:52
+      结束时间：2018/11/21 16:26:52
+      总 时 间：456秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:54,702 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:26:54
+      结束时间：2018/11/21 16:26:54
+      总 时 间：404秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:26:54,706 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:26:54
+      结束时间：2018/11/21 16:26:54
+      总 时 间：404秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:27:32,720 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:27:30
+      结束时间：2018/11/21 16:27:32
+      总 时 间：2044秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:27:36,725 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:27:32
+      结束时间：2018/11/21 16:27:36
+      总 时 间：2044秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:47:54,173 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:47:51
+      结束时间：2018/11/21 16:47:54
+      总 时 间：2295秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:47:57,907 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:47:54
+      结束时间：2018/11/21 16:47:57
+      总 时 间：2295秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:54:04,040 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:54:02
+      结束时间：2018/11/21 16:54:04
+      总 时 间：1673秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:54:05,140 
+线程ID:[30] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:54:04
+      结束时间：2018/11/21 16:54:05
+      总 时 间：1673秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:54:34,058 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:54:33
+      结束时间：2018/11/21 16:54:34
+      总 时 间：256秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:54:35,154 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:54:34
+      结束时间：2018/11/21 16:54:35
+      总 时 间：256秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:54:55,848 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:54:55
+      结束时间：2018/11/21 16:54:55
+      总 时 间：251秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:54:55,853 
+线程ID:[29] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:54:55
+      结束时间：2018/11/21 16:54:55
+      总 时 间：251秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:54:58,231 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:54:57
+      结束时间：2018/11/21 16:54:58
+      总 时 间：242秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:54:58,235 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:54:58
+      结束时间：2018/11/21 16:54:58
+      总 时 间：242秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:55:09,250 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:55:07
+      结束时间：2018/11/21 16:55:09
+      总 时 间：1687秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:55:09,257 
+线程ID:[32] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:55:09
+      结束时间：2018/11/21 16:55:09
+      总 时 间：1687秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:55:14,151 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:55:13
+      结束时间：2018/11/21 16:55:14
+      总 时 间：236秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:55:14,155 
+线程ID:[26] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:55:14
+      结束时间：2018/11/21 16:55:14
+      总 时 间：236秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:58:22,771 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:58:22
+      结束时间：2018/11/21 16:58:22
+      总 时 间：231秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:58:22,777 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:58:22
+      结束时间：2018/11/21 16:58:22
+      总 时 间：231秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:58:42,294 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:58:41
+      结束时间：2018/11/21 16:58:42
+      总 时 间：358秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:58:42,298 
+线程ID:[18] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:58:42
+      结束时间：2018/11/21 16:58:42
+      总 时 间：358秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:58:45,130 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/21 16:58:44
+      结束时间：2018/11/21 16:58:45
+      总 时 间：236秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-21 16:58:45,134 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/21 16:58:45
+      结束时间：2018/11/21 16:58:45
+      总 时 间：236秒
+        Form：
+ 

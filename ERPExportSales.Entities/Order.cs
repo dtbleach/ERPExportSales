@@ -14,7 +14,7 @@ namespace ERPExportSales.Entities
 
         [Key]
         [Column("ID")]
-        public int FID { get; set; }
+        public Guid FID { get; set; }
 
         [Column("PO No.")]
         public string PONo { get; set; }
@@ -43,20 +43,20 @@ namespace ERPExportSales.Entities
         [Column("部门ID")]
         public int DepID { get; set; }
 
-        [Column("Weight (kg)")]
+        [Column("Weight  (kg)")]
         public decimal Weight { get; set; }
 
         [Column("Invoice No.")]
-        public int InvoiceNo { get; set; }
+        public string InvoiceNo { get; set; }
 
         [Column("Packing List")]
-        public int PackingList { get; set; }
+        public string PackingList { get; set; }
 
         [Column("BL Copy")]
-        public int BLCopy { get; set; }
+        public string BLCopy { get; set; }
 
         [Column("Quality Report")]
-        public int QualityReport { get; set; }
+        public string QualityReport { get; set; }
 
     }
 }

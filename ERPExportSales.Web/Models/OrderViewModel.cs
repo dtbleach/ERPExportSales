@@ -7,7 +7,7 @@ namespace ERPExportSales.Web.Models
 {
     public class OrderViewModel
     {
-        public int FID { get; set; }
+        public Guid FID { get; set; }
 
         public string PONo { get; set; }
 
@@ -29,12 +29,12 @@ namespace ERPExportSales.Web.Models
 
         public decimal Weight { get; set; }
 
-        public int InvoiceNo { get; set; }
+        public string InvoiceNo { get; set; }
 
-        public int PackingList { get; set; }
+        public string PackingList { get; set; }
 
-        public int BLCopy { get; set; }
+        public string BLCopy { get; set; }
 
-        public int QualityReport { get; set; }
+        public string QualityReport { get; set; }
     }
 }

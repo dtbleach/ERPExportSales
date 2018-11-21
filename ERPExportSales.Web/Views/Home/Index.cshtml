@@ -1,9 +1,11 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 @using ERPExportSales.Web.Models
 @model ExportSalesModel
+  @section Css{
+    <link href="@Url.Content("~/Content/pagestyle.css")" rel="Stylesheet" type="text/css" />
+}
 <ul class="breadcrumb">
     <li><a href="/">首页</a></li>
     <li><a href="#">信息</a></li>
@@ -13,149 +15,260 @@
     <form role="form" ng-app="myApp" ng-controller="formCtrl" class="form-horizontal" style="margin-top: 20px;"
           name="myForm" novalidate>
 
-        <div class="row">
-            <div class="col-md-6">
+        <div class="col-md-12">
+            <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#settings" data-toggle="tab" aria-expanded="true">Query</a></li>
+                    <li class=""><a href="#activity" data-toggle="tab" aria-expanded="false">Info</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="settings">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="box box-primary">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Orders</h3>
+                                    </div>
+                                    <div class="box-body box-profile">
+                                        <div class="box">
+                                            @*<div class="box-header">
+                                                    <h3 class="box-title">数据信息</h3>
+                                                </div>*@
+                                            <!-- /.box-header -->
+                                            <div class="box-body">
+                                                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="pull-left">
+                                                                PO No. @Html.TextBox("PoNo","",new { @class= "form-control" })
+                                                                SC No. @Html.TextBox("SCNo", "", new { @class = "form-control" })
+                                                                Invoice No. @Html.TextBox("InvoiceNo", "", new { @class = "form-control" })
+                                                               @Html.ActionLink("Query","Index","Home",new { },new { @class = "btn btn-primary" })
+                                                                </div>
+                                                                <div class="pull-right">
+                                                                    @Html.ActionLink("上一页", "Index", "Home", new { pageNum = ViewBag.PageNum - 1 }, new { @class = "btn btn-default" })
+                                                                    @Html.ActionLink("下一页", "Index", "Home", new { pageNum = ViewBag.PageNum + 1 }, new { @class = "btn btn-default" })
+                                                                </div>
+                                                                <table id="tbOrders" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                                                                    <thead>
+                                                                        <tr role="row">
+                                                                            <th>PO No.</th>
+                                                                            <th>Sc No.</th>
+                                                                            <th>Amount</th>
+                                                                            <th>ETD</th>
+                                                                            <th>Progess</th>
+                                                                            <th>客户ID</th>
+                                                                            <th>销售员</th>
+                                                                            <th>制单人</th>
+                                                                            <th>Weight (kg)</th>
+                                                                            <th>Invoice No.</th>
+                                                                            <th>Packing List</th>
+                                                                            <th>BL Copy</th>
+                                                                            <th>Quality Report</th>
+                                                                        </tr>
 
-                <!-- Profile Image -->
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">汇率</h3>
-                    </div>
-                    <div class="box-body box-profile" style="height:350px">
-                        <iframe id="sinaFrame" width="100%" height="100%" style="background-color:white"></iframe>
-                        @*<h3 class="profile-username text-center">{[project.name]}</h3>
-                            <p class="text-muted text-center">{[project.code]}</p>
-
-                            <ul class="list-group list-group-unbordered">
-                                <li class="list-group-item">
-                                    <b>需求数:</b> <a class="pull-right">2,103</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <b>源代码数:</b> <a class="pull-right">211</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <b>生产应用数:</b> <a class="pull-right">40</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <b>应用数:</b> <a class="pull-right">100</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <b>项目创建于 </b> <a class="pull-right">
-
-                                    </a>
-                                </li>
-                            </ul>
-                            <p class="text-muted">
-
-                            </p>
-                            {#                            <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>#}*@
-                    </div>
-                    <!-- /.box-body -->
-                </div>
-                <!-- /.box -->
-                <!-- Profile Image -->
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Freight</h3>
-                    </div>
-                    <div class="box-body box-profile">
-                        <div class="box">
-                            @*<div class="box-header">
-                                    <h3 class="box-title">数据信息</h3>
-                                </div>*@
-                            <!-- /.box-header -->
-                            <div class="box-body">
-                                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <table id="tbFreight" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
-                                                <thead>
-                                                    <tr role="row"><th>FID</th><th>Port</th><th>Freight</th><th>Schedule</th><th>Days to port</th></tr>
-                                                </thead>
-                                                <tbody>
-                                                    @foreach (var item in Model.FreightList)
-                                                    {
-                                                        <tr role="row">
-                                                            <td class="sorting_1">@item.FID</td>
-                                                            <td>@item.Port</td>
-                                                            <td>@item.Freight</td>
-                                                            <td>@item.Schedule</td>
-                                                            <td>@item.DaysToPort</td>
-                                                        </tr>
-                                                    }
-                                                </tbody>
-                                            </table>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        @foreach (var item in Model.OrderList)
+                                                                        {
+                                                                            <tr role="row">
+                                                                                <td class="sorting_1">@item.PONo</td>
+                                                                                <td>@item.SCNo</td>
+                                                                                <td>@item.Amount</td>
+                                                                                <td>@item.ETD</td>
+                                                                                <td>@item.Progress</td>
+                                                                                <td>@item.CustomerID</td>
+                                                                                <td>@item.Sales</td>
+                                                                                <td>@item.Maker</td>
+                                                                                <td>@item.Weight</td>
+                                                                                <td>@item.InvoiceNo</td>
+                                                                                <td>@item.PackingList</td>
+                                                                                <td>@item.BLCopy</td>
+                                                                                <td>@item.QualityReport</td>
+                                                                            </tr>
+                                                                        }
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="pull-right">
+                                                                    @Html.ActionLink("上一页", "Index", "Home", new { pageNum = ViewBag.PageNum - 1 }, new { @class = "btn btn-default" })
+                                                                    @Html.ActionLink("下一页", "Index", "Home", new { pageNum = ViewBag.PageNum + 1 }, new { @class = "btn btn-default" })
+                                                                    @*@Html.Pager(Model.OrderList, new PagerOptions
+                {
+                    PageIndexParameterName = "pageNum",
+                    ContainerTagName = "ul",
+                    FirstPageText = "First",
+                    PrevPageText = "Previous",
+                    NextPageText = "Next",
+                    LastPageText = "Last",
+                    CssClass = "pagination",
+                    CurrentPagerItemTemplate = "<li class=\"active\"><a href=\"#\">{0}</a></li>",
+                    DisabledPagerItemTemplate = "<li class=\"disabled\"><a>{0}</a></li>",
+                    PagerItemTemplate = "<li>{0}</li>"
+                })*@
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.box-body -->
                                         </div>
                                     </div>
+                                    <!-- /.box-body -->
                                 </div>
                             </div>
-                            <!-- /.box-body -->
                         </div>
                     </div>
-                    <!-- /.box-body -->
-                </div>
-                <!-- /.box -->
-            </div>
-            <!-- /.col -->
-            <div class="col-md-6">
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">RB0</h3>
-                    </div>
-                    <div class="box-body box-profile" style="height:350px">
-                        <iframe id="rbFrame" width="100%" height="100%" style="background-color:white"></iframe>
-                    </div>
-                    <!-- /.box-body -->
-                </div>
-                <!-- /.nav-tabs-custom -->
-                <div class="box box-primary">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Public Holiday</h3>
-                    </div>
-                    <div class="box-body box-profile">
-                        <div class="box">
-                            @*<div class="box-header">
-                                    <h3 class="box-title">数据信息</h3>
-                                </div>*@
-                            <!-- /.box-header -->
-                            <div class="box-body">
-                                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <table id="tbHoliday" class="table table-bordered table-striped dataTable" role="grid">
-                                                <thead>
-                                                    <tr role="row"><th>Holiday</th><th>Date</th></tr>
-                                                </thead>
-                                                <tbody>
-                                                    @foreach (var item in Model.PublicHoliday)
-                                                    {
-                                                        <tr role="row">
-                                                            <td class="sorting_1">@item.Holiday</td>
-                                                            <td>@item.Date</td>
-                                                        </tr>
-                                                    }
-                                                </tbody>
-                                            </table>
+                    <!-- /.tab-pane -->
+                    <!-- /.tab-pane -->
+
+                    <div class="tab-pane" id="activity">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <!-- Profile Image -->
+                                <div class="box box-primary">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">汇率</h3>
+                                    </div>
+                                    <div class="box-body box-profile" style="height:350px">
+                                        <iframe id="sinaFrame" width="100%" height="100%" style="background-color:white"></iframe>
+                                        @*<h3 class="profile-username text-center">{[project.name]}</h3>
+                                            <p class="text-muted text-center">{[project.code]}</p>
+
+                                            <ul class="list-group list-group-unbordered">
+                                                <li class="list-group-item">
+                                                    <b>需求数:</b> <a class="pull-right">2,103</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>源代码数:</b> <a class="pull-right">211</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>生产应用数:</b> <a class="pull-right">40</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>应用数:</b> <a class="pull-right">100</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>项目创建于 </b> <a class="pull-right">
+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <p class="text-muted">
+
+                                            </p>
+                                            {#                            <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>#}*@
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <!-- /.box -->
+                                <!-- Profile Image -->
+                                <div class="box box-primary">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Freight</h3>
+                                    </div>
+                                    <div class="box-body box-profile">
+                                        <div class="box">
+                                            @*<div class="box-header">
+                                                    <h3 class="box-title">数据信息</h3>
+                                                </div>*@
+                                            <!-- /.box-header -->
+                                            <div class="box-body">
+                                                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <table id="tbFreight" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+                                                                <thead>
+                                                                    <tr role="row"><th>FID</th><th>Port</th><th>Freight</th><th>Schedule</th><th>Days to port</th></tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    @foreach (var item in Model.FreightList)
+                                                                    {
+                                                                    <tr role="row">
+                                                                        <td class="sorting_1">@item.FID</td>
+                                                                        <td>@item.Port</td>
+                                                                        <td>@item.Freight</td>
+                                                                        <td>@item.Schedule</td>
+                                                                        <td>@item.DaysToPort</td>
+                                                                    </tr>
+                                                                    }
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.box-body -->
                                         </div>
                                     </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <!-- /.box -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-6">
+                                <div class="box box-primary">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">RB0</h3>
+                                    </div>
+                                    <div class="box-body box-profile" style="height:350px">
+                                        <iframe id="rbFrame" width="100%" height="100%" style="background-color:white"></iframe>
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <!-- /.nav-tabs-custom -->
+                                <div class="box box-primary">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Public Holiday</h3>
+                                    </div>
+                                    <div class="box-body box-profile">
+                                        <div class="box">
+                                            @*<div class="box-header">
+                                                    <h3 class="box-title">数据信息</h3>
+                                                </div>*@
+                                            <!-- /.box-header -->
+                                            <div class="box-body">
+                                                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <table id="tbHoliday" class="table table-bordered table-striped dataTable" role="grid">
+                                                                <thead>
+                                                                    <tr role="row"><th>Holiday</th><th>Date</th></tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    @foreach (var item in Model.PublicHoliday)
+                                                                    {
+                                                                    <tr role="row">
+                                                                        <td class="sorting_1">@item.Holiday</td>
+                                                                        <td>@item.Date</td>
+                                                                    </tr>
+                                                                    }
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                    </div>
+                                    <!-- /.box-body -->
                                 </div>
                             </div>
-                            <!-- /.box-body -->
+                            <!-- /.col -->
                         </div>
                     </div>
-                    <!-- /.box-body -->
+                    <!-- /.tab-pane -->
                 </div>
+                <!-- /.tab-content -->
             </div>
-            <!-- /.col -->
+            <!-- /.nav-tabs-custom -->
         </div>
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-md-12">
-            </div>
-        </div>
+
     </form>
 </section>
 @section Scripts{
+<!--{Html.RegisterMvcPagerScriptResource();}-->
     <script type="text/javascript">
         $(document).ready(function () {
             $("#sinaFrame").attr("src", "http://gu.sina.cn/fx/hq/quotes.php?code=USDCNY");
@@ -163,6 +276,9 @@
             var divs = $(document.getElementById('sinaFrame').contentWindow.document.body).find('#hq_chart');
             $('#tbFreight').DataTable();
             $('#tbHoliday').DataTable();
+           // $('#tbOrders').DataTable();
         })
     </script>
 }
+
+

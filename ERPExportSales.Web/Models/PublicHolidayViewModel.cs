@@ -7,7 +7,7 @@ namespace ERPExportSales.Web.Models
 {
     public class PublicHolidayViewModel
     {
-        public Guid ID { get; set; }
+        public int ID { get; set; }
 
         public string Holiday { get; set; }
 

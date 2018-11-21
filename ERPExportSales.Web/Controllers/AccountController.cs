@@ -52,6 +52,7 @@ namespace ERPExportSales.Web.Controllers
                     loginToken.Token = token;
                     loginToken.UserName = model.LoginName;
                     tokenService.SaveLoginToken(loginToken);
+                    LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "'}");
                 }else
                 {
                     var employee = employeeService.GetEmployee(model.LoginName);
