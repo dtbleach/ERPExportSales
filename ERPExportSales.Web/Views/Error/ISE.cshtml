@@ -13,6 +13,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="renderer" content="webkit">
         <title>系统内部服务器错误(500)</title>
+           <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/bootstrap/dist/css/bootstrap.min.css")">
+    <!-- Font Awesome -->
+        <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/font-awesome/css/font-awesome.min.css")">
+    <!-- Ionicons -->
+        <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/Ionicons/css/ionicons.min.css")">
+    <!-- DataTables -->
+        <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css")">
+    <!-- Theme style -->
+        <link rel="stylesheet" href="@Url.Content("~/Scripts/dist/css/AdminLTE.min.css")">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+             folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="@Url.Content("~/Scripts/dist/css/skins/_all-skins.min.css")">
+    <!-- Google Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
         <style>
             html,
             body {
@@ -94,117 +109,137 @@
 </head>
 <body>
     <div class="center">
-        <img id="img_error" src="/Images/500.png" height="218" width="640">
+        <div class="wrapper">
+            <!-- Main content -->
+            <section class="content">
+
+                <div class="error-page">
+                    <h2 class="headline text-red">500</h2>
+
+                    <div class="error-content">
+                        <h3><i class="fa fa-warning text-red"></i> Oops! Something went wrong.</h3>
+
+                        <p>
+                            We will work on fixing that right away.
+                            Meanwhile, you may <a href="/Home/Index">return to dashboard</a> .
+                        </p>
+                    </div>
+                </div>
+                <!-- /.error-page -->
+
+            </section>
+            <!-- /.content -->
+        </div>
         <div class="center_link">
             <a href="/Home">返回首页</a><a href="javascript:void(0)" id="link_expand">
                 @if (@Model.ShowException)
             {
                 string hidden = "隐藏详细信息"; @hidden
-            }
-            else
-            {
-                string hidden = "显示详细信息"; @hidden
-            }
-        </a>
+                }
+                else
+                {
+                    string hidden = "显示详细信息"; @hidden
+                }
+            </a>
+        </div>
     </div>
-</div>
 
-<table id="tbl_exception" class="tbl_exception @if (!@Model.ShowException) { string hidden = "hidden"; @hidden } ">
-    <colgroup>
-        <col style="width:120px;" />
-        <col />
-    </colgroup>
-    <tr>
-        <td colspan="2" class="td-remark">
-            异常相关信息
-            <button style="float:right;font-weight:normal;" id="btn_screen">截图报告管理员</button>
-        </td>
-    </tr>
-    <tr>
-        <td class="td-title">请求路径</td>
-        <td>@Model.Path</td>
-    </tr>
-    <tr>
-        <td class="td-title">请求类型</td>
-        <td>@Model.Type</td>
-    </tr>
-    <tr>
-        <td class="td-title">错误类型</td>
-        <td>@Model.MsgType</td>
-    </tr>
-    <tr>
-        <td class="td-title">消息内容</td>
-        <td>@Model.Message</td>
-    </tr>
-    <tr>
-        <td class="td-title">异常源</td>
-        <td class="td-code">@Model.Source</td>
-    </tr>
-    <tr>
-        <td class="td-title">异常发生方法</td>
-        <td>@Model.Method</td>
-    </tr>
-    @if (!string.IsNullOrEmpty(@Model.ActionArguments))
-            {
+    <table id="tbl_exception" class="tbl_exception @if (!@Model.ShowException) { string hidden = "hidden"; @hidden } ">
+        <colgroup>
+            <col style="width:120px;" />
+            <col />
+        </colgroup>
         <tr>
-            <td class="td-title">请求参数</td>
-            <td>@Model.ActionArguments</td>
+            <td colspan="2" class="td-remark">
+                异常相关信息
+                <button style="float:right;font-weight:normal;" id="btn_screen">截图报告管理员</button>
+            </td>
         </tr>
-    }
-    <tr>
-        <td class="td-title">HttpMethod</td>
-        <td>@Model.HttpMethod</td>
-    </tr>
-    <tr>
-        <td class="td-title">UserAgent</td>
-        <td>@Model.UserAgent</td>
-    </tr>
-    <tr>
-        <td class="td-title">异常堆栈</td>
-        <td class="td-code">@Model.StackTrace</td>
-    </tr>
-    <tr>
-        <td class="td-title">异常时间</td>
-        <td class="td-code">@Model.Time</td>
-    </tr>
-    <tr>
-        <td colspan="2" class="td-remark">服务器相关信息</td>
-    </tr>
-    <tr>
-        <td class="td-title">服务器IP</td>
-        <td>@Model.IP</td>
-    </tr>
-    <tr>
-        <td class="td-title">操作系统</td>
-        <td>@Model.OSVersion</td>
-    </tr>
-    <tr>
-        <td class="td-title">操作系统位数</td>
-        <td>@Model.OSBit</td>
-    </tr>
-    <tr>
-        <td class="td-title">NET版本</td>
-        <td>@Model.DotNetVersion</td>
-    </tr>
-    <tr>
-        <td class="td-title">IIS版本</td>
-        <td>@Model.IISVersion</td>
-    </tr>
-    <tr>
-        <td class="td-title">程序池位数</td>
-        <td>@Model.DotNetBit</td>
-    </tr>
-    <tr>
-        <td class="td-title">CPU个数</td>
-        <td>@Model.CPUCount</td>
-    </tr>
-    <tr>
-        <td class="td-title">CPU类型</td>
-        <td>@Model.CPUType</td>
-    </tr>
-</table>
-<script src="~/Scripts/plugins/html2canvas/html2canvas.min.js"></script>
-<script>
+        <tr>
+            <td class="td-title">请求路径</td>
+            <td>@Model.Path</td>
+        </tr>
+        <tr>
+            <td class="td-title">请求类型</td>
+            <td>@Model.Type</td>
+        </tr>
+        <tr>
+            <td class="td-title">错误类型</td>
+            <td>@Model.MsgType</td>
+        </tr>
+        <tr>
+            <td class="td-title">消息内容</td>
+            <td>@Model.Message</td>
+        </tr>
+        <tr>
+            <td class="td-title">异常源</td>
+            <td class="td-code">@Model.Source</td>
+        </tr>
+        <tr>
+            <td class="td-title">异常发生方法</td>
+            <td>@Model.Method</td>
+        </tr>
+        @if (!string.IsNullOrEmpty(@Model.ActionArguments))
+            {
+            <tr>
+                <td class="td-title">请求参数</td>
+                <td>@Model.ActionArguments</td>
+            </tr>
+        }
+        <tr>
+            <td class="td-title">HttpMethod</td>
+            <td>@Model.HttpMethod</td>
+        </tr>
+        <tr>
+            <td class="td-title">UserAgent</td>
+            <td>@Model.UserAgent</td>
+        </tr>
+        <tr>
+            <td class="td-title">异常堆栈</td>
+            <td class="td-code">@Model.StackTrace</td>
+        </tr>
+        <tr>
+            <td class="td-title">异常时间</td>
+            <td class="td-code">@Model.Time</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="td-remark">服务器相关信息</td>
+        </tr>
+        <tr>
+            <td class="td-title">服务器IP</td>
+            <td>@Model.IP</td>
+        </tr>
+        <tr>
+            <td class="td-title">操作系统</td>
+            <td>@Model.OSVersion</td>
+        </tr>
+        <tr>
+            <td class="td-title">操作系统位数</td>
+            <td>@Model.OSBit</td>
+        </tr>
+        <tr>
+            <td class="td-title">NET版本</td>
+            <td>@Model.DotNetVersion</td>
+        </tr>
+        <tr>
+            <td class="td-title">IIS版本</td>
+            <td>@Model.IISVersion</td>
+        </tr>
+        <tr>
+            <td class="td-title">程序池位数</td>
+            <td>@Model.DotNetBit</td>
+        </tr>
+        <tr>
+            <td class="td-title">CPU个数</td>
+            <td>@Model.CPUCount</td>
+        </tr>
+        <tr>
+            <td class="td-title">CPU类型</td>
+            <td>@Model.CPUType</td>
+        </tr>
+    </table>
+    <script src="@Url.Content("~/Scripts/plugins/html2canvas/html2canvas.min.js")"></script>
+    <script>
         $(function () {
             $("#btn_screen").on("click", function () {
                 console.log($("#exception_container").outerHeight())
@@ -262,6 +297,6 @@
                     + seperator2 + strSeconds;
             return currentdate;
         }
-</script>
+    </script>
 </body>
 </html>

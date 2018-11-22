@@ -11,11 +11,13 @@ namespace ERPExportSales.Web.Models
     {
         public UserViewModel UserModel { get; set; }
 
-        public IList<ExportSalesOceanFreightViewModel> FreightList { get; set; }
+        public QueryViewModel QueryModel { get; set; }
 
-        public IList<PublicHolidayViewModel> PublicHoliday { get; set; }
+        //public IList<ExportSalesOceanFreightViewModel> FreightList { get; set; }
 
-        public IList<OrderViewModel> OrderList { get; set; }
+        //public IList<PublicHolidayViewModel> PublicHoliday { get; set; }
+
+        //public IList<OrderViewModel> OrderList { get; set; }
     }
 
     public class QueryViewModel

@@ -76,7 +76,7 @@ namespace ERPExportSales.Services
         /// <param name="pageNum">第几页</param>
         /// <param name="totalCount">总记录数</param>
         /// <returns></returns>
-        public IList<Order> GetOrdersByEmployeeName(string name, int pageSize, int pageNum)
+        public IList<Order> GetOrdersByEmployeeName(string name, int pageSize, int pageNum,string pono,string scno,string invoiceno)
         {
             var db = databaseFactory.Get();
             int level = db.GetEmployeeLevel(name);
@@ -84,22 +84,40 @@ namespace ERPExportSales.Services
             SqlParameter paramPageNum = new SqlParameter("@RowNumber", pageNum);
             //SqlParameter paramTotalRecord = new SqlParameter("@TotalRecord", SqlDbType.Int);
             //paramTotalRecord.Direction = System.Data.ParameterDirection.Output;
+            string sqlWhere = string.Empty;
+            StringBuilder str = new StringBuilder();
+            if (!string.IsNullOrEmpty(pono))
+            {
+                sqlWhere += " and [PO No.]=" + pono;
+            }
+
+            if (!string.IsNullOrEmpty(scno))
+            {
+                sqlWhere += " and [SC No.]=" + scno;
+            }
+
+            if (!string.IsNullOrEmpty(invoiceno))
+            {
+                sqlWhere += " and [Invoice No.]=" + invoiceno;
+            }
+
             if (level == 1)
             {
-                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "销售员='"+name+"' and 制单人='"+name+"'");
+                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "(销售员='"+name+"' or 制单人='"+name+"') "+ sqlWhere);
                 var orders = db.OrderEntities.SqlQuery("p外销电商_万能分页 @Top,@RowNumber,@SqlWhere", paramTop,paramPageNum, paramSqlWhere).ToList();
                // totalCount = (int)paramTotalRecord.Value;
                 return orders != null ? orders.ToList() : null;
             }
             else if (level == 2)
             {
-                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "部门ID="+1);
+                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "部门ID="+1+ sqlWhere);
                 var orders = db.OrderEntities.SqlQuery("p外销电商_万能分页 @Top,@RowNumber,@SqlWhere", paramTop, paramPageNum, paramSqlWhere).ToList();
                // totalCount = (int)paramTotalRecord.Value;
                 return orders != null ? orders.ToList() : null;
             }else if (level == 3)
             {
-                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "1=1");
+
+                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere","1=1 "+sqlWhere);
                 var query = db.OrderEntities.SqlQuery("p外销电商_万能分页 @Top,@RowNumber,@SqlWhere", paramTop, paramPageNum, paramSqlWhere);
                 var orders = query.ToList();
                // totalCount = (int)paramTotalRecord.Value;

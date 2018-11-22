@@ -1,0 +1,1079 @@
+
+ 
+记录时间：2018-11-22 09:01:16,657 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "未找到分部视图“OrderQuery”或没有视图引擎支持搜索的位置。搜索了以下位置: \r\n~/Views/Home/OrderQuery.aspx\r\n~/Views/Home/OrderQuery.ascx\r\n~/Views/Shared/OrderQuery.aspx\r\n~/Views/Shared/OrderQuery.ascx\r\n~/Views/Home/OrderQuery.cshtml\r\n~/Views/Home/OrderQuery.vbhtml\r\n~/Views/Shared/OrderQuery.cshtml\r\n~/Views/Shared/OrderQuery.vbhtml",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web.Mvc",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:01:16",
+  "Method": "FindPartialView"
+}
+ 
+System.InvalidOperationException: 未找到分部视图“OrderQuery”或没有视图引擎支持搜索的位置。搜索了以下位置: 
+~/Views/Home/OrderQuery.aspx
+~/Views/Home/OrderQuery.ascx
+~/Views/Shared/OrderQuery.aspx
+~/Views/Shared/OrderQuery.ascx
+~/Views/Home/OrderQuery.cshtml
+~/Views/Home/OrderQuery.vbhtml
+~/Views/Shared/OrderQuery.cshtml
+~/Views/Shared/OrderQuery.vbhtml
+   在 System.Web.Mvc.HtmlHelper.FindPartialView(ViewContext viewContext, String partialViewName, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:05:53,414 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)\r\n   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)\r\n   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web.Mvc",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:05:53",
+  "Method": "SetModel"
+}
+ 
+System.InvalidOperationException: 传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:05:57,168 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)\r\n   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)\r\n   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web.Mvc",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:05:57",
+  "Method": "SetModel"
+}
+ 
+System.InvalidOperationException: 传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:06:21,076 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。",
+  "Path": "/",
+  "Assembly": "System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)\r\n   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)\r\n   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web.Mvc",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:06:21",
+  "Method": "SetModel"
+}
+ 
+System.InvalidOperationException: 传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:11:08,084 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。",
+  "Path": "/",
+  "Assembly": "System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)\r\n   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)\r\n   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web.Mvc",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:11:08",
+  "Method": "SetModel"
+}
+ 
+System.InvalidOperationException: 传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:27:56,211 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)\r\n   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)\r\n   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web.Mvc",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:27:56",
+  "Method": "SetModel"
+}
+ 
+System.InvalidOperationException: 传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:28:05,177 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。",
+  "Path": "/Home",
+  "Assembly": "System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)\r\n   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)\r\n   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web.Mvc",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:28:05",
+  "Method": "SetModel"
+}
+ 
+System.InvalidOperationException: 传入字典的模型项的类型为“ERPExportSales.Web.Models.ExportSalesModel”，但此字典需要类型“System.Collections.Generic.IList`1[ERPExportSales.Web.Models.OrderViewModel]”的模型项。
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:34:46,708 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "NullReferenceException",
+  "Message": "未将对象引用设置到对象的实例。",
+  "Path": "/",
+  "Assembly": "App_Web_5304l3v4, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 ASP._Page_Views_Home_OrderQuery_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\OrderQuery.cshtml:行号 43\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "App_Web_5304l3v4",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:34:46",
+  "Method": "Execute"
+}
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP._Page_Views_Home_OrderQuery_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\OrderQuery.cshtml:行号 43
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:35:02,803 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "NullReferenceException",
+  "Message": "未将对象引用设置到对象的实例。",
+  "Path": "/",
+  "Assembly": "App_Web_5304l3v4, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 ASP._Page_Views_Home_OrderQuery_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\OrderQuery.cshtml:行号 43\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "App_Web_5304l3v4",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:35:02",
+  "Method": "Execute"
+}
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP._Page_Views_Home_OrderQuery_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\OrderQuery.cshtml:行号 43
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:37:09,620 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml(33): error CS1002: 应输入 ;",
+  "Path": "/",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.AssemblyBuilder.Compile()\r\n   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()\r\n   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:37:09",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml(33): error CS1002: 应输入 ;
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 09:37:37,000 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "NullReferenceException",
+  "Message": "未将对象引用设置到对象的实例。",
+  "Path": "/",
+  "Assembly": "App_Web_y1efxsco, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 ASP._Page_Views_Home_OrderQuery_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\OrderQuery.cshtml:行号 43\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)\r\n   在 System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)\r\n   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml:行号 33\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "App_Web_y1efxsco",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 09:37:36",
+  "Method": "Execute"
+}
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP._Page_Views_Home_OrderQuery_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\OrderQuery.cshtml:行号 43
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   在 System.Web.Mvc.Html.RenderPartialExtensions.RenderPartial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   在 ASP._Page_Views_Home_Index_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml:行号 33
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 10:21:48,642 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\OrderQuery.cshtml(21): error CS1525: 无效的表达式项“,”",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.AssemblyBuilder.Compile()\r\n   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()\r\n   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 10:21:48",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\OrderQuery.cshtml(21): error CS1525: 无效的表达式项“,”
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 10:29:44,349 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "NullReferenceException",
+  "Message": "未将对象引用设置到对象的实例。",
+  "Path": "/",
+  "Assembly": "App_Web_xxbrpnh4, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 ASP._Page_Views_Home_OrderQuery_cshtml.Execute() 位置 d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\OrderQuery.cshtml:行号 43\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()\r\n   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.StartPage.RunPage()\r\n   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "App_Web_xxbrpnh4",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 10:29:44",
+  "Method": "Execute"
+}
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP._Page_Views_Home_OrderQuery_cshtml.Execute() 位置 d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\OrderQuery.cshtml:行号 43
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.StartPage.RunPage()
+   在 System.Web.WebPages.StartPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 13:20:54,278 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "NullReferenceException",
+  "Message": "未将对象引用设置到对象的实例。",
+  "Path": "/Error/Path500",
+  "Assembly": "ERPExportSales.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 ERPExportSales.Web.Filter.TrackerFilter.OnActionExecuted(ActionExecutedContext filterContext) 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Filter\\TrackerFilter.cs:行号 30\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "ERPExportSales.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 13:20:54",
+  "Method": "OnActionExecuted"
+}
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ERPExportSales.Web.Filter.TrackerFilter.OnActionExecuted(ActionExecutedContext filterContext) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Filter\TrackerFilter.cs:行号 30
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 13:21:55,725 
+线程ID:[27] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "NullReferenceException",
+  "Message": "未将对象引用设置到对象的实例。",
+  "Path": "/Error/Path500",
+  "Assembly": "ERPExportSales.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 ERPExportSales.Web.Filter.TrackerFilter.OnActionExecuted(ActionExecutedContext filterContext) 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Filter\\TrackerFilter.cs:行号 30\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "ERPExportSales.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 13:21:55",
+  "Method": "OnActionExecuted"
+}
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ERPExportSales.Web.Filter.TrackerFilter.OnActionExecuted(ActionExecutedContext filterContext) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Filter\TrackerFilter.cs:行号 30
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 13:25:35,685 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "NullReferenceException",
+  "Message": "未将对象引用设置到对象的实例。",
+  "Path": "/Error/Path500",
+  "Assembly": "ERPExportSales.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 ERPExportSales.Web.Filter.TrackerFilter.OnActionExecuted(ActionExecutedContext filterContext) 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Filter\\TrackerFilter.cs:行号 30\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "ERPExportSales.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 13:25:35",
+  "Method": "OnActionExecuted"
+}
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ERPExportSales.Web.Filter.TrackerFilter.OnActionExecuted(ActionExecutedContext filterContext) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Filter\TrackerFilter.cs:行号 30
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 14:23:15,382 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "SqlException",
+  "Message": "'(' 附近有语法错误。\r\nselect top (        50) * from \r\n\t\t(select row_number()over(order by [SC No.])rownumber,[PO No.] as PONo,[SC No.] as SCNo,Amount,ETD,Progress,客户ID as CustomerID,销售员 AS Sales,\r\n        制单人 as Maker,部门ID as DepID, [Weight  (kg)] as [Weight],[Invoice No.] as InvoiceNo,[Packing List] as PackingList,[BL Copy] as BLCopy,\r\n        [Quality Report] as QualityReport,ID as FID  from [v外销电商_订单信息] where 1=1  and [PO No.]=$('#PoNo').value() and [SC No.]=$('#SCNo').value() and [Invoice No.]=$('#InvoiceNo').value())a WHERE rownumber between          0 and         50",
+  "Path": "/Home/OrderQuery",
+  "Assembly": "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "ActionArguments": null,
+  "HttpMethod": "POST",
+  "StackTrace": "   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)\r\n   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)\r\n   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()\r\n   在 System.Data.SqlClient.SqlDataReader.get_MetaData()\r\n   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)\r\n   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)\r\n   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)\r\n   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)\r\n   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)\r\n   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\r\n   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)\r\n   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)\r\n   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)\r\n   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)\r\n   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)\r\n   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()\r\n   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)\r\n   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)\r\n   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClass11.<ExecuteSqlQuery>b__10()\r\n   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()\r\n   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\r\n   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\r\n   在 ERPExportSales.Services.ExportSalesService.GetOrdersByEmployeeName(String name, Int32 pageSize, Int32 pageNum, String pono, String scno, String invoiceno) 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Services\\ExportSalesService.cs:行号 122\r\n   在 ERPExportSales.Web.Controllers.HomeController.OrderQuery(String PoNo, String SCNo, String InvoiceNo, Boolean IsBtnQuery, Int32 pageNum) 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\HomeController.cs:行号 58\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": ".Net SqlClient Data Provider",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 14:23:15",
+  "Method": "OnError"
+}
+ 
+System.Data.SqlClient.SqlException (0x80131904): '(' 附近有语法错误。
+select top (        50) * from 
+		(select row_number()over(order by [SC No.])rownumber,[PO No.] as PONo,[SC No.] as SCNo,Amount,ETD,Progress,客户ID as CustomerID,销售员 AS Sales,
+        制单人 as Maker,部门ID as DepID, [Weight  (kg)] as [Weight],[Invoice No.] as InvoiceNo,[Packing List] as PackingList,[BL Copy] as BLCopy,
+        [Quality Report] as QualityReport,ID as FID  from [v外销电商_订单信息] where 1=1  and [PO No.]=$('#PoNo').value() and [SC No.]=$('#SCNo').value() and [Invoice No.]=$('#InvoiceNo').value())a WHERE rownumber between          0 and         50
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   在 System.Data.Entity.Internal.Linq.InternalSet`1.<>c__DisplayClass11.<ExecuteSqlQuery>b__10()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 ERPExportSales.Services.ExportSalesService.GetOrdersByEmployeeName(String name, Int32 pageSize, Int32 pageNum, String pono, String scno, String invoiceno) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Services\ExportSalesService.cs:行号 122
+   在 ERPExportSales.Web.Controllers.HomeController.OrderQuery(String PoNo, String SCNo, String InvoiceNo, Boolean IsBtnQuery, Int32 pageNum) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\HomeController.cs:行号 58
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+ClientConnectionId:cff065fd-71f2-4c2a-a74b-4f707d2a3e1f
+Error Number:102,State:1,Class:15
+
+ 
+记录时间：2018-11-22 14:43:48,985 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Home\\Index.cshtml(54): error CS1513: 应输入 }",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.AssemblyBuilder.Compile()\r\n   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()\r\n   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 14:43:48",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Home\Index.cshtml(54): error CS1513: 应输入 }
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 15:16:04,986 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "c:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Temporary ASP.NET Files\\root\\0f1dc638\\3ad89386\\App_Web_index.cshtml.a8d08dba.7tiq3pj9.0.cs(853): error CS1513: 应输入 }",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.AssemblyBuilder.Compile()\r\n   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()\r\n   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 15:16:04",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\0f1dc638\3ad89386\App_Web_index.cshtml.a8d08dba.7tiq3pj9.0.cs(853): error CS1513: 应输入 }
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 15:17:40,559 
+线程ID:[20] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "c:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Temporary ASP.NET Files\\root\\0f1dc638\\3ad89386\\App_Web_index.cshtml.a8d08dba.cb08g656.0.cs(857): error CS1513: 应输入 }",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.AssemblyBuilder.Compile()\r\n   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()\r\n   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 15:17:40",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\0f1dc638\3ad89386\App_Web_index.cshtml.a8d08dba.cb08g656.0.cs(857): error CS1513: 应输入 }
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-22 15:17:45,376 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "c:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Temporary ASP.NET Files\\root\\0f1dc638\\3ad89386\\App_Web_index.cshtml.a8d08dba.cb08g656.0.cs(857): error CS1513: 应输入 }",
+  "Path": "/Home/Index",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-22 15:17:45",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\0f1dc638\3ad89386\App_Web_index.cshtml.a8d08dba.cb08g656.0.cs(857): error CS1513: 应输入 }
+   在 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)

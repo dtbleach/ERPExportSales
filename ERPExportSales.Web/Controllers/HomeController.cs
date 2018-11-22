@@ -23,28 +23,74 @@ namespace ERPExportSales.Web.Controllers
         }
 
         [AuthorizeUser]
-        public ActionResult Index(int pageNum=1)
+        public ActionResult Index()
         {
-            
+            var user = SessionHelper.Get<Employee>("User");
+            UserViewModel userModel = new UserViewModel();
+            userModel.LoginName = user.LoginName;
+
+            ExportSalesModel model = new ExportSalesModel();
+            model.UserModel = userModel;
+            model.QueryModel = new QueryViewModel();
+            return View(model);
+        }
+
+        [AuthorizeUser]
+        public PartialViewResult OrderQuery(ExportSalesModel model, string InvoiceNo,bool IsBtnQuery=true, int pageNum = 1)
+        {
+            if (model == null) {
+                model = new ExportSalesModel();
+                model.QueryModel = new QueryViewModel();
+                model.UserModel = new UserViewModel();
+            }
+            if (model.QueryModel == null)
+            {
+                model.QueryModel = new QueryViewModel();
+            }
             ViewBag.PageNum = pageNum;
             if (pageNum < 1)
             {
                 ViewBag.PageNum = 1;
             }
-            var user = SessionHelper.Get<Employee>("User");
-            UserViewModel userModel = new UserViewModel();
-            userModel.LoginName = user.LoginName;
+            if (IsBtnQuery)
+            {
+                SessionHelper.Add("QueryWhere", model.QueryModel);
+            }else
+            {
+                model.QueryModel = SessionHelper.Get<QueryViewModel>("QueryWhere");
+            }
+
+            var orders = exportSalesService.GetOrdersByEmployeeName("周晓东", 50, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo);
+            IList<OrderViewModel> orderList = new List<OrderViewModel>();
+            foreach (var item in orders)
+            {
+                var order = ConvertHelper.Trans<Order, OrderViewModel>(item);
+                orderList.Add(order);
+            }
+
+            return PartialView(orderList);
+        }
+
+
+        [AuthorizeUser]
+        public PartialViewResult Freight()
+        {
             var freights = exportSalesService.GetExportSalesOceanFreight(2496);
             IList<ExportSalesOceanFreightViewModel> list = new List<ExportSalesOceanFreightViewModel>();
             if (freights != null && freights.Count > 0)
             {
                 foreach (var item in freights)
                 {
-                    var freight=ConvertHelper.Trans<VExportSalesOceanFreight, ExportSalesOceanFreightViewModel>(item);
+                    var freight = ConvertHelper.Trans<VExportSalesOceanFreight, ExportSalesOceanFreightViewModel>(item);
                     list.Add(freight);
                 }
             }
+            return PartialView(list);
+        }
 
+        [AuthorizeUser]
+        public PartialViewResult PublicHoliday()
+        {
             IList<PublicHolidayViewModel> publicHolidayList = new List<PublicHolidayViewModel>();
             var holiday = exportSalesService.GetPublicHoliday();
             if (holiday != null && holiday.Count > 0)
@@ -55,24 +101,8 @@ namespace ERPExportSales.Web.Controllers
                     publicHolidayList.Add(publicHoliday);
                 }
             }
-            ExportSalesModel model = new ExportSalesModel();
-            model.UserModel = userModel;
-            model.FreightList = list;
-            model.PublicHoliday = publicHolidayList;
-            //int count = 0;
-             var orders = exportSalesService.GetOrdersByEmployeeName("周晓东", 50,pageNum);
-            IList<OrderViewModel> orderList = new List<OrderViewModel>();
-            foreach (var item in orders)
-            {
-                var order = ConvertHelper.Trans<Order, OrderViewModel>(item);
-                orderList.Add(order);
-            }
-            //var orderViewModels = new PagedList<OrderViewModel>(orderList, pageNum, 10, count);
-            model.OrderList = orderList;
-          
-            return View(model);
+
+            return PartialView(publicHolidayList);
         }
-
-
     }
 }

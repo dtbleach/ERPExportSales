@@ -2,50 +2,49 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="renderer" content="webkit">
-    <title>404</title>
-    <style>
-        html,
-        body {
-            height: 100%;
-            width: 100%;
-            overflow: auto;
-            background-color: white;
-            padding: 0;
-            margin: 0;
-        }
-
-        .center {
-            width: 640px;
-            padding: 0px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10px;
-        }
-
-        .center_link {
-            text-align: center;
-            width: 100%;
-        }
-
-        .center a {
-            display: inline-block;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>404 Page not found</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/bootstrap/dist/css/bootstrap.min.css")">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/font-awesome/css/font-awesome.min.css")">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/Ionicons/css/ionicons.min.css")">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css")">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/dist/css/AdminLTE.min.css")">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/dist/css/skins/_all-skins.min.css")">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body>
-    <div class="center">
-        <img id="img_error" src="/Images/404.png" height="218" width="640">
-        <div class="center_link">
-            <a href="/Home">返回首页</a>
-        </div>
+    <div class="wrapper content" style="min-height: 1126px;">
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="error-page">
+                <h2 class="headline text-yellow"> 404</h2>
+
+                <div class="error-content">
+                    <h3><i class="fa fa-warning text-yellow"></i> Oops! Page not found.</h3>
+
+                    <p>
+                        We could not find the page you were looking for.
+                        Meanwhile, you may <a href="/Home/Index">return to dashboard</a> or try using the search form.
+                    </p>
+
+                  
+                </div>
+                <!-- /.error-content -->
+            </div>
+            <!-- /.error-page -->
+        </section>
+        <!-- /.content -->
     </div>
 
     <script src="@Url.Content("~/Scripts/jquery-3.3.1.js")"></script>

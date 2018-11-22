@@ -358,6 +358,7 @@
     <Content Include="Content\dist\js\pages\dashboard.js" />
     <Content Include="Content\dist\js\pages\dashboard2.js" />
     <Content Include="Content\img\in-3.gif" />
+    <Content Include="Content\img\loading.gif" />
     <Content Include="Content\img\logo.gif" />
     <Content Include="Content\img\tick.png" />
     <Content Include="Content\pagestyle.css" />
@@ -6663,6 +6664,8 @@
     <Content Include="Scripts\dist\js\demo.js" />
     <Content Include="Scripts\dist\js\pages\dashboard.js" />
     <Content Include="Scripts\dist\js\pages\dashboard2.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="Scripts\plugins\bootstrap-slider\slider.css" />
     <Content Include="Scripts\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.js" />
@@ -7358,6 +7361,11 @@
     <Content Include="Scripts\plugins\input-mask\phone-codes\phone-be.json" />
     <Content Include="Scripts\plugins\input-mask\phone-codes\phone-codes.json" />
     <None Include="Scripts\_references.js" />
+    <Content Include="Views\Home\OrderQuery.cshtml" />
+    <Content Include="Views\Home\USDCNY.cshtml" />
+    <Content Include="Views\Home\Freight.cshtml" />
+    <Content Include="Views\Home\PublicHoliday.cshtml" />
+    <Content Include="Views\Home\Q195.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
