@@ -51,6 +51,7 @@ namespace ERPExportSales.Web.Controllers
             if (pageNum < 1)
             {
                 ViewBag.PageNum = 1;
+                pageNum = 1;
             }
             if (IsBtnQuery)
             {

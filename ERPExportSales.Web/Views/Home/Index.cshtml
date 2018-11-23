@@ -54,7 +54,7 @@
                                                                     <p>PO No. @Html.TextBoxFor(p => p.QueryModel.PONo, "", new { @class = "form-control" })
                                                                     SC No. @Html.TextBoxFor(p => p.QueryModel.SCNo, "", new { @class = "form-control" })
                                                                     Invoice No. @Html.TextBoxFor(p => p.QueryModel.InvoiceNo, "", new { @class = "form-control" })
-                                                                <button type="submit" class="btn btn-primary">Query</button>
+                                                                <button type="submit" class="btn btn-primary">Search</button>
                                                                 </p>
                                                                         @*@Ajax.ActionLink("Previous", "OrderQuery", "Home", new { QueryModel =Model.QueryModel,InvoiceNo=Model.QueryModel.InvoiceNo ,IsBtnQuery = true }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "divOrders", OnBegin = "$('#divOrders').fadeOut('slow')", OnComplete = "$('#divOrders').fadeIn('slow')", LoadingElementId = "loadingDiv" }, new { @class = "btn btn-primary" })*@
 

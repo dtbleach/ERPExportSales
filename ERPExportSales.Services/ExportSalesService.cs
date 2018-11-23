@@ -88,17 +88,17 @@ namespace ERPExportSales.Services
             StringBuilder str = new StringBuilder();
             if (!string.IsNullOrEmpty(pono))
             {
-                sqlWhere += " and [PO No.]=" + pono;
+                sqlWhere += " and [PO No.]='" + pono+"'";
             }
 
             if (!string.IsNullOrEmpty(scno))
             {
-                sqlWhere += " and [SC No.]=" + scno;
+                sqlWhere += " and [SC No.]='" + scno+"'";
             }
 
             if (!string.IsNullOrEmpty(invoiceno))
             {
-                sqlWhere += " and [Invoice No.]=" + invoiceno;
+                sqlWhere += " and [Invoice No.]='" + invoiceno+"'";
             }
 
             if (level == 1)
