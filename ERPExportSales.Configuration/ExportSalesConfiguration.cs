@@ -17,5 +17,39 @@ namespace ERPExportSales.Configuration
                 return ConfigurationManager.ConnectionStrings[ExportSales_DB].ConnectionString;
             }
         }
+
+        public string Encryption64Key
+        {
+            get { return "JKHk387689##21MMssx3"; }
+        }
+
+        public string OrderFolderName
+        {
+            get { return "订单"; }
+        }
+
+        public string InvoiceFolderName
+        {
+            get
+            {
+               return "发票";
+            }
+        }
+
+        public string PackingFolderName
+        {
+            get
+            {
+                return "装箱单";
+            }
+        }
+
+        public string BLFolderName
+        {
+            get
+            {
+                return "提单";
+            }
+        }
     }
 }

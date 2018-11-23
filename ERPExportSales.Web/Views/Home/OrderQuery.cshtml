@@ -29,7 +29,7 @@
             {
                 <tr role="row">
                     <td class="sorting_1">@item.PONo</td>
-                    <td>@item.SCNo</td>
+                    <td>@Html.ActionLink(item.SCNo, "GetPDF", "Files", new { file = item.SCNoHref }, new { target = "_blank" })</td>
                     <td>@item.Amount</td>
                     <td>@item.ETD</td>
                     <td style="min-width:120px">
@@ -58,9 +58,9 @@
                     <td>@item.Sales</td>
                     <td>@item.Maker</td>
                     <td>@item.Weight</td>
-                    <td>@item.InvoiceNo</td>
-                    <td>@item.PackingList</td>
-                    <td>@item.BLCopy</td>
+                    <td>@Html.ActionLink(item.InvoiceNo, "GetPDF", "Files", new { file = item.InvoiceHref }, new { target = "_blank" })</td>
+                    <td>@Html.ActionLink(item.PackingList, "GetPDF", "Files", new { file = item.PackingHref }, new { target = "_blank" })</td>
+                    <td>@Html.ActionLink(item.BLCopy, "GetPDF", "Files", new { file = item.BLNoHref }, new { target = "_blank" })</td>
                     <td>@item.QualityReport</td>
                 </tr>
             }

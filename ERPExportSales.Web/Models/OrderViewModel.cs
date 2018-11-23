@@ -36,5 +36,13 @@ namespace ERPExportSales.Web.Models
         public string BLCopy { get; set; }
 
         public string QualityReport { get; set; }
+
+        public string SCNoHref { get; set; }
+
+        public string InvoiceHref { get; set; }
+
+        public string PackingHref { get; set; }
+
+        public string BLNoHref { get; set; }
     }
 }

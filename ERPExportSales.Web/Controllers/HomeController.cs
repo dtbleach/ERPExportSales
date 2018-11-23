@@ -1,4 +1,5 @@
-﻿using ERPExportSales.Entities;
+﻿using ERPExportSales.Configuration;
+using ERPExportSales.Entities;
 using ERPExportSales.Framework;
 using ERPExportSales.Services;
 using ERPExportSales.Web.Filter;
@@ -16,10 +17,12 @@ namespace ERPExportSales.Web.Controllers
     {
         public IExportSalesUserService userService;
         public IExportSalesService exportSalesService;
-        public HomeController(IExportSalesUserService userService, IExportSalesService exportSalesService)
+        public IExportSalesConfiguration config;
+        public HomeController(IExportSalesUserService userService, IExportSalesService exportSalesService, IExportSalesConfiguration config)
         {
             this.exportSalesService = exportSalesService;
             this.userService = userService;
+            this.config = config;
         }
 
         [AuthorizeUser]
@@ -66,6 +69,10 @@ namespace ERPExportSales.Web.Controllers
             foreach (var item in orders)
             {
                 var order = ConvertHelper.Trans<Order, OrderViewModel>(item);
+                order.SCNoHref = Encryption64.Encrypt(item.SCNo + ":" + config.OrderFolderName, config.Encryption64Key);
+                order.InvoiceHref = Encryption64.Encrypt(item.InvoiceNo + ":" + config.InvoiceFolderName, config.Encryption64Key);
+                order.PackingHref = Encryption64.Encrypt(item.InvoiceNo + ":" + config.PackingFolderName, config.Encryption64Key);
+                order.BLNoHref = Encryption64.Encrypt(item.InvoiceNo + ":" + config.BLFolderName, config.Encryption64Key);
                 orderList.Add(order);
             }
 
