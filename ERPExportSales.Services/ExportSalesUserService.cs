@@ -1,4 +1,5 @@
-﻿using ERPExportSales.Repositories;
+﻿using ERPExportSales.Entities;
+using ERPExportSales.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace ERPExportSales.Services
         /// <param name="loginName"></param>
         /// <param name="password"></param>
         /// <returns></returns>
-        public BizResult<bool> Login(string loginName, string password)
+        public BizResult<bool> Login(string loginName, string password,ref int userType)
         {
             BizResult<bool> result = new BizResult<bool>();
 
@@ -44,14 +45,15 @@ namespace ERPExportSales.Services
             }
 
             var db = databaseFactory.Get();
-            int flag = db.ExportSales_Login(loginName, password);
+            LoginStatus flag = db.ExportSales_Login_ReturnUserType(loginName, password);
 
-            switch (flag)
+            switch (flag.Login)
             {
                 case 0:result.Message = "密码错误"; result.Result = false; break;
                 case 1:result.Message = "登陆成功"; result.Result = true; break;
                 case -1:result.Message = "用户名不存在"; result.Result = false; break;
             }
+            userType = flag.UserType;
             return result;
         }
     }

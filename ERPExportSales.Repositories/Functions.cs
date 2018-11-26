@@ -1,7 +1,9 @@
 ﻿using EntityFramework.Functions;
+using ERPExportSales.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Core.Objects;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +30,22 @@ namespace ERPExportSales.Repositories
             ObjectParameter passwordParameter = new ObjectParameter("密码", password);
             return this.ObjectContext().ExecuteFunction<int>("f外销_登陆校验", loginNameParameter, passwordParameter).SingleOrDefault();
         }
+
+        /// <summary>
+        /// 外销登录
+        /// </summary>
+        /// <param name="loginName">用户名</param>
+        /// <param name="password">密码</param>
+        /// <returns></returns>
+        public LoginStatus ExportSales_Login_ReturnUserType(string loginName,string password)
+        {
+
+            SqlParameter loginNameParameter = new SqlParameter("登录名", loginName);
+            SqlParameter passwordParameter = new SqlParameter("密码", password);
+            var login=this.Database.SqlQuery<LoginStatus>("select * from dbo.f外销_登陆校验_多返回值(@登录名,@密码)", loginNameParameter, passwordParameter).SingleOrDefault();
+            return login;
+        }
+
 
         /// <summary>
         /// 

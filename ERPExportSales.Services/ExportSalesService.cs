@@ -24,13 +24,16 @@ namespace ERPExportSales.Services
 
         public IEmployeeRepository employeeRepository;
 
+        public ICustomerRepository customerRepository;
+
         public IOrderRepository orderRepository;
 
         public IDatabaseFactory databaseFactory;
 
         public IUnitOfWork unitOfWork;
 
-        public ExportSalesService(IDatabaseFactory databaseFactory, IUnitOfWork unitOfWork, IVExportSalesOceanFreightRepository vExportSalesOceanFreightRepository, IVPublicHolidayRepository vPublicHolidayRepository, IIPWhiteListRepository ipWhiteListRepository, IOrderRepository orderRepository, IEmployeeRepository employeeRepository)
+        public ExportSalesService(IDatabaseFactory databaseFactory, IUnitOfWork unitOfWork, IVExportSalesOceanFreightRepository vExportSalesOceanFreightRepository, IVPublicHolidayRepository vPublicHolidayRepository, IIPWhiteListRepository ipWhiteListRepository, IOrderRepository orderRepository, IEmployeeRepository employeeRepository,
+            ICustomerRepository customerRepository)
         {
             this.databaseFactory = databaseFactory;
             this.unitOfWork = unitOfWork;
@@ -39,6 +42,7 @@ namespace ERPExportSales.Services
             this.ipWhiteListRepository = ipWhiteListRepository;
             this.orderRepository = orderRepository;
             this.employeeRepository = employeeRepository;
+            this.customerRepository = customerRepository;
         }
 
         public IList<VExportSalesOceanFreight> GetExportSalesOceanFreight(int customerID)
@@ -76,11 +80,11 @@ namespace ERPExportSales.Services
         /// <param name="pageNum">第几页</param>
         /// <param name="totalCount">总记录数</param>
         /// <returns></returns>
-        public IList<Order> GetOrdersByEmployeeName(string name, int pageSize, int pageNum,string pono,string scno,string invoiceno)
+        public IList<Order> GetOrdersByEmployeeName(string name, int depId,int pageSize, int pageNum, string pono, string scno, string invoiceno)
         {
             var db = databaseFactory.Get();
             int level = db.GetEmployeeLevel(name);
-            SqlParameter paramTop = new SqlParameter("@Top",  pageSize );
+            SqlParameter paramTop = new SqlParameter("@Top", pageSize);
             SqlParameter paramPageNum = new SqlParameter("@RowNumber", pageNum);
             //SqlParameter paramTotalRecord = new SqlParameter("@TotalRecord", SqlDbType.Int);
             //paramTotalRecord.Direction = System.Data.ParameterDirection.Output;
@@ -88,49 +92,74 @@ namespace ERPExportSales.Services
             StringBuilder str = new StringBuilder();
             if (!string.IsNullOrEmpty(pono))
             {
-                sqlWhere += " and [PO No.]='" + pono+"'";
+                sqlWhere += " and [PO No.]='" + pono + "'";
             }
 
             if (!string.IsNullOrEmpty(scno))
             {
-                sqlWhere += " and [SC No.]='" + scno+"'";
+                sqlWhere += " and [SC No.]='" + scno + "'";
             }
 
             if (!string.IsNullOrEmpty(invoiceno))
             {
-                sqlWhere += " and [Invoice No.]='" + invoiceno+"'";
+                sqlWhere += " and [Invoice No.]='" + invoiceno + "'";
             }
 
             if (level == 1)
             {
-                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "(销售员='"+name+"' or 制单人='"+name+"') "+ sqlWhere);
-                var orders = db.OrderEntities.SqlQuery("p外销电商_万能分页 @Top,@RowNumber,@SqlWhere", paramTop,paramPageNum, paramSqlWhere).ToList();
-               // totalCount = (int)paramTotalRecord.Value;
+                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "(销售员='" + name + "' or 制单人='" + name + "') " + sqlWhere);
+                var orders = db.OrderEntities.SqlQuery("p外销电商_万能分页 @Top,@RowNumber,@SqlWhere", paramTop, paramPageNum, paramSqlWhere).ToList();
+                // totalCount = (int)paramTotalRecord.Value;
                 return orders != null ? orders.ToList() : null;
             }
             else if (level == 2)
             {
-                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "部门ID="+1+ sqlWhere);
+                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "部门ID=" + depId + sqlWhere);
                 var orders = db.OrderEntities.SqlQuery("p外销电商_万能分页 @Top,@RowNumber,@SqlWhere", paramTop, paramPageNum, paramSqlWhere).ToList();
-               // totalCount = (int)paramTotalRecord.Value;
-                return orders != null ? orders.ToList() : null;
-            }else if (level == 3)
-            {
-
-                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere","1=1 "+sqlWhere);
-                var query = db.OrderEntities.SqlQuery("p外销电商_万能分页 @Top,@RowNumber,@SqlWhere", paramTop, paramPageNum, paramSqlWhere);
-                var orders = query.ToList();
-               // totalCount = (int)paramTotalRecord.Value;
+                // totalCount = (int)paramTotalRecord.Value;
                 return orders != null ? orders.ToList() : null;
             }
-       
+            else if (level == 3)
+            {
+
+                SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "1=1 " + sqlWhere);
+                var query = db.OrderEntities.SqlQuery("p外销电商_万能分页 @Top,@RowNumber,@SqlWhere", paramTop, paramPageNum, paramSqlWhere);
+                var orders = query.ToList();
+                // totalCount = (int)paramTotalRecord.Value;
+                return orders != null ? orders.ToList() : null;
+            }
+
             return new List<Order>();
         }
 
-        public IList<Order> GetOrdersByCustomerID(int customerID)
+        public IList<Order> GetOrdersByCustomerID(int customerID, int pageSize, int pageNum, string pono, string scno, string invoiceno)
         {
-            var orders = new List<Order>();
-            return orders;
+            var db = databaseFactory.Get();
+            string sqlWhere = string.Empty;
+            StringBuilder str = new StringBuilder();
+            SqlParameter paramTop = new SqlParameter("@Top", pageSize);
+            SqlParameter paramPageNum = new SqlParameter("@RowNumber", pageNum);
+            if (!string.IsNullOrEmpty(pono))
+            {
+                sqlWhere += " and [PO No.]='" + pono + "'";
+            }
+
+            if (!string.IsNullOrEmpty(scno))
+            {
+                sqlWhere += " and [SC No.]='" + scno + "'";
+            }
+
+            if (!string.IsNullOrEmpty(invoiceno))
+            {
+                sqlWhere += " and [Invoice No.]='" + invoiceno + "'";
+            }
+
+
+            SqlParameter paramSqlWhere = new SqlParameter("@SqlWhere", "客户ID=" + customerID + " " + sqlWhere);
+            var orders = db.OrderEntities.SqlQuery("p外销电商_万能分页 @Top,@RowNumber,@SqlWhere", paramTop, paramPageNum, paramSqlWhere).ToList();
+            // totalCount = (int)paramTotalRecord.Value;
+            return orders != null ? orders.ToList() : null;
+
         }
     }
 }

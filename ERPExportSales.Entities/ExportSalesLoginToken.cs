@@ -27,5 +27,8 @@ namespace ERPExportSales.Entities
 
         [Column("是否记住")]
         public int Remember { get; set; }
+
+        [Column("用户类型")]
+        public int? UserType { get; set; }
     }
 }

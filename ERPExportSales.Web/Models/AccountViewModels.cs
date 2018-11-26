@@ -16,6 +16,16 @@ namespace ERPExportSales.Web.Models
         [Required]
         [Display(Name = "用户名")]
         public string LoginName { get; set; }
+
+        public string UserType { get; set; }
+
+        public string UserName { get; set; }
+
+        public byte[] Password { get; set; }
+
+        public int ID { get; set; }
+
+        public int DepID { get; set; }
     }
 
     public class ExternalLoginListViewModel

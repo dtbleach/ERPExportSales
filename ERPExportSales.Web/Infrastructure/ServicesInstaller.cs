@@ -23,13 +23,17 @@ namespace ERPExportSales.Web.Infrastructure
                      .ImplementedBy<EmployeeService>()
                      .LifestylePerWebRequest());
 
+                container.Register(Component.For<ICustomerService>()
+                 .ImplementedBy<CustomerService>()
+                 .LifestylePerWebRequest());
+
             container.Register(Component.For<IExportSalesLoginTokenService>()
                 .ImplementedBy<ExportSalesLoginTokenService>()
                 .LifestylePerWebRequest());
 
             container.Register(Component.For<IExportSalesService>()
              .ImplementedBy<ExportSalesService>()
-             .LifestylePerWebRequest());
+             .LifestylePerWebRequest()); 
 
         }
     }

@@ -10,6 +10,7 @@ using ERPExportSales.Services;
 using System.Text;
 using ERPExportSales.Entities;
 using ERPExportSales.Web.Core;
+using ERPExportSales.Web.Models;
 
 namespace ERPExportSales.Web.Filter
 {
@@ -46,8 +47,8 @@ namespace ERPExportSales.Web.Filter
                     return SecurityManager.VerifyToken(token, request);
                 }else
                 {
-                    var employee = SessionHelper.Get<Employee>("User");
-                    if (employee != null)
+                    var user = SessionHelper.Get<UserViewModel>("User");
+                    if (user != null)
                     {
                         return true;
                     }

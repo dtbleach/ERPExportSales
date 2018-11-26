@@ -50,10 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BizResult.cs" />
+    <Compile Include="CustomerService.cs" />
     <Compile Include="EmployeeService.cs" />
     <Compile Include="ExportSalesLoginTokenService.cs" />
     <Compile Include="ExportSalesService.cs" />
     <Compile Include="ExportSalesUserService.cs" />
+    <Compile Include="ICustomerService.cs" />
     <Compile Include="IEmployeeService.cs" />
     <Compile Include="IExportSalesLoginTokenService.cs" />
     <Compile Include="IExportSalesService.cs" />

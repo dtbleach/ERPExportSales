@@ -12,7 +12,7 @@ namespace ERPExportSales.Services
         IList<VExportSalesOceanFreight> GetExportSalesOceanFreight(int customerID);
         IList<VPublicHoliday> GetPublicHoliday();
         bool RequestIPWhiteList(string ip);
-        IList<Order> GetOrdersByEmployeeName(string name, int pageSize, int pageNum, string pono, string scno, string invoiceno);
-        IList<Order> GetOrdersByCustomerID(int customerID);
+        IList<Order> GetOrdersByEmployeeName(string name, int depId,int pageSize, int pageNum, string pono, string scno, string invoiceno);
+        IList<Order> GetOrdersByCustomerID(int customerID, int pageSize, int pageNum, string pono, string scno, string invoiceno);
     }
 }

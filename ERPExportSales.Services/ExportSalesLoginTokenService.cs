@@ -37,6 +37,7 @@ namespace ERPExportSales.Services
                     tokenModel.Token = model.Token;
                     tokenModel.ExpiresTime = model.ExpiresTime;
                     tokenModel.Remember = model.Remember;
+                    tokenModel.UserType = model.UserType;
                     exportSalesLoginTokenRepository.Update(tokenModel);
                 }
                 else

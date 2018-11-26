@@ -20,9 +20,9 @@ namespace ERPExportSales.Web.Core
         private static ApplicationDbContext db = new ApplicationDbContext();
 
 
-        public static string GenerateToken(string username, string password, string ip, string userAgent, long ticks)
+        public static string GenerateToken(string username, string password, string ip, string userAgent, string userType,long ticks)
         {
-            string hash = string.Join(":", new string[] { username, ip, userAgent, ticks.ToString() });
+            string hash = string.Join(":", new string[] { username, ip, userAgent, userType, ticks.ToString() });
             string hashLeft = "";
             string hashRight = "";
 
@@ -32,7 +32,7 @@ namespace ERPExportSales.Web.Core
                 hmac.ComputeHash(Encoding.UTF8.GetBytes(hash));
 
                 hashLeft = Convert.ToBase64String(hmac.Hash);
-                hashRight = string.Join(":", new string[] { username, ticks.ToString() });
+                hashRight = string.Join(":", new string[] { username, userType, ticks.ToString() });
             }
 
             return Convert.ToBase64String(Encoding.UTF8.GetBytes(string.Join(":", hashLeft, hashRight)));
@@ -58,20 +58,41 @@ namespace ERPExportSales.Web.Core
 
             string[] parts = key.Split(new char[] { ':' });
 
-            if (parts.Length == 3)
+            if (parts.Length == 4)
             {
                 string hash = parts[0];
                 string username = parts[1];
-                long ticks = 0; long.TryParse(parts[2], out ticks);
+                string userType = parts[2];
+                long ticks = 0; long.TryParse(parts[3], out ticks);
 
                 //string password = _employeeService.GetEmployeeSHAPassword(username);
-                var user = db.EmployeeEntities.Where(p => p.LoginName == username).FirstOrDefault();
-                string password = ConvertHelper.BytesToString(user.Password, Encoding.UTF8);;
-                bool cookieExpires = CookieHelper.CookieExpires(username);
+                Models.UserViewModel model = new Models.UserViewModel();
+                if (int.Parse(userType) == 1)
+                {
+                    Employee user = db.EmployeeEntities.Where(p => p.LoginName == username).FirstOrDefault();
+                    model.LoginName = user.LoginName;
+                    model.UserName = user.Name;
+                    model.Password = user.Password;
+                    model.UserType = userType;
+                    model.ID = user.FID;
+                    model.DepID = user.DepID;
 
+                }else if (int.Parse(userType) == 2)
+                {
+                    Customer customer = db.CustomerEntities.Where(p => p.LoginName == username).FirstOrDefault();
+                    model.LoginName = customer.LoginName;
+                    model.UserName = customer.Name;
+                    model.Password = customer.Password;
+                    model.UserType = userType;
+                    model.ID = customer.fID;
+                }
+
+                string password = ConvertHelper.BytesToString(model.Password, Encoding.UTF8);;
+                bool cookieExpires = CookieHelper.CookieExpires("token");
+               
                 if (!cookieExpires)
                 {
-                    string computedToken = GenerateToken(username, password, CommonManager.GetIP(request), request.UserAgent, ticks);
+                    string computedToken = GenerateToken(username, password, CommonManager.GetIP(request), request.UserAgent, userType,ticks);
 
                     var loginToken = db.ExportSalesLoginTokenEntities.Where(p => p.UserName == username).FirstOrDefault();
                    // var loginToken = _tokenService.GetExportSalesLoginToken(username);
@@ -79,8 +100,7 @@ namespace ERPExportSales.Web.Core
                     {
                         if (token == computedToken && token == loginToken.Token)
                         {
-                           
-                            SessionHelper.Add<Employee>("User", user);
+                            SessionHelper.Add<Models.UserViewModel>("User", model);
                             return true;
                         }
                     }

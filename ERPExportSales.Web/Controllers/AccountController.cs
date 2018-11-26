@@ -17,11 +17,13 @@ namespace ERPExportSales.Web.Controllers
         public IExportSalesUserService userService;
         public IEmployeeService employeeService;
         public IExportSalesLoginTokenService tokenService;
-        public AccountController(IExportSalesUserService userService, IEmployeeService employeeService,IExportSalesLoginTokenService tokenService)
+        public ICustomerService customerService;
+        public AccountController(IExportSalesUserService userService, IEmployeeService employeeService,IExportSalesLoginTokenService tokenService, ICustomerService customerService)
         {
             this.userService = userService;
             this.employeeService = employeeService;
             this.tokenService = tokenService;
+            this.customerService = customerService;
         }
         public ActionResult Login()
         {
@@ -32,7 +34,8 @@ namespace ERPExportSales.Web.Controllers
         [HttpPost]
         public ActionResult Login(LoginViewModel model)
         {
-            var result = userService.Login(model.LoginName, model.Password);
+            int userType = 0;
+            var result = userService.Login(model.LoginName, model.Password,ref userType);
             if (result.Result)
             {
                 if (model.RememberMe)
@@ -40,23 +43,44 @@ namespace ERPExportSales.Web.Controllers
                     long ticks = new DateTime().Ticks;
                     string ip = CommonManager.GetIP(Request);
                     string userAgent = CommonManager.GetUserAgent(Request);
-
-                    string shaPassword = employeeService.GetEmployeeSHAPassword(model.LoginName);
-
-                    string token = SecurityManager.GenerateToken(model.LoginName, shaPassword, ip, userAgent, ticks);
+                    string shaPassword = string.Empty;
+                    if(userType==1)
+                            shaPassword = employeeService.GetEmployeeSHAPassword(model.LoginName);
+                    else if(userType==2)
+                             shaPassword = customerService.GetCustomerSHAPassword(model.LoginName);
+                    string token = SecurityManager.GenerateToken(model.LoginName, shaPassword, ip, userAgent, userType.ToString(),ticks);
                     DateTime expries = DateTime.Now.AddDays(1.0);
                     CookieHelper.SetCookie("token", token, expries);
-                    CookieHelper.SetCookie("rememberLogin", "true");
+                    CookieHelper.SetCookie("rememberLogin", "true", expries);
                     ExportSalesLoginToken loginToken = new ExportSalesLoginToken();
                     loginToken.ExpiresTime = expries;
                     loginToken.Token = token;
                     loginToken.UserName = model.LoginName;
+                    loginToken.UserType = userType;
                     tokenService.SaveLoginToken(loginToken);
-                    LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "'}");
+                    LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "','UserType':"+userType+",'Date:'"+DateTime.Now+"'}");
                 }else
                 {
-                    var employee = employeeService.GetEmployee(model.LoginName);
-                    SessionHelper.Add("User", employee);
+                    UserViewModel user = new UserViewModel();
+                    if (userType == 1)
+                    {
+                        var employee = employeeService.GetEmployee(model.LoginName);
+                        user.ID = employee.FID;
+                        user.LoginName = employee.LoginName;
+                        user.Password = employee.Password;
+                        user.UserName = employee.Name;
+                        user.UserType = userType.ToString();
+                        user.DepID = employee.DepID;
+                    }else if (userType == 2)
+                    {
+                        var customer = customerService.GetCustomer(model.LoginName);
+                        user.ID = customer.fID;
+                        user.LoginName = customer.LoginName;
+                        user.Password = customer.Password;
+                        user.UserName = customer.Name;
+                        user.UserType = userType.ToString();
+                    }
+                    SessionHelper.Add("User", user);
                     CookieHelper.SetCookie("rememberLogin", "false");
                     CookieHelper.ClearCookie("token");
                 }

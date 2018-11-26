@@ -89,5 +89,9 @@ namespace ERPExportSales.Repositories
 
         public DbSet<Order> OrderEntities { get; set; }
 
+        public DbSet<Customer> CustomerEntities { get; set; }
+
+        public DbSet<LoginStatus> LoginStatusEntities { get; set; }
+
     }
 }

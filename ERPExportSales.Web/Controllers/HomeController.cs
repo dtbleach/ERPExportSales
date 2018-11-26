@@ -28,12 +28,10 @@ namespace ERPExportSales.Web.Controllers
         [AuthorizeUser]
         public ActionResult Index()
         {
-            var user = SessionHelper.Get<Employee>("User");
-            UserViewModel userModel = new UserViewModel();
-            userModel.LoginName = user.LoginName;
+            var user = SessionHelper.Get<UserViewModel>("User");
 
             ExportSalesModel model = new ExportSalesModel();
-            model.UserModel = userModel;
+            model.UserModel = user;
             model.QueryModel = new QueryViewModel();
             return View(model);
         }
@@ -41,14 +39,24 @@ namespace ERPExportSales.Web.Controllers
         [AuthorizeUser]
         public PartialViewResult OrderQuery(ExportSalesModel model, string InvoiceNo,bool IsBtnQuery=true, int pageNum = 1)
         {
-            if (model == null) {
+            var user = SessionHelper.Get<UserViewModel>("User");
+          
+            if (model == null)
+            {
                 model = new ExportSalesModel();
                 model.QueryModel = new QueryViewModel();
-                model.UserModel = new UserViewModel();
+                model.UserModel = user;
             }
-            if (model.QueryModel == null)
+            else
             {
-                model.QueryModel = new QueryViewModel();
+                if (model.QueryModel == null)
+                {
+                    model.QueryModel = new QueryViewModel();
+                }
+                if (model.UserModel == null)
+                {
+                    model.UserModel = user;
+                }
             }
             ViewBag.PageNum = pageNum;
             if (pageNum < 1)
@@ -64,7 +72,16 @@ namespace ERPExportSales.Web.Controllers
                 model.QueryModel = SessionHelper.Get<QueryViewModel>("QueryWhere");
             }
 
-            var orders = exportSalesService.GetOrdersByEmployeeName("周晓东", 50, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo);
+            int userType = 0;
+            int.TryParse(model.UserModel.UserType, out userType);
+            IList<Order> orders = new List<Order>();
+            if (userType == 1)
+            {
+                orders = exportSalesService.GetOrdersByEmployeeName(model.UserModel.UserName,model.UserModel.DepID, 50, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo);
+            }else if (userType == 2)
+            {
+                orders = exportSalesService.GetOrdersByCustomerID(model.UserModel.ID, 50, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo);
+            }
             IList<OrderViewModel> orderList = new List<OrderViewModel>();
             foreach (var item in orders)
             {

@@ -54,6 +54,7 @@
     <Compile Include="Employee.cs" />
     <Compile Include="ExportSalesLoginToken.cs" />
     <Compile Include="IPWhiteList.cs" />
+    <Compile Include="LoginStatus.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VPublicHoliday.cs" />
