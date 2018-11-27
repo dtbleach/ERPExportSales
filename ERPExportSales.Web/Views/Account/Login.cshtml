@@ -2,11 +2,83 @@
 @using ERPExportSales.Framework
 @model LoginViewModel
 <!DOCTYPE html>
-<html>
+@*<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" />
+        <script src="@Url.Content("~/Scripts/jquery-3.3.1.js")"></script>
+        <script src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
+        <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#ValidatedCodeUrl").click(function () {
+                    var curTime = new Date();
+                    this.src = '/ValidateCode/GetValidateCode?data=' + curTime;
+                })
+            })
+        </script>
+    </head>
+
+    <body>
+        <header id="header">
+            <div id="sfc-logo" class="login-logo-left">
+                <a href="//www.sfiec.com">www.sfiec.com</a>
+            </div>
+        </header>
+        <hr>
+        <div class="login" id="login">
+            <div class="login-container">
+                <div class="login-info">
+                    <h1>Login</h1>
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        <div>
+                            Username：
+                            @Html.TextBoxFor(m => m.LoginName, new { @class = "form-group user-name", placeholder = "Username" })
+                            @Html.ValidationMessageFor(m => m.LoginName, "", new { @class = "text-danger" })
+                        </div>
+                        <div>
+                            Password：
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-group mail", placeholder = "Password" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                        <div>
+                            ValidatedCode：
+                            @Html.TextBoxFor(m => m.ValidatedCode, new { @class = "form-group user-name", placeholder = "ValidatedCode" })
+                            @Html.ImageFor(m => m.ValidatedCodeUrl, new { @class = "form-group", id = "ValidatedCodeUrl" })
+                            @Html.ValidationMessageFor(m => m.ValidatedCode, "", new { @class = "text-danger" })
+                        </div>
+                        <div>
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            <i> </i>Keep me signed in(Uncheck when using a shared computer)
+                            <input type="submit" value="Sign In">
+                        </div>
+                    }
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </body>
+    </html>*@
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Content/css/style.css")" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Export Service Platform</title>
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/bootstrap/dist/css/bootstrap.min.css")">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/font-awesome/css/font-awesome.min.css")">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/Ionicons/css/ionicons.min.css")">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css")">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/dist/css/AdminLTE.min.css")">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="@Url.Content("~/Scripts/dist/css/skins/_all-skins.min.css")">
+    <link href="@Url.Content("~/Content/css/login.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/css/demo.css")" rel="stylesheet" />
     <script src="@Url.Content("~/Scripts/jquery-3.3.1.js")"></script>
     <script src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
     <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"></script>
@@ -21,43 +93,93 @@
 </head>
 
 <body>
-    <header id="header">
-        <div id="sfc-logo" class="login-logo-left">
-            <a href="//www.sfiec.com">www.sfiec.com</a>
-        </div>
-    </header>
-    <hr>
-    <div class="login" id="login">
-        <div class="login-container">
-            <div class="login-info">
-                <h1>Login</h1>
-                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    <div class="header">
+        <h1 class="headerLogo"><a title="Export Service Platform " href="#"><img alt="logo" src="@Url.Content("~/Content/img/logo.gif")"></a></h1>
+
+    </div>
+
+    <div class="banner">
+
+        <div class="login-aside" style="margin-left: 100px;">
+            <div id="o-box-up"></div>
+            <div id="o-box-down" style="table-layout:fixed;">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "registerform", role = "form" }))
                 {
-                    <div>
-                        Username：
-                        @Html.TextBoxFor(m => m.LoginName, new { @class = "form-group user-name", placeholder = "Username" })
-                        @Html.ValidationMessageFor(m => m.LoginName, "", new { @class = "text-danger" })
+                    <div class="error-box">
+                        @Html.ValidationMessageFor(m => m.LoginName, "", new { @class = "text-lg-left text-warning" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-lg-left text-warning" })
+                        @Html.ValidationMessageFor(m => m.ValidatedCode, "", new { @class = "text-lg-left text-warning" })
+                    </div>
+
+                    <div class="fm-item">
+                        <label for="logonId" class="form-label">Username：</label>
+                        @Html.TextBoxFor(m => m.LoginName, new { @class = "i-text", placeholder = "Username" })
                     </div>
                     <div>
-                        Password：
-                        @Html.PasswordFor(m => m.Password, new { @class = "form-group mail", placeholder = "Password" })
-                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        <label for="logonId" class="form-label">Password：</label>
+                        @Html.PasswordFor(m => m.Password, new { @class = "i-text", placeholder = "Password" })
                     </div>
-                    <div>
-                        ValidatedCode：
-                        @Html.TextBoxFor(m => m.ValidatedCode, new { @class = "form-group user-name", placeholder = "ValidatedCode" })
-                        @Html.ImageFor(m => m.ValidatedCodeUrl, new { @class = "form-group", id = "ValidatedCodeUrl" })
-                        @Html.ValidationMessageFor(m => m.ValidatedCode, "", new { @class = "text-danger" })
+                    <div class="fm-item pos-r">
+                        <label for="logonId" class="form-label">Validatedcode</label>
+                        @Html.TextBoxFor(m => m.ValidatedCode, new { @class = "i-text yzm", placeholder = "Validatedcode" })
+                        <div class="ui-form-explain">
+                            @Html.ImageFor(m => m.ValidatedCodeUrl, new { @class = "yzm-img", id = "ValidatedCodeUrl" })
+                        </div>
                     </div>
-                    <div>
-                        @Html.CheckBoxFor(m => m.RememberMe)
-                        <i> </i>Keep me signed in(Uncheck when using a shared computer)
-                        <input type="submit" value="Sign In">
+                    <div class="fm-item">
+                        <label for="logonId" class="form-label">
+                            @Html.CheckBoxFor(m => m.RememberMe) Keep me signed in(Uncheck when using a shared computer)
+                        </label>
+                        <input type="submit" value="Sign In" class="btn btn-block btn-success" style="width:250px">
                     </div>
                 }
+                @*<form class="registerform" action="demo/ajax_post.jsp">
+                        <div class="fm-item">
+                            <label for="logonId" class="form-label">Username：</label>
+                            <input type="text" value="" maxlength="100" id="username" class="i-text" placeholder="Username">
+                            <div class="ui-form-explain"></div>
+                        </div>
+
+                        <div class="fm-item">
+                            <label for="logonId" class="form-label">Password：</label>
+                            <input type="password" value="" maxlength="100" id="password" class="i-text" placeholder="Password">
+                            <div class="ui-form-explain"></div>
+                        </div>
+
+                        <div class="fm-item pos-r">
+                            <label for="logonId" class="form-label">Validatedcode</label>
+                            <input type="text" value="" maxlength="100" id="yzm" class="i-text yzm">
+                            <div class="ui-form-explain"><img src="images/yzm.jpg" class="yzm-img" /></div>
+                        </div>
+
+                        <div class="fm-item">
+                            <label for="logonId" class="form-label"></label>
+
+                            <input type="submit" value="Login" tabindex="4" id="send-btn" class="btn btn-block btn-warning btn-lg" style="width:250px">
+                            <div class="ui-form-explain"></div>
+                        </div>
+
+                    </form>*@
+
             </div>
-            <div class="clearfix"></div>
+
         </div>
+
+        <div class="bd">
+            <ul>
+                <li style="background: url(../../Content/img/in-2.gif) 400px 60px no-repeat, url(../../Content/img/in-3.gif) 700px 60px no-repeat,url(../../Content/img/in-1.gif) 0 60px repeat-x;background-size:auto 70%"><a target="_blank" href="#"></a></li>
+
+            </ul>
+        </div>
+
+        <div class="hd"><ul></ul></div>
     </div>
+
+    <div class="banner-shadow"></div>
+
+    <div class="footer">
+        <p>Copyright </p>
+    </div>
+
 </body>
 </html>

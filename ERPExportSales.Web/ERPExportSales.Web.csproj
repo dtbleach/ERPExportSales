@@ -295,6 +295,8 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\demo.css" />
+    <Content Include="Content\css\login.css" />
     <Content Include="Content\css\style.css" />
     <Content Include="Content\dist\css\AdminLTE.css" />
     <Content Include="Content\dist\css\AdminLTE.min.css" />
@@ -365,6 +367,9 @@
     <Content Include="Content\dist\js\demo.js" />
     <Content Include="Content\dist\js\pages\dashboard.js" />
     <Content Include="Content\dist\js\pages\dashboard2.js" />
+    <Content Include="Content\img\banner-shdow.png" />
+    <Content Include="Content\img\in-1.gif" />
+    <Content Include="Content\img\in-2.gif" />
     <Content Include="Content\img\in-3.gif" />
     <Content Include="Content\img\loading.gif" />
     <Content Include="Content\img\logo.gif" />
