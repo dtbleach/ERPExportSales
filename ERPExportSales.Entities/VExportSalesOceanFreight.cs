@@ -12,6 +12,9 @@ namespace ERPExportSales.Entities
     public class VExportSalesOceanFreight
     {
         [Key]
+        [Column("ID")]
+        public Guid ID { get; set; }
+
         [Column("fID")]
         public int FID { get; set; }
 
@@ -29,5 +32,18 @@ namespace ERPExportSales.Entities
 
         [Column("客户ID")]
         public int CustomerID { get; set; }
+
+        [Column("名称")]
+        public string Name { get; set; }
+
+        [Column("销售员ID")]
+        public int? Sales { get; set; }
+
+        [Column("大螺丝销售员ID")]
+        public int? BScrew { get; set; }
+
+        [Column("小螺丝销售员ID")]
+        public int? SScrew { get; set; }
     }
+
 }

@@ -37,10 +37,15 @@ namespace ERPExportSales.Web.Controllers
         }
 
         [AuthorizeUser]
-        public PartialViewResult OrderQuery(ExportSalesModel model, string InvoiceNo,bool IsBtnQuery=true, int pageNum = 1)
+        public PartialViewResult OrderQuery(ExportSalesModel model,bool IsBtnQuery=true, int pageNum = 1)
         {
             var user = SessionHelper.Get<UserViewModel>("User");
-          
+
+            if (user == null)
+            {
+                return PartialView();
+            }
+
             if (model == null)
             {
                 model = new ExportSalesModel();
@@ -66,6 +71,12 @@ namespace ERPExportSales.Web.Controllers
             }
             if (IsBtnQuery)
             {
+                if(!string.IsNullOrEmpty(model.QueryModel.InvoiceNo))
+                    model.QueryModel.InvoiceNo = model.QueryModel.InvoiceNo.Trim();
+                if (!string.IsNullOrEmpty(model.QueryModel.PONo))
+                    model.QueryModel.PONo = model.QueryModel.PONo.Trim();
+                if (!string.IsNullOrEmpty(model.QueryModel.SCNo))
+                    model.QueryModel.SCNo = model.QueryModel.SCNo.Trim();
                 SessionHelper.Add("QueryWhere", model.QueryModel);
             }else
             {
@@ -90,6 +101,7 @@ namespace ERPExportSales.Web.Controllers
                 order.InvoiceHref = Encryption64.Encrypt(item.InvoiceNo + ":" + config.InvoiceFolderName, config.Encryption64Key);
                 order.PackingHref = Encryption64.Encrypt(item.InvoiceNo + ":" + config.PackingFolderName, config.Encryption64Key);
                 order.BLNoHref = Encryption64.Encrypt(item.InvoiceNo + ":" + config.BLFolderName, config.Encryption64Key);
+                order.QRHref = Encryption64.Encrypt(item.InvoiceNo + ":" + config.QRFolderName, config.Encryption64Key);
                 orderList.Add(order);
             }
 
@@ -100,7 +112,24 @@ namespace ERPExportSales.Web.Controllers
         [AuthorizeUser]
         public PartialViewResult Freight()
         {
-            var freights = exportSalesService.GetExportSalesOceanFreight(2496);
+            var user = SessionHelper.Get<UserViewModel>("User");
+
+            if (user == null)
+            {
+                return PartialView();
+            }
+            int userType = 0;
+            int.TryParse(user.UserType,out userType);
+            IList<VExportSalesOceanFreight> freights = new List<VExportSalesOceanFreight>();
+            if (userType == 1)
+            {
+                freights= exportSalesService.GetExportSalesOceanFreightByEmployee(user.UserName);
+            }
+            else if (userType == 2)
+            {
+                freights = exportSalesService.GetExportSalesOceanFreightByCustomerID(user.ID);
+            }
+           
             IList<ExportSalesOceanFreightViewModel> list = new List<ExportSalesOceanFreightViewModel>();
             if (freights != null && freights.Count > 0)
             {
@@ -110,7 +139,7 @@ namespace ERPExportSales.Web.Controllers
                     list.Add(freight);
                 }
             }
-            return PartialView(list);
+            return PartialView(freights);
         }
 
         [AuthorizeUser]

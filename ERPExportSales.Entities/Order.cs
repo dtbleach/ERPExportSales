@@ -58,5 +58,8 @@ namespace ERPExportSales.Entities
         [Column("Quality Report")]
         public string QualityReport { get; set; }
 
+        [Column("Customer")]
+        public string Customer { get; set; }
+
     }
 }

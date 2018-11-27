@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div id="pdfContent" class="col-md-12" style="height:1080px">
+    </div>
+</section>
+
+    @section Scripts{
+        <script type="text/javascript">
+
+            $(function () {
+
+                var purl = "@ViewBag.FullPath";//要展示的文件路径
+
+                // 下面代码都是处理IE浏览器的情况
+                if (window.ActiveXObject || "ActiveXObject" in window) {
+                    //判断是否为IE浏览器，"ActiveXObject" in window判断是否为IE11
+                    //判断是否安装了adobe Reader
+                    for (x = 2; x < 10; x++) {
+                        try {
+                            oAcro = eval("new ActiveXObject('PDF.PdfCtrl." + x + "');");
+                            if (oAcro) {
+                                flag = true;
+                            }
+                        } catch (e) {
+                            flag = false;
+                        }
+                    }
+                    try {
+                        oAcro4 = new ActiveXObject('PDF.PdfCtrl.1');
+                        if (oAcro4) {
+                            flag = true;
+                        }
+                    } catch (e) {
+                        flag = false;
+                    }
+
+                    try {
+                        oAcro7 = new ActiveXObject('AcroPDF.PDF.1');
+                        if (oAcro7) {
+                            flag = true;
+                        }
+                    } catch (e) {
+                        flag = false;
+                    }
+
+                    if (flag) {//支持
+                        pdfShow(purl);//调用显示的方法
+
+                    } else {//不支持
+                        $("#pdfContent").append("Sorry, you haven't installed the PDF reader software yet. For the convenience of previewing PDF documents, please choose to install it!");
+                        alert("Sorry, you haven't installed the PDF reader software yet. For the convenience of previewing PDF documents, please choose to install!");
+                        location = "http://ardownload.adobe.com/pub/adobe/reader/win/9.x/9.3/chs/AdbeRdr930_zh_CN.exe";
+                    }
+
+                } else {
+                    pdfShow(purl);//调用显示的方法
+                }
+            });
+
+
+            //显示文件方法，就是将文件展示到div中
+            function pdfShow(url) {
+                $("#pdfContent").append('<iframe style="height:100%;width:100%;" src="' + url + '"></iframe>');
+            }
+
+        </script>
+    }

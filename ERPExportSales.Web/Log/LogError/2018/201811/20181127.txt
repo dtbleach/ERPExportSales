@@ -1,0 +1,365 @@
+
+ 
+记录时间：2018-11-27 09:03:52,558 
+线程ID:[40] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 42
+
+ 
+记录时间：2018-11-27 09:03:55,919 
+线程ID:[40] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 42
+
+ 
+记录时间：2018-11-27 10:16:16,708 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "InvalidOperationException",
+  "Message": "从具体化“System.Guid”类型到“System.Int32”类型的指定强制转换无效。",
+  "Path": "/",
+  "Assembly": "EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)\r\n   在 lambda_method(Closure , Shaper )\r\n   在 System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)\r\n   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()\r\n   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()\r\n   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)\r\n   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)\r\n   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Repositories\\RepositoryBase.cs:行号 84\r\n   在 ERPExportSales.Services.ExportSalesService.GetExportSalesOceanFreightByEmployee(String name) 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Services\\ExportSalesService.cs:行号 76\r\n   在 ERPExportSales.Web.Controllers.HomeController.Freight() 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\HomeController.cs:行号 126\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "EntityFramework",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-27 10:16:16",
+  "Method": "GetValue"
+}
+ 
+System.InvalidOperationException: 从具体化“System.Guid”类型到“System.Int32”类型的指定强制转换无效。
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   在 lambda_method(Closure , Shaper )
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   在 System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 ERPExportSales.Repositories.RepositoryBase`1.GetAll() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Repositories\RepositoryBase.cs:行号 84
+   在 ERPExportSales.Services.ExportSalesService.GetExportSalesOceanFreightByEmployee(String name) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Services\ExportSalesService.cs:行号 76
+   在 ERPExportSales.Web.Controllers.HomeController.Freight() 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\HomeController.cs:行号 126
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-11-27 11:14:53,226 
+线程ID:[17] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 42
+
+ 
+记录时间：2018-11-27 11:15:12,448 
+线程ID:[16] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.IO.IOException: 文件“D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Files\订单\70000122.pdf”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 41
+
+ 
+记录时间：2018-11-27 12:54:34,775 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:54:46,237 
+线程ID:[17] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 42
+
+ 
+记录时间：2018-11-27 12:54:48,119 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:55:01,642 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:55:14,127 
+线程ID:[20] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:55:16,133 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:55:34,166 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:55:44,544 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:55:52,149 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:56:52,969 
+线程ID:[26] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:57:33,585 
+线程ID:[30] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:57:40,135 
+线程ID:[27] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:58:07,612 
+线程ID:[30] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:58:49,611 
+线程ID:[6] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:59:15,088 
+线程ID:[34] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 12:59:18,233 
+线程ID:[31] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 13:00:22,922 
+线程ID:[26] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 13:00:43,967 
+线程ID:[26] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 13:00:54,803 
+线程ID:[40] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 13:02:38,371 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 13:02:54,877 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.FormatException: Base-64 字符数组或字符串的长度无效。
+   在 ERPExportSales.Framework.Encryption64.Decrypt(String stringToDecrypt, String sEncryptionKey) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Framework\CommonManager.cs:行号 63
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 30
+
+ 
+记录时间：2018-11-27 14:18:04,851 
+线程ID:[8] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "NullReferenceException",
+  "Message": "未将对象引用设置到对象的实例。",
+  "Path": "/Account/Login",
+  "Assembly": "ERPExportSales.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "ActionArguments": null,
+  "HttpMethod": "POST",
+  "StackTrace": "   在 ERPExportSales.Web.Controllers.AccountController.Login(LoginViewModel model) 位置 D:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Controllers\\AccountController.cs:行号 39\r\n   在 lambda_method(Closure , ControllerBase , Object[] )\r\n   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)\r\n   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "ERPExportSales.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-11-27 14:18:04",
+  "Method": "Login"
+}
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ERPExportSales.Web.Controllers.AccountController.Login(LoginViewModel model) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\AccountController.cs:行号 39
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c.<BeginInvokeSynchronousActionMethod>b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__11_0()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_1.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)

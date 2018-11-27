@@ -7,9 +7,8 @@
     <link href="@Url.Content("~/Content/pagestyle.css")" rel="Stylesheet" type="text/css" />
 }
 <ul class="breadcrumb">
-    <li><a href="/">首页</a></li>
-    <li><a href="#">信息</a></li>
-    <li class="active">汇总</li>
+    <li><a href="/Home/Index">Home</a></li>
+    <li class="active">Order</li>
 </ul>
 <section class="content">
     <form role="form" ng-app="myApp" ng-controller="formCtrl" class="form-horizontal" style="margin-top: 20px;"
@@ -132,9 +131,24 @@
             $("#sinaFrame").attr("src", "http://gu.sina.cn/fx/hq/quotes.php?code=USDCNY");
             $("#rbFrame").attr("src", "http://gu.sina.cn/ft/hq/nf.php?symbol=RB0");
             var divs = $(document.getElementById('sinaFrame').contentWindow.document.body).find('#hq_chart');
-            $('#tbFreight').DataTable();
-            $('#tbHoliday').DataTable();
+        
+            $('#tbHoliday').DataTable({
+                "bSort": false,
+                "searching": false,
+                "pagingType": "simple",
+                "info": false,
+                "pageLength": 20,
+                "lengthChange": false
+            });
             // $('#tbOrders').DataTable();
+            $('#tbFreight').DataTable({
+                "bSort": false,
+                "searching": false,
+                "pagingType": "simple",
+                "info": false,
+                "pageLength": 20,
+                "lengthChange":false
+            });
         })
     </script>
 }

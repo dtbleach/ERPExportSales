@@ -37,6 +37,8 @@ namespace ERPExportSales.Web.Models
 
         public string QualityReport { get; set; }
 
+        public string Customer { get; set; }
+
         public string SCNoHref { get; set; }
 
         public string InvoiceHref { get; set; }
@@ -44,5 +46,9 @@ namespace ERPExportSales.Web.Models
         public string PackingHref { get; set; }
 
         public string BLNoHref { get; set; }
+
+        public string QRHref { get; set; }
+
+
     }
 }

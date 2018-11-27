@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ERPExportSales.Entities
 {
-    [Table("客户", Schema = "dbo")]
+    [Table("v外销客户", Schema = "dbo")]
     public class Customer
     {
         [Key]

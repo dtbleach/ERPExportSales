@@ -19,5 +19,7 @@ namespace ERPExportSales.Configuration
         string PackingFolderName { get;}
 
         string BLFolderName { get; }
+
+        string QRFolderName { get; }
     }
 }

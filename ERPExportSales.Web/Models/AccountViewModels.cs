@@ -66,16 +66,16 @@ namespace ERPExportSales.Web.Models
 
     public class LoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Username must be filled in")]
         [Display(Name = "用户名")]
         public string LoginName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Password must be filled in")]
         [DataType(DataType.Password)]
         [Display(Name = "密码")]
         public string Password { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Verification code must be filled in")]
         [Display(Name = "验证码")]
         public string ValidatedCode { get; set; }
 

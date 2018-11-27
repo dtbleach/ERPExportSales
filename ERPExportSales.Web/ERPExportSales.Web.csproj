@@ -6605,6 +6605,8 @@
     <Content Include="Scripts\bower_components\select2\tests\vendor\qunit-1.23.1.css" />
     <Content Include="Scripts\bower_components\select2\tests\vendor\qunit-1.23.1.js" />
     <Content Include="Scripts\bower_components\select2\vendor\jquery-2.1.0.js" />
+    <Content Include="Scripts\datatables.min.css" />
+    <Content Include="Scripts\datatables.min.js" />
     <Content Include="Scripts\dist\css\AdminLTE.css" />
     <Content Include="Scripts\dist\css\AdminLTE.min.css" />
     <Content Include="Scripts\dist\css\alt\AdminLTE-bootstrap-social.css" />
@@ -7397,6 +7399,7 @@
     <Content Include="Views\Home\PublicHoliday.cshtml" />
     <Content Include="Views\Home\Q195.cshtml" />
     <None Include="Service References\ExportSalesWebService\SFCService.wsdl" />
+    <Content Include="Views\Files\PDF.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -7408,7 +7411,6 @@
     <Folder Include="Files\质保书\" />
     <Folder Include="Log\LogError\" />
     <Folder Include="Log\LogInfo\" />
-    <Folder Include="Views\Files\" />
     <Folder Include="Views\ValidateCode\" />
   </ItemGroup>
   <ItemGroup>

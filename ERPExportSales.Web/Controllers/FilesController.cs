@@ -21,34 +21,52 @@ namespace ERPExportSales.Web.Controllers
         [AuthorizeUser]
         public ActionResult GetPDF(string file)
         {
-            string fileName = string.Empty;
-            string folder = string.Empty;
-            if (!string.IsNullOrEmpty(file))
+            try
             {
-                file = Encryption64.Decrypt(file, config.Encryption64Key);
-                string[] urlParam = file.Split(':');
-                fileName = urlParam[0];
-                folder = urlParam[1];
-            }
-            ExportSalesWebService.SFCServiceSoapClient client = new ExportSalesWebService.SFCServiceSoapClient();
-            fileName = fileName + ".pdf";
-            var dfile = client.下载附件("", "外销", folder, fileName, "", ""); 
-            string dirp = System.Web.HttpContext.Current.Server.MapPath("~/Files/"+folder);
-            DirectoryInfo mydir = new DirectoryInfo(dirp);
-            string fullPath = dirp + "\\" + fileName;
-            FileStream writeStream = new FileStream(fullPath, FileMode.Create, FileAccess.Write);
-            MemoryStream readStream = new MemoryStream(dfile);
-            int Length = dfile.Length;
-            int bytesRead = readStream.Read(dfile, 0, Length);
-            while (bytesRead > 0)
+                string fileName = string.Empty;
+                string folder = string.Empty;
+                if (!string.IsNullOrEmpty(file))
+                {
+                    file = Encryption64.Decrypt(file, config.Encryption64Key);
+                    string[] urlParam = file.Split(':');
+                    fileName = urlParam[0];
+                    folder = urlParam[1];
+                }
+                ExportSalesWebService.SFCServiceSoapClient client = new ExportSalesWebService.SFCServiceSoapClient();
+                fileName = fileName + ".pdf";
+                var dfile = client.下载附件("", "外销", folder, fileName, "", "");
+                string dirp = System.Web.HttpContext.Current.Server.MapPath("~/Files/" + folder);
+                DirectoryInfo mydir = new DirectoryInfo(dirp);
+                string fullPath = dirp + "\\" + fileName;
+                FileStream writeStream = new FileStream(fullPath, FileMode.Create, FileAccess.Write);
+                MemoryStream readStream = new MemoryStream(dfile);
+                int Length = dfile.Length;
+                int bytesRead = readStream.Read(dfile, 0, Length);
+                while (bytesRead > 0)
+                {
+                    writeStream.Write(dfile, 0, bytesRead);
+                    bytesRead = readStream.Read(dfile, 0, Length);
+                }
+                readStream.Close();
+                writeStream.Close();
+                return new FilePathResult(fullPath, "application/pdf");
+            }catch(Exception ex)
             {
-                writeStream.Write(dfile, 0, bytesRead);
-                bytesRead = readStream.Read(dfile, 0, Length);
+                LoggerHelper.Error("预览PDF出错", ex);
+                return null;
             }
-            readStream.Close();
-            writeStream.Close();
-            return new FilePathResult(fullPath, "application/pdf");
         }
+
+
+        [AuthorizeUser]
+        public ActionResult PDF(string file)
+        {
+            var request = HttpContext.Request;
+            string host = request.Url.Authority;
+            ViewBag.FullPath = "http://"+host+"/Files/GetPDF?file="+ System.Web.HttpUtility.UrlEncode(file);
+            return View();
+        }
+
 
         private void DeleteTempPdfFile(string fullpath)
         {

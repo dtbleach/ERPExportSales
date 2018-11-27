@@ -3652,3 +3652,7339 @@
       总 时 间：1165秒
         Form：X-Requested-With=XMLHttpRequest
  
+
+ 
+记录时间：2018-11-26 13:32:48,082 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 13:32:48
+      结束时间：2018/11/26 13:32:48
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 13:32:48,295 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 13:32:48
+      结束时间：2018/11/26 13:32:48
+      总 时 间：196秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 13:32:48,333 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 13:32:48
+      结束时间：2018/11/26 13:32:48
+      总 时 间：196秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 13:32:48,402 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 13:32:48
+      结束时间：2018/11/26 13:32:48
+      总 时 间：63秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 13:32:48,405 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 13:32:48
+      结束时间：2018/11/26 13:32:48
+      总 时 间：63秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 13:32:48,447 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 13:32:48
+      结束时间：2018/11/26 13:32:48
+      总 时 间：39秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 13:32:48,449 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 13:32:48
+      结束时间：2018/11/26 13:32:48
+      总 时 间：39秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 13:32:48,450 
+线程ID:[21] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 13:32:48
+      结束时间：2018/11/26 13:32:48
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 13:32:54,670 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 13:32:54
+      结束时间：2018/11/26 13:32:54
+      总 时 间：224秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 13:32:54,704 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 13:32:54
+      结束时间：2018/11/26 13:32:54
+      总 时 间：224秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 13:33:01,138 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 13:33:00
+      结束时间：2018/11/26 13:33:01
+      总 时 间：281秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 13:33:01,158 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 13:33:01
+      结束时间：2018/11/26 13:33:01
+      总 时 间：281秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 13:33:09,633 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 13:33:09
+      结束时间：2018/11/26 13:33:09
+      总 时 间：400秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 13:33:09,658 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 13:33:09
+      结束时间：2018/11/26 13:33:09
+      总 时 间：400秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 13:33:16,269 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 13:33:15
+      结束时间：2018/11/26 13:33:16
+      总 时 间：975秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 13:33:16,280 
+线程ID:[17] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 13:33:16
+      结束时间：2018/11/26 13:33:16
+      总 时 间：975秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 14:27:42,978 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:27:42
+      结束时间：2018/11/26 14:27:42
+      总 时 间：45秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:27:45,867 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:27:42
+      结束时间：2018/11/26 14:27:45
+      总 时 间：45秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:27:46,160 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 14:27:46
+      结束时间：2018/11/26 14:27:46
+      总 时 间：109秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:27:46,161 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 14:27:46
+      结束时间：2018/11/26 14:27:46
+      总 时 间：109秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:01,839 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:27:56
+      结束时间：2018/11/26 14:28:01
+      总 时 间：5827秒
+        Form：LoginName=vit&Password=vit&ValidatedCode=nbc7&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:28:01,926 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:28:01
+      结束时间：2018/11/26 14:28:01
+      总 时 间：5827秒
+        Form：LoginName=vit&Password=vit&ValidatedCode=nbc7&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:28:02,015 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 14:28:02
+      结束时间：2018/11/26 14:28:02
+      总 时 间：2秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:04,084 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 14:28:03
+      结束时间：2018/11/26 14:28:04
+      总 时 间：1019秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:04,193 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 14:28:04
+      结束时间：2018/11/26 14:28:04
+      总 时 间：1019秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:04,338 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 14:28:04
+      结束时间：2018/11/26 14:28:04
+      总 时 间：140秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:04,342 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 14:28:04
+      结束时间：2018/11/26 14:28:04
+      总 时 间：140秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:04,416 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 14:28:04
+      结束时间：2018/11/26 14:28:04
+      总 时 间：70秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:04,422 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 14:28:04
+      结束时间：2018/11/26 14:28:04
+      总 时 间：70秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:05,924 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 14:28:02
+      结束时间：2018/11/26 14:28:05
+      总 时 间：2秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:28,532 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:28:28
+      结束时间：2018/11/26 14:28:28
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:28:28,534 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:28:28
+      结束时间：2018/11/26 14:28:28
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:41:43,260 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:41:43
+      结束时间：2018/11/26 14:41:43
+      总 时 间：44秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:41:45,890 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:41:43
+      结束时间：2018/11/26 14:41:45
+      总 时 间：44秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:41:46,092 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 14:41:45
+      结束时间：2018/11/26 14:41:46
+      总 时 间：132秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:41:46,094 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 14:41:46
+      结束时间：2018/11/26 14:41:46
+      总 时 间：132秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:41:55,256 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:41:54
+      结束时间：2018/11/26 14:41:55
+      总 时 间：948秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=e686&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:41:55,268 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:41:55
+      结束时间：2018/11/26 14:41:55
+      总 时 间：948秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=e686&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:41:55,282 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 14:41:55
+      结束时间：2018/11/26 14:41:55
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:41:57,585 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 14:41:56
+      结束时间：2018/11/26 14:41:57
+      总 时 间：1198秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:41:57,620 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 14:41:57
+      结束时间：2018/11/26 14:41:57
+      总 时 间：1198秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:43:36,291 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:43:36
+      结束时间：2018/11/26 14:43:36
+      总 时 间：45秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:43:38,793 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:43:36
+      结束时间：2018/11/26 14:43:38
+      总 时 间：45秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:43:39,022 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 14:43:38
+      结束时间：2018/11/26 14:43:39
+      总 时 间：130秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:43:39,023 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 14:43:39
+      结束时间：2018/11/26 14:43:39
+      总 时 间：130秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:43:48,500 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:43:47
+      结束时间：2018/11/26 14:43:48
+      总 时 间：972秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=edmt&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:43:48,513 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:43:48
+      结束时间：2018/11/26 14:43:48
+      总 时 间：972秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=edmt&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:43:48,570 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 14:43:48
+      结束时间：2018/11/26 14:43:48
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:43:50,223 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 14:43:49
+      结束时间：2018/11/26 14:43:50
+      总 时 间：550秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:43:50,263 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 14:43:50
+      结束时间：2018/11/26 14:43:50
+      总 时 间：550秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:08,268 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:45:08
+      结束时间：2018/11/26 14:45:08
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:11,561 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:45:08
+      结束时间：2018/11/26 14:45:11
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:11,801 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 14:45:11
+      结束时间：2018/11/26 14:45:11
+      总 时 间：147秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:11,803 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 14:45:11
+      结束时间：2018/11/26 14:45:11
+      总 时 间：147秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:20,017 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:45:19
+      结束时间：2018/11/26 14:45:20
+      总 时 间：872秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=ec33&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:45:20,050 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:45:20
+      结束时间：2018/11/26 14:45:20
+      总 时 间：872秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=ec33&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:45:20,067 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 14:45:20
+      结束时间：2018/11/26 14:45:20
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:21,662 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 14:45:21
+      结束时间：2018/11/26 14:45:21
+      总 时 间：500秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:21,701 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 14:45:21
+      结束时间：2018/11/26 14:45:21
+      总 时 间：500秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:21,985 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 14:45:21
+      结束时间：2018/11/26 14:45:21
+      总 时 间：279秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:22,007 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 14:45:21
+      结束时间：2018/11/26 14:45:22
+      总 时 间：279秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:22,073 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 14:45:22
+      结束时间：2018/11/26 14:45:22
+      总 时 间：63秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:22,076 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 14:45:22
+      结束时间：2018/11/26 14:45:22
+      总 时 间：63秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:23,062 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 14:45:20
+      结束时间：2018/11/26 14:45:23
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:42,001 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：FilesController
+      ActionName:GetPDF
+      开始时间：2018/11/26 14:45:39
+      结束时间：2018/11/26 14:45:42
+      总 时 间：2836秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:45:42,002 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：FilesController
+      ViewName:GetPDF
+      开始时间：2018/11/26 14:45:42
+      结束时间：2018/11/26 14:45:42
+      总 时 间：2836秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:20,963 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:46:20
+      结束时间：2018/11/26 14:46:20
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:20,976 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:46:20
+      结束时间：2018/11/26 14:46:20
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:21,260 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 14:46:21
+      结束时间：2018/11/26 14:46:21
+      总 时 间：123秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:21,261 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 14:46:21
+      结束时间：2018/11/26 14:46:21
+      总 时 间：123秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,057 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:46:26
+      结束时间：2018/11/26 14:46:27
+      总 时 间：109秒
+        Form：LoginName=vit&Password=vit&ValidatedCode=y62d&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,067 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:46:27
+      结束时间：2018/11/26 14:46:27
+      总 时 间：109秒
+        Form：LoginName=vit&Password=vit&ValidatedCode=y62d&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,080 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 14:46:27
+      结束时间：2018/11/26 14:46:27
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,271 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 14:46:27
+      结束时间：2018/11/26 14:46:27
+      总 时 间：187秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,286 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 14:46:27
+      结束时间：2018/11/26 14:46:27
+      总 时 间：187秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,434 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 14:46:27
+      结束时间：2018/11/26 14:46:27
+      总 时 间：145秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,435 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 14:46:27
+      结束时间：2018/11/26 14:46:27
+      总 时 间：145秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,488 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 14:46:27
+      结束时间：2018/11/26 14:46:27
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,489 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 14:46:27
+      结束时间：2018/11/26 14:46:27
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:46:27,490 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 14:46:27
+      结束时间：2018/11/26 14:46:27
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:11,820 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:56:11
+      结束时间：2018/11/26 14:56:11
+      总 时 间：59秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:14,518 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:56:11
+      结束时间：2018/11/26 14:56:14
+      总 时 间：59秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:14,697 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 14:56:14
+      结束时间：2018/11/26 14:56:14
+      总 时 间：118秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:14,698 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 14:56:14
+      结束时间：2018/11/26 14:56:14
+      总 时 间：118秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:24,268 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 14:56:23
+      结束时间：2018/11/26 14:56:24
+      总 时 间：877秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=7mwn&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:56:24,281 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 14:56:24
+      结束时间：2018/11/26 14:56:24
+      总 时 间：877秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=7mwn&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 14:56:24,295 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 14:56:24
+      结束时间：2018/11/26 14:56:24
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:26,027 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 14:56:25
+      结束时间：2018/11/26 14:56:26
+      总 时 间：556秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:26,064 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 14:56:26
+      结束时间：2018/11/26 14:56:26
+      总 时 间：556秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:26,488 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 14:56:26
+      结束时间：2018/11/26 14:56:26
+      总 时 间：419秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:26,508 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 14:56:26
+      结束时间：2018/11/26 14:56:26
+      总 时 间：419秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:26,600 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 14:56:26
+      结束时间：2018/11/26 14:56:26
+      总 时 间：88秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:26,608 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 14:56:26
+      结束时间：2018/11/26 14:56:26
+      总 时 间：88秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 14:56:27,591 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 14:56:24
+      结束时间：2018/11/26 14:56:27
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:13,914 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:00:13
+      结束时间：2018/11/26 15:00:13
+      总 时 间：52秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:16,598 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:00:13
+      结束时间：2018/11/26 15:00:16
+      总 时 间：52秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:16,782 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:00:16
+      结束时间：2018/11/26 15:00:16
+      总 时 间：124秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:16,787 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:00:16
+      结束时间：2018/11/26 15:00:16
+      总 时 间：124秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:29,185 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:00:28
+      结束时间：2018/11/26 15:00:29
+      总 时 间：928秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=8equ&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:00:29,201 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:00:29
+      结束时间：2018/11/26 15:00:29
+      总 时 间：928秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=8equ&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:00:29,337 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:00:29
+      结束时间：2018/11/26 15:00:29
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:30,865 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:00:30
+      结束时间：2018/11/26 15:00:30
+      总 时 间：477秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:30,937 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:00:30
+      结束时间：2018/11/26 15:00:30
+      总 时 间：477秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:31,349 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:00:30
+      结束时间：2018/11/26 15:00:31
+      总 时 间：408秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:31,371 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:00:31
+      结束时间：2018/11/26 15:00:31
+      总 时 间：408秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:31,457 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:00:31
+      结束时间：2018/11/26 15:00:31
+      总 时 间：83秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:31,461 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:00:31
+      结束时间：2018/11/26 15:00:31
+      总 时 间：83秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:00:32,531 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:00:29
+      结束时间：2018/11/26 15:00:32
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:32,258 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:04:32
+      结束时间：2018/11/26 15:04:32
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:34,972 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:04:32
+      结束时间：2018/11/26 15:04:34
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:35,163 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:04:35
+      结束时间：2018/11/26 15:04:35
+      总 时 间：132秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:35,164 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:04:35
+      结束时间：2018/11/26 15:04:35
+      总 时 间：132秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:47,910 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:04:47
+      结束时间：2018/11/26 15:04:47
+      总 时 间：850秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=8ft3&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:04:47,922 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:04:47
+      结束时间：2018/11/26 15:04:47
+      总 时 间：850秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=8ft3&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:04:47,935 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:04:47
+      结束时间：2018/11/26 15:04:47
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:49,526 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:04:48
+      结束时间：2018/11/26 15:04:49
+      总 时 间：528秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:49,572 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:04:49
+      结束时间：2018/11/26 15:04:49
+      总 时 间：528秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:54,569 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:04:49
+      结束时间：2018/11/26 15:04:54
+      总 时 间：4992秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:54,595 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:04:54
+      结束时间：2018/11/26 15:04:54
+      总 时 间：4992秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:54,663 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:04:54
+      结束时间：2018/11/26 15:04:54
+      总 时 间：65秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:54,667 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:04:54
+      结束时间：2018/11/26 15:04:54
+      总 时 间：65秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:04:55,710 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:04:47
+      结束时间：2018/11/26 15:04:55
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:06:04,807 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:06:04
+      结束时间：2018/11/26 15:06:04
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:06:05,065 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:06:04
+      结束时间：2018/11/26 15:06:05
+      总 时 间：250秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:06:05,081 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:06:05
+      结束时间：2018/11/26 15:06:05
+      总 时 间：250秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:07:41,719 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:06:05
+      结束时间：2018/11/26 15:07:41
+      总 时 间：96633秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:07:41,741 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:07:41
+      结束时间：2018/11/26 15:07:41
+      总 时 间：96633秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:07:41,805 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:07:41
+      结束时间：2018/11/26 15:07:41
+      总 时 间：55秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:07:41,807 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:07:41
+      结束时间：2018/11/26 15:07:41
+      总 时 间：55秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:07:41,809 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:06:04
+      结束时间：2018/11/26 15:07:41
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:09:03,382 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:09:03
+      结束时间：2018/11/26 15:09:03
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:09:04,710 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:09:04
+      结束时间：2018/11/26 15:09:04
+      总 时 间：272秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:09:04,745 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:09:04
+      结束时间：2018/11/26 15:09:04
+      总 时 间：272秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:09:15,592 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:09:04
+      结束时间：2018/11/26 15:09:15
+      总 时 间：10844秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:09:15,611 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:09:15
+      结束时间：2018/11/26 15:09:15
+      总 时 间：10844秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:09:15,683 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:09:15
+      结束时间：2018/11/26 15:09:15
+      总 时 间：70秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:09:15,686 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:09:15
+      结束时间：2018/11/26 15:09:15
+      总 时 间：70秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:09:15,689 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:09:03
+      结束时间：2018/11/26 15:09:15
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:11:41,840 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:11:41
+      结束时间：2018/11/26 15:11:41
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:11:42,063 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:11:41
+      结束时间：2018/11/26 15:11:42
+      总 时 间：219秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:11:42,073 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:11:42
+      结束时间：2018/11/26 15:11:42
+      总 时 间：219秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:12:37,371 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:11:42
+      结束时间：2018/11/26 15:12:33
+      总 时 间：55276秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:13:12,769 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:12:40
+      结束时间：2018/11/26 15:13:12
+      总 时 间：55276秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:13:12,803 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:13:12
+      结束时间：2018/11/26 15:13:12
+      总 时 间：32秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:13:12,805 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:13:12
+      结束时间：2018/11/26 15:13:12
+      总 时 间：32秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:13:12,869 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:11:41
+      结束时间：2018/11/26 15:13:12
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:14:48,029 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:14:47
+      结束时间：2018/11/26 15:14:48
+      总 时 间：40秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:14:48,429 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:14:48
+      结束时间：2018/11/26 15:14:48
+      总 时 间：40秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:14:48,606 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:14:48
+      结束时间：2018/11/26 15:14:48
+      总 时 间：115秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:14:48,608 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:14:48
+      结束时间：2018/11/26 15:14:48
+      总 时 间：115秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:02,888 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:15:02
+      结束时间：2018/11/26 15:15:02
+      总 时 间：813秒
+        Form：LoginName=vit&Password=vit&ValidatedCode=3pnn&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:15:02,917 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:15:02
+      结束时间：2018/11/26 15:15:02
+      总 时 间：813秒
+        Form：LoginName=vit&Password=vit&ValidatedCode=3pnn&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:15:02,930 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:15:02
+      结束时间：2018/11/26 15:15:02
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:03,389 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:15:02
+      结束时间：2018/11/26 15:15:03
+      总 时 间：406秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:03,459 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:15:03
+      结束时间：2018/11/26 15:15:03
+      总 时 间：406秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:06,778 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:15:03
+      结束时间：2018/11/26 15:15:06
+      总 时 间：3312秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:06,787 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:15:06
+      结束时间：2018/11/26 15:15:06
+      总 时 间：3312秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:06,895 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:15:06
+      结束时间：2018/11/26 15:15:06
+      总 时 间：100秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:06,903 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:15:06
+      结束时间：2018/11/26 15:15:06
+      总 时 间：100秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:06,968 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:15:02
+      结束时间：2018/11/26 15:15:06
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:26,466 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:15:26
+      结束时间：2018/11/26 15:15:26
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:26,468 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:15:26
+      结束时间：2018/11/26 15:15:26
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:34,650 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:15:34
+      结束时间：2018/11/26 15:15:34
+      总 时 间：71秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=3pnn&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:15:34,659 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:15:34
+      结束时间：2018/11/26 15:15:34
+      总 时 间：71秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=3pnn&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:15:34,671 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:15:34
+      结束时间：2018/11/26 15:15:34
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:34,934 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:15:34
+      结束时间：2018/11/26 15:15:34
+      总 时 间：260秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:34,945 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:15:34
+      结束时间：2018/11/26 15:15:34
+      总 时 间：260秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:38,191 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:15:34
+      结束时间：2018/11/26 15:15:38
+      总 时 间：3245秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:38,210 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:15:38
+      结束时间：2018/11/26 15:15:38
+      总 时 间：3245秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:38,306 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:15:38
+      结束时间：2018/11/26 15:15:38
+      总 时 间：95秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:38,307 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:15:38
+      结束时间：2018/11/26 15:15:38
+      总 时 间：95秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:15:38,310 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:15:34
+      结束时间：2018/11/26 15:15:38
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:18:45,375 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:18:45
+      结束时间：2018/11/26 15:18:45
+      总 时 间：53秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:18:45,736 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:18:45
+      结束时间：2018/11/26 15:18:45
+      总 时 间：53秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:18:45,910 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:18:45
+      结束时间：2018/11/26 15:18:45
+      总 时 间：125秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:18:45,911 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:18:45
+      结束时间：2018/11/26 15:18:45
+      总 时 间：125秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:19:02,175 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:19:01
+      结束时间：2018/11/26 15:19:02
+      总 时 间：999秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=rk5h&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:19:02,188 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:19:02
+      结束时间：2018/11/26 15:19:02
+      总 时 间：999秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=rk5h&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:19:02,201 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:19:02
+      结束时间：2018/11/26 15:19:02
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:19:02,794 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:19:02
+      结束时间：2018/11/26 15:19:02
+      总 时 间：539秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:19:02,842 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:19:02
+      结束时间：2018/11/26 15:19:02
+      总 时 间：539秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:10,825 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:22:10
+      结束时间：2018/11/26 15:22:10
+      总 时 间：59秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:13,653 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:22:10
+      结束时间：2018/11/26 15:22:13
+      总 时 间：59秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:13,854 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:22:13
+      结束时间：2018/11/26 15:22:13
+      总 时 间：139秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:13,857 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:22:13
+      结束时间：2018/11/26 15:22:13
+      总 时 间：139秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:22,646 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:22:21
+      结束时间：2018/11/26 15:22:22
+      总 时 间：1048秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=s77k&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:22:22,658 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:22:22
+      结束时间：2018/11/26 15:22:22
+      总 时 间：1048秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=s77k&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:22:22,676 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:22:22
+      结束时间：2018/11/26 15:22:22
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:24,393 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:22:23
+      结束时间：2018/11/26 15:22:24
+      总 时 间：519秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:24,432 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:22:24
+      结束时间：2018/11/26 15:22:24
+      总 时 间：519秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:30,068 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:22:24
+      结束时间：2018/11/26 15:22:30
+      总 时 间：5631秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:30,072 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:22:30
+      结束时间：2018/11/26 15:22:30
+      总 时 间：5631秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:31,248 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:22:31
+      结束时间：2018/11/26 15:22:31
+      总 时 间：99秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:31,251 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:22:31
+      结束时间：2018/11/26 15:22:31
+      总 时 间：99秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:22:32,347 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:22:22
+      结束时间：2018/11/26 15:22:32
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:27,410 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:24:27
+      结束时间：2018/11/26 15:24:27
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:27,739 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:24:27
+      结束时间：2018/11/26 15:24:27
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:28,007 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:24:27
+      结束时间：2018/11/26 15:24:28
+      总 时 间：131秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:28,008 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:24:28
+      结束时间：2018/11/26 15:24:28
+      总 时 间：131秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:38,451 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:24:37
+      结束时间：2018/11/26 15:24:38
+      总 时 间：909秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=ry3s&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:24:38,467 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:24:38
+      结束时间：2018/11/26 15:24:38
+      总 时 间：909秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=ry3s&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:24:38,501 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:24:38
+      结束时间：2018/11/26 15:24:38
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:39,072 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:24:38
+      结束时间：2018/11/26 15:24:39
+      总 时 间：528秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:39,120 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:24:39
+      结束时间：2018/11/26 15:24:39
+      总 时 间：528秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:44,735 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:24:39
+      结束时间：2018/11/26 15:24:44
+      总 时 间：5608秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:46,283 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:24:44
+      结束时间：2018/11/26 15:24:46
+      总 时 间：5608秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:46,329 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:24:46
+      结束时间：2018/11/26 15:24:46
+      总 时 间：43秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:46,332 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:24:46
+      结束时间：2018/11/26 15:24:46
+      总 时 间：43秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:24:46,364 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:24:38
+      结束时间：2018/11/26 15:24:46
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:29:46,865 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:29:46
+      结束时间：2018/11/26 15:29:46
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:29:49,546 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:29:46
+      结束时间：2018/11/26 15:29:49
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:29:49,761 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:29:49
+      结束时间：2018/11/26 15:29:49
+      总 时 间：128秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:29:49,762 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:29:49
+      结束时间：2018/11/26 15:29:49
+      总 时 间：128秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:29:58,756 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:29:57
+      结束时间：2018/11/26 15:29:58
+      总 时 间：1581秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=pvnf&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:29:58,783 
+线程ID:[6] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:29:58
+      结束时间：2018/11/26 15:29:58
+      总 时 间：1581秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=pvnf&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:29:58,797 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:29:58
+      结束时间：2018/11/26 15:29:58
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:30:00,482 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:29:59
+      结束时间：2018/11/26 15:30:00
+      总 时 间：530秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:30:00,526 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:30:00
+      结束时间：2018/11/26 15:30:00
+      总 时 间：530秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:32:07,963 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:30:00
+      结束时间：2018/11/26 15:32:07
+      总 时 间：127431秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:32:07,985 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:32:07
+      结束时间：2018/11/26 15:32:07
+      总 时 间：127431秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:32:10,745 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:32:07
+      结束时间：2018/11/26 15:32:10
+      总 时 间：2756秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:32:10,748 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:32:10
+      结束时间：2018/11/26 15:32:10
+      总 时 间：2756秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:32:11,851 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:29:58
+      结束时间：2018/11/26 15:32:11
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:34:49,498 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:34:49
+      结束时间：2018/11/26 15:34:49
+      总 时 间：51秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:34:49,827 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:34:49
+      结束时间：2018/11/26 15:34:49
+      总 时 间：51秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:34:50,010 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:34:49
+      结束时间：2018/11/26 15:34:50
+      总 时 间：117秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:34:50,011 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:34:50
+      结束时间：2018/11/26 15:34:50
+      总 时 间：117秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:35:08,395 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:35:07
+      结束时间：2018/11/26 15:35:08
+      总 时 间：896秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=r3k8&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:35:08,408 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:35:08
+      结束时间：2018/11/26 15:35:08
+      总 时 间：896秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=r3k8&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:35:08,421 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:35:08
+      结束时间：2018/11/26 15:35:08
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:35:10,618 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:35:10
+      结束时间：2018/11/26 15:35:10
+      总 时 间：584秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:35:10,691 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:35:10
+      结束时间：2018/11/26 15:35:10
+      总 时 间：584秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:35:15,791 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:35:10
+      结束时间：2018/11/26 15:35:15
+      总 时 间：5095秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:35:15,817 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:35:15
+      结束时间：2018/11/26 15:35:15
+      总 时 间：5095秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:35:15,879 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:35:15
+      结束时间：2018/11/26 15:35:15
+      总 时 间：59秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:35:15,882 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:35:15
+      结束时间：2018/11/26 15:35:15
+      总 时 间：59秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:35:15,913 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:35:08
+      结束时间：2018/11/26 15:35:15
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:37:41,893 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:37:41
+      结束时间：2018/11/26 15:37:41
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:37:43,160 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:37:42
+      结束时间：2018/11/26 15:37:43
+      总 时 间：235秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:37:43,201 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:37:43
+      结束时间：2018/11/26 15:37:43
+      总 时 间：235秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:37:43,442 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:37:43
+      结束时间：2018/11/26 15:37:43
+      总 时 间：238秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:37:43,461 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:37:43
+      结束时间：2018/11/26 15:37:43
+      总 时 间：238秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:37:43,509 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:37:43
+      结束时间：2018/11/26 15:37:43
+      总 时 间：45秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:37:43,511 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:37:43
+      结束时间：2018/11/26 15:37:43
+      总 时 间：45秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:37:43,515 
+线程ID:[20] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:37:41
+      结束时间：2018/11/26 15:37:43
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:30,299 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:44:30
+      结束时间：2018/11/26 15:44:30
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:32,189 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:44:31
+      结束时间：2018/11/26 15:44:32
+      总 时 间：264秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:32,223 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:44:32
+      结束时间：2018/11/26 15:44:32
+      总 时 间：264秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:32,736 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:44:32
+      结束时间：2018/11/26 15:44:32
+      总 时 间：510秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:32,801 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:44:32
+      结束时间：2018/11/26 15:44:32
+      总 时 间：510秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:32,892 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:44:32
+      结束时间：2018/11/26 15:44:32
+      总 时 间：77秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:32,896 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:44:32
+      结束时间：2018/11/26 15:44:32
+      总 时 间：77秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:32,902 
+线程ID:[19] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:44:30
+      结束时间：2018/11/26 15:44:32
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:52,234 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:44:52
+      结束时间：2018/11/26 15:44:52
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:56,966 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:44:52
+      结束时间：2018/11/26 15:44:56
+      总 时 间：4730秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:56,976 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:44:56
+      结束时间：2018/11/26 15:44:56
+      总 时 间：4730秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:57,229 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:44:56
+      结束时间：2018/11/26 15:44:57
+      总 时 间：253秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:57,246 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:44:57
+      结束时间：2018/11/26 15:44:57
+      总 时 间：253秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:57,304 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:44:57
+      结束时间：2018/11/26 15:44:57
+      总 时 间：56秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:57,304 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:44:57
+      结束时间：2018/11/26 15:44:57
+      总 时 间：56秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:44:57,305 
+线程ID:[31] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:44:52
+      结束时间：2018/11/26 15:44:57
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:50:05,121 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:50:05
+      结束时间：2018/11/26 15:50:05
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:50:06,339 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:50:06
+      结束时间：2018/11/26 15:50:06
+      总 时 间：231秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:50:06,377 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:50:06
+      结束时间：2018/11/26 15:50:06
+      总 时 间：231秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:50:06,652 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:50:06
+      结束时间：2018/11/26 15:50:06
+      总 时 间：273秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:50:06,673 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:50:06
+      结束时间：2018/11/26 15:50:06
+      总 时 间：273秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:50:06,738 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:50:06
+      结束时间：2018/11/26 15:50:06
+      总 时 间：62秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:50:06,742 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:50:06
+      结束时间：2018/11/26 15:50:06
+      总 时 间：62秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:50:06,746 
+线程ID:[33] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:50:05
+      结束时间：2018/11/26 15:50:06
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:53:34,210 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:53:34
+      结束时间：2018/11/26 15:53:34
+      总 时 间：113秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:53:34,935 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:53:34
+      结束时间：2018/11/26 15:53:34
+      总 时 间：113秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:53:35,267 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:53:35
+      结束时间：2018/11/26 15:53:35
+      总 时 间：162秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:53:35,268 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:53:35
+      结束时间：2018/11/26 15:53:35
+      总 时 间：162秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:53:40,299 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:53:40
+      结束时间：2018/11/26 15:53:40
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:53:40,301 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:53:40
+      结束时间：2018/11/26 15:53:40
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:53:40,477 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:53:40
+      结束时间：2018/11/26 15:53:40
+      总 时 间：58秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:53:40,477 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:53:40
+      结束时间：2018/11/26 15:53:40
+      总 时 间：58秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:11,042 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:54:10
+      结束时间：2018/11/26 15:54:11
+      总 时 间：974秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=ukem&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:54:11,056 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:54:11
+      结束时间：2018/11/26 15:54:11
+      总 时 间：974秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=ukem&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:54:11,082 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:54:11
+      结束时间：2018/11/26 15:54:11
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:13,012 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:54:12
+      结束时间：2018/11/26 15:54:13
+      总 时 间：510秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:13,046 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:54:13
+      结束时间：2018/11/26 15:54:13
+      总 时 间：510秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:13,327 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:54:13
+      结束时间：2018/11/26 15:54:13
+      总 时 间：276秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:13,347 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:54:13
+      结束时间：2018/11/26 15:54:13
+      总 时 间：276秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:13,455 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:54:13
+      结束时间：2018/11/26 15:54:13
+      总 时 间：106秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:13,459 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:54:13
+      结束时间：2018/11/26 15:54:13
+      总 时 间：106秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:13,527 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:54:11
+      结束时间：2018/11/26 15:54:13
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:50,185 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:54:49
+      结束时间：2018/11/26 15:54:50
+      总 时 间：1137秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 15:54:50,201 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:54:50
+      结束时间：2018/11/26 15:54:50
+      总 时 间：1137秒
+        Form：X-Requested-With=XMLHttpRequest
+ 
+
+ 
+记录时间：2018-11-26 15:54:56,607 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:54:56
+      结束时间：2018/11/26 15:54:56
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:56,960 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:54:56
+      结束时间：2018/11/26 15:54:56
+      总 时 间：334秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:56,960 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:54:56
+      结束时间：2018/11/26 15:54:56
+      总 时 间：334秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:57,366 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:54:56
+      结束时间：2018/11/26 15:54:57
+      总 时 间：405秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:57,397 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:54:57
+      结束时间：2018/11/26 15:54:57
+      总 时 间：405秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:57,509 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:54:57
+      结束时间：2018/11/26 15:54:57
+      总 时 间：112秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:57,510 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:54:57
+      结束时间：2018/11/26 15:54:57
+      总 时 间：112秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:54:57,513 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:54:56
+      结束时间：2018/11/26 15:54:57
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:01,682 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:55:01
+      结束时间：2018/11/26 15:55:01
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:06,461 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:55:01
+      结束时间：2018/11/26 15:55:06
+      总 时 间：4778秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:06,462 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:55:06
+      结束时间：2018/11/26 15:55:06
+      总 时 间：4778秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:06,705 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:55:06
+      结束时间：2018/11/26 15:55:06
+      总 时 间：242秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:06,717 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:55:06
+      结束时间：2018/11/26 15:55:06
+      总 时 间：242秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:06,745 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:55:06
+      结束时间：2018/11/26 15:55:06
+      总 时 间：27秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:06,746 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:55:06
+      结束时间：2018/11/26 15:55:06
+      总 时 间：27秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:06,747 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:55:01
+      结束时间：2018/11/26 15:55:06
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:25,397 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:55:25
+      结束时间：2018/11/26 15:55:25
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:25,729 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:55:25
+      结束时间：2018/11/26 15:55:25
+      总 时 间：330秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:25,730 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:55:25
+      结束时间：2018/11/26 15:55:25
+      总 时 间：330秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:26,211 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:55:25
+      结束时间：2018/11/26 15:55:26
+      总 时 间：481秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:26,230 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:55:26
+      结束时间：2018/11/26 15:55:26
+      总 时 间：481秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:26,364 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:55:26
+      结束时间：2018/11/26 15:55:26
+      总 时 间：133秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:26,364 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:55:26
+      结束时间：2018/11/26 15:55:26
+      总 时 间：133秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:26,367 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:55:25
+      结束时间：2018/11/26 15:55:26
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:32,621 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:55:32
+      结束时间：2018/11/26 15:55:32
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:32,891 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:55:32
+      结束时间：2018/11/26 15:55:32
+      总 时 间：268秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:32,892 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:55:32
+      结束时间：2018/11/26 15:55:32
+      总 时 间：268秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:33,199 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:55:32
+      结束时间：2018/11/26 15:55:33
+      总 时 间：306秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:33,221 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:55:33
+      结束时间：2018/11/26 15:55:33
+      总 时 间：306秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:33,295 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:55:33
+      结束时间：2018/11/26 15:55:33
+      总 时 间：73秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:33,295 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:55:33
+      结束时间：2018/11/26 15:55:33
+      总 时 间：73秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:33,298 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:55:32
+      结束时间：2018/11/26 15:55:33
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:37,217 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:55:37
+      结束时间：2018/11/26 15:55:37
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:37,488 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:55:37
+      结束时间：2018/11/26 15:55:37
+      总 时 间：269秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:37,489 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:55:37
+      结束时间：2018/11/26 15:55:37
+      总 时 间：269秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:37,737 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:55:37
+      结束时间：2018/11/26 15:55:37
+      总 时 间：247秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:37,753 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:55:37
+      结束时间：2018/11/26 15:55:37
+      总 时 间：247秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:37,793 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:55:37
+      结束时间：2018/11/26 15:55:37
+      总 时 间：38秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:37,793 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:55:37
+      结束时间：2018/11/26 15:55:37
+      总 时 间：38秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:37,796 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:55:37
+      结束时间：2018/11/26 15:55:37
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:42,764 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:55:42
+      结束时间：2018/11/26 15:55:42
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:43,039 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:55:42
+      结束时间：2018/11/26 15:55:43
+      总 时 间：274秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:43,040 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:55:43
+      结束时间：2018/11/26 15:55:43
+      总 时 间：274秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:43,338 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:55:43
+      结束时间：2018/11/26 15:55:43
+      总 时 间：297秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:43,356 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:55:43
+      结束时间：2018/11/26 15:55:43
+      总 时 间：297秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:43,401 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:55:43
+      结束时间：2018/11/26 15:55:43
+      总 时 间：44秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:43,401 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:55:43
+      结束时间：2018/11/26 15:55:43
+      总 时 间：44秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:55:43,403 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:55:42
+      结束时间：2018/11/26 15:55:43
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,124 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：109秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=wbam&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,146 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：109秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=wbam&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,169 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,450 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：277秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,460 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：277秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,752 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：290秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,765 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：290秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,794 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：27秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,794 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：27秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:56:19,796 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:56:19
+      结束时间：2018/11/26 15:56:19
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:13,200 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:57:13
+      结束时间：2018/11/26 15:57:13
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:14,383 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:57:14
+      结束时间：2018/11/26 15:57:14
+      总 时 间：213秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:14,413 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:57:14
+      结束时间：2018/11/26 15:57:14
+      总 时 间：213秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:14,685 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:57:14
+      结束时间：2018/11/26 15:57:14
+      总 时 间：269秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:14,702 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:57:14
+      结束时间：2018/11/26 15:57:14
+      总 时 间：269秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:14,768 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:57:14
+      结束时间：2018/11/26 15:57:14
+      总 时 间：55秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:14,771 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:57:14
+      结束时间：2018/11/26 15:57:14
+      总 时 间：55秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:14,776 
+线程ID:[13] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:57:13
+      结束时间：2018/11/26 15:57:14
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:21,363 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:57:21
+      结束时间：2018/11/26 15:57:21
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:21,521 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:57:21
+      结束时间：2018/11/26 15:57:21
+      总 时 间：155秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:21,523 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:57:21
+      结束时间：2018/11/26 15:57:21
+      总 时 间：155秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:21,841 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:57:21
+      结束时间：2018/11/26 15:57:21
+      总 时 间：317秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:21,855 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:57:21
+      结束时间：2018/11/26 15:57:21
+      总 时 间：317秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:21,904 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:57:21
+      结束时间：2018/11/26 15:57:21
+      总 时 间：48秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:21,904 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:57:21
+      结束时间：2018/11/26 15:57:21
+      总 时 间：48秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:21,907 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:57:21
+      结束时间：2018/11/26 15:57:21
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:24,877 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:57:24
+      结束时间：2018/11/26 15:57:24
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:25,021 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:57:24
+      结束时间：2018/11/26 15:57:25
+      总 时 间：142秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:25,024 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:57:25
+      结束时间：2018/11/26 15:57:25
+      总 时 间：142秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:25,378 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:57:25
+      结束时间：2018/11/26 15:57:25
+      总 时 间：353秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:25,391 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:57:25
+      结束时间：2018/11/26 15:57:25
+      总 时 间：353秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:25,438 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:57:25
+      结束时间：2018/11/26 15:57:25
+      总 时 间：46秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:25,438 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:57:25
+      结束时间：2018/11/26 15:57:25
+      总 时 间：46秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:25,440 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:57:24
+      结束时间：2018/11/26 15:57:25
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:27,744 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:57:27
+      结束时间：2018/11/26 15:57:27
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:28,382 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:57:27
+      结束时间：2018/11/26 15:57:28
+      总 时 间：636秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:28,403 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:57:28
+      结束时间：2018/11/26 15:57:28
+      总 时 间：636秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:28,846 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:57:28
+      结束时间：2018/11/26 15:57:28
+      总 时 间：442秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:28,877 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:57:28
+      结束时间：2018/11/26 15:57:28
+      总 时 间：442秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:29,004 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:57:28
+      结束时间：2018/11/26 15:57:29
+      总 时 间：125秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:29,006 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:57:29
+      结束时间：2018/11/26 15:57:29
+      总 时 间：125秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:57:29,009 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:57:27
+      结束时间：2018/11/26 15:57:29
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:25,674 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:59:25
+      结束时间：2018/11/26 15:59:25
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:28,436 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:59:25
+      结束时间：2018/11/26 15:59:28
+      总 时 间：50秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:28,600 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 15:59:28
+      结束时间：2018/11/26 15:59:28
+      总 时 间：116秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:28,602 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 15:59:28
+      结束时间：2018/11/26 15:59:28
+      总 时 间：116秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:39,986 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 15:59:39
+      结束时间：2018/11/26 15:59:39
+      总 时 间：874秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=3mvn&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:59:39,997 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 15:59:39
+      结束时间：2018/11/26 15:59:39
+      总 时 间：874秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=3mvn&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 15:59:40,011 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:59:40
+      结束时间：2018/11/26 15:59:40
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:41,662 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:59:41
+      结束时间：2018/11/26 15:59:41
+      总 时 间：519秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:41,722 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:59:41
+      结束时间：2018/11/26 15:59:41
+      总 时 间：519秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:41,980 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:59:41
+      结束时间：2018/11/26 15:59:41
+      总 时 间：253秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:41,996 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:59:41
+      结束时间：2018/11/26 15:59:41
+      总 时 间：253秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:42,060 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:59:41
+      结束时间：2018/11/26 15:59:42
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:42,063 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:59:42
+      结束时间：2018/11/26 15:59:42
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:43,020 
+线程ID:[8] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:59:40
+      结束时间：2018/11/26 15:59:43
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:53,093 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:59:53
+      结束时间：2018/11/26 15:59:53
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:53,467 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:59:53
+      结束时间：2018/11/26 15:59:53
+      总 时 间：357秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:53,498 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:59:53
+      结束时间：2018/11/26 15:59:53
+      总 时 间：357秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:53,848 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:59:53
+      结束时间：2018/11/26 15:59:53
+      总 时 间：346秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:53,886 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:59:53
+      结束时间：2018/11/26 15:59:53
+      总 时 间：346秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:53,996 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:59:53
+      结束时间：2018/11/26 15:59:53
+      总 时 间：109秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:53,997 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:59:53
+      结束时间：2018/11/26 15:59:53
+      总 时 间：109秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:54,001 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:59:53
+      结束时间：2018/11/26 15:59:54
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:57,453 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 15:59:57
+      结束时间：2018/11/26 15:59:57
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:58,181 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 15:59:57
+      结束时间：2018/11/26 15:59:58
+      总 时 间：723秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:58,264 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 15:59:58
+      结束时间：2018/11/26 15:59:58
+      总 时 间：723秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:59,310 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 15:59:58
+      结束时间：2018/11/26 15:59:59
+      总 时 间：1045秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:59,363 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 15:59:59
+      结束时间：2018/11/26 15:59:59
+      总 时 间：1045秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:59,474 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 15:59:59
+      结束时间：2018/11/26 15:59:59
+      总 时 间：110秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:59,475 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 15:59:59
+      结束时间：2018/11/26 15:59:59
+      总 时 间：110秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 15:59:59,478 
+线程ID:[5] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 15:59:57
+      结束时间：2018/11/26 15:59:59
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:15:29,436 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:15:29
+      结束时间：2018/11/26 16:15:29
+      总 时 间：41秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:15:32,059 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:15:29
+      结束时间：2018/11/26 16:15:32
+      总 时 间：41秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:15:32,290 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 16:15:32
+      结束时间：2018/11/26 16:15:32
+      总 时 间：154秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:15:32,291 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 16:15:32
+      结束时间：2018/11/26 16:15:32
+      总 时 间：154秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:16:30,140 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:16:29
+      结束时间：2018/11/26 16:16:30
+      总 时 间：846秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=augp&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:16:30,175 
+线程ID:[16] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:16:30
+      结束时间：2018/11/26 16:16:30
+      总 时 间：846秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=augp&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:16:30,188 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:16:30
+      结束时间：2018/11/26 16:16:30
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:17:54,166 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:17:54
+      结束时间：2018/11/26 16:17:54
+      总 时 间：42秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:17:56,983 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:17:54
+      结束时间：2018/11/26 16:17:56
+      总 时 间：42秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:17:57,207 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 16:17:57
+      结束时间：2018/11/26 16:17:57
+      总 时 间：137秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:17:57,208 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 16:17:57
+      结束时间：2018/11/26 16:17:57
+      总 时 间：137秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:18:42,393 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:18:41
+      结束时间：2018/11/26 16:18:42
+      总 时 间：864秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=45ch&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:18:42,426 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:18:42
+      结束时间：2018/11/26 16:18:42
+      总 时 间：864秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=45ch&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:18:42,439 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:18:42
+      结束时间：2018/11/26 16:18:42
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:18:44,031 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 16:18:43
+      结束时间：2018/11/26 16:18:44
+      总 时 间：511秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:18:44,081 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 16:18:44
+      结束时间：2018/11/26 16:18:44
+      总 时 间：511秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:18:44,507 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 16:18:44
+      结束时间：2018/11/26 16:18:44
+      总 时 间：422秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:18:44,524 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 16:18:44
+      结束时间：2018/11/26 16:18:44
+      总 时 间：422秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:18:44,588 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 16:18:44
+      结束时间：2018/11/26 16:18:44
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:18:44,592 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 16:18:44
+      结束时间：2018/11/26 16:18:44
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:18:45,553 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 16:18:42
+      结束时间：2018/11/26 16:18:45
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:00,270 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：FilesController
+      ActionName:GetPDF
+      开始时间：2018/11/26 16:18:57
+      结束时间：2018/11/26 16:19:00
+      总 时 间：3004秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:00,271 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：FilesController
+      ViewName:GetPDF
+      开始时间：2018/11/26 16:19:00
+      结束时间：2018/11/26 16:19:00
+      总 时 间：3004秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:03,829 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:19:03
+      结束时间：2018/11/26 16:19:03
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:04,018 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 16:19:03
+      结束时间：2018/11/26 16:19:04
+      总 时 间：173秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:04,020 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 16:19:04
+      结束时间：2018/11/26 16:19:04
+      总 时 间：173秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:04,437 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 16:19:04
+      结束时间：2018/11/26 16:19:04
+      总 时 间：415秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:04,478 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 16:19:04
+      结束时间：2018/11/26 16:19:04
+      总 时 间：415秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:04,541 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 16:19:04
+      结束时间：2018/11/26 16:19:04
+      总 时 间：60秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:04,542 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 16:19:04
+      结束时间：2018/11/26 16:19:04
+      总 时 间：60秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:19:04,544 
+线程ID:[15] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 16:19:03
+      结束时间：2018/11/26 16:19:04
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:22:54,102 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:22:54
+      结束时间：2018/11/26 16:22:54
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:22:56,823 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 16:22:56
+      结束时间：2018/11/26 16:22:56
+      总 时 间：354秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:22:56,914 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 16:22:56
+      结束时间：2018/11/26 16:22:56
+      总 时 间：354秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:22:57,491 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 16:22:56
+      结束时间：2018/11/26 16:22:57
+      总 时 间：572秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:22:57,533 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 16:22:57
+      结束时间：2018/11/26 16:22:57
+      总 时 间：572秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:22:57,637 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 16:22:57
+      结束时间：2018/11/26 16:22:57
+      总 时 间：100秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:22:57,649 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 16:22:57
+      结束时间：2018/11/26 16:22:57
+      总 时 间：100秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:22:57,655 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 16:22:54
+      结束时间：2018/11/26 16:22:57
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:30:53,148 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:30:53
+      结束时间：2018/11/26 16:30:53
+      总 时 间：69秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:30:53,620 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:30:53
+      结束时间：2018/11/26 16:30:53
+      总 时 间：69秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:30:53,790 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 16:30:53
+      结束时间：2018/11/26 16:30:53
+      总 时 间：118秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:30:53,791 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 16:30:53
+      结束时间：2018/11/26 16:30:53
+      总 时 间：118秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:31:04,467 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:31:03
+      结束时间：2018/11/26 16:31:04
+      总 时 间：904秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=n3qs&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:31:04,479 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:31:04
+      结束时间：2018/11/26 16:31:04
+      总 时 间：904秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=n3qs&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:31:05,064 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:31:04
+      结束时间：2018/11/26 16:31:05
+      总 时 间：73秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=n3qs&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:31:05,074 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:31:05
+      结束时间：2018/11/26 16:31:05
+      总 时 间：73秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=n3qs&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:31:05,093 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:31:05
+      结束时间：2018/11/26 16:31:05
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:31:07,209 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 16:31:06
+      结束时间：2018/11/26 16:31:07
+      总 时 间：528秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:31:07,252 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 16:31:07
+      结束时间：2018/11/26 16:31:07
+      总 时 间：528秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:31:07,536 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 16:31:07
+      结束时间：2018/11/26 16:31:07
+      总 时 间：279秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:31:07,553 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 16:31:07
+      结束时间：2018/11/26 16:31:07
+      总 时 间：279秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:31:07,616 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 16:31:07
+      结束时间：2018/11/26 16:31:07
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:31:07,620 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 16:31:07
+      结束时间：2018/11/26 16:31:07
+      总 时 间：61秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:31:08,620 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 16:31:05
+      结束时间：2018/11/26 16:31:08
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:38,735 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:35:38
+      结束时间：2018/11/26 16:35:38
+      总 时 间：62秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:40,982 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:35:38
+      结束时间：2018/11/26 16:35:40
+      总 时 间：62秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:41,251 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 16:35:41
+      结束时间：2018/11/26 16:35:41
+      总 时 间：152秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:41,252 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 16:35:41
+      结束时间：2018/11/26 16:35:41
+      总 时 间：152秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:49,187 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:35:48
+      结束时间：2018/11/26 16:35:49
+      总 时 间：855秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=rpma&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:35:49,217 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:35:49
+      结束时间：2018/11/26 16:35:49
+      总 时 间：855秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=rpma&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:35:49,294 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:35:49
+      结束时间：2018/11/26 16:35:49
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:50,865 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 16:35:50
+      结束时间：2018/11/26 16:35:50
+      总 时 间：514秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:50,914 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 16:35:50
+      结束时间：2018/11/26 16:35:50
+      总 时 间：514秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:51,256 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 16:35:50
+      结束时间：2018/11/26 16:35:51
+      总 时 间：338秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:51,278 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 16:35:51
+      结束时间：2018/11/26 16:35:51
+      总 时 间：338秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:51,334 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 16:35:51
+      结束时间：2018/11/26 16:35:51
+      总 时 间：52秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:51,337 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 16:35:51
+      结束时间：2018/11/26 16:35:51
+      总 时 间：52秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:35:52,495 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 16:35:49
+      结束时间：2018/11/26 16:35:52
+      总 时 间：1秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:01,173 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:37:01
+      结束时间：2018/11/26 16:37:01
+      总 时 间：57秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:01,504 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:37:01
+      结束时间：2018/11/26 16:37:01
+      总 时 间：57秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:01,743 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/26 16:37:01
+      结束时间：2018/11/26 16:37:01
+      总 时 间：123秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:01,744 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/26 16:37:01
+      结束时间：2018/11/26 16:37:01
+      总 时 间：123秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:16,505 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/26 16:37:15
+      结束时间：2018/11/26 16:37:16
+      总 时 间：998秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=27wd&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:37:16,517 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/26 16:37:16
+      结束时间：2018/11/26 16:37:16
+      总 时 间：998秒
+        Form：LoginName=llh&Password=1qazxsw2&ValidatedCode=27wd&RememberMe=false
+ 
+
+ 
+记录时间：2018-11-26 16:37:16,532 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:37:16
+      结束时间：2018/11/26 16:37:16
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:17,169 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 16:37:16
+      结束时间：2018/11/26 16:37:17
+      总 时 间：573秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:17,216 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 16:37:17
+      结束时间：2018/11/26 16:37:17
+      总 时 间：573秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:17,558 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 16:37:17
+      结束时间：2018/11/26 16:37:17
+      总 时 间：333秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:19,131 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 16:37:17
+      结束时间：2018/11/26 16:37:19
+      总 时 间：333秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:19,193 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 16:37:19
+      结束时间：2018/11/26 16:37:19
+      总 时 间：59秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:19,196 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 16:37:19
+      结束时间：2018/11/26 16:37:19
+      总 时 间：59秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:37:20,258 
+线程ID:[9] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 16:37:16
+      结束时间：2018/11/26 16:37:20
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:38:01,138 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:38:01
+      结束时间：2018/11/26 16:38:01
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:38:02,455 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 16:38:02
+      结束时间：2018/11/26 16:38:02
+      总 时 间：220秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:38:02,498 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 16:38:02
+      结束时间：2018/11/26 16:38:02
+      总 时 间：220秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:38:02,773 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 16:38:02
+      结束时间：2018/11/26 16:38:02
+      总 时 间：273秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:38:02,802 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 16:38:02
+      结束时间：2018/11/26 16:38:02
+      总 时 间：273秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:38:02,847 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 16:38:02
+      结束时间：2018/11/26 16:38:02
+      总 时 间：42秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:38:02,849 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 16:38:02
+      结束时间：2018/11/26 16:38:02
+      总 时 间：42秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:38:02,853 
+线程ID:[11] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 16:38:01
+      结束时间：2018/11/26 16:38:02
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:39:13,857 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:39:13
+      结束时间：2018/11/26 16:39:13
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:39:15,011 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 16:39:14
+      结束时间：2018/11/26 16:39:15
+      总 时 间：229秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:39:15,048 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 16:39:15
+      结束时间：2018/11/26 16:39:15
+      总 时 间：229秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:39:15,328 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 16:39:15
+      结束时间：2018/11/26 16:39:15
+      总 时 间：277秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:39:15,360 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 16:39:15
+      结束时间：2018/11/26 16:39:15
+      总 时 间：277秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:39:15,421 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 16:39:15
+      结束时间：2018/11/26 16:39:15
+      总 时 间：57秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:39:15,425 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 16:39:15
+      结束时间：2018/11/26 16:39:15
+      总 时 间：57秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:39:15,432 
+线程ID:[14] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 16:39:13
+      结束时间：2018/11/26 16:39:15
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:46:55,218 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 16:46:55
+      结束时间：2018/11/26 16:46:55
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:46:56,562 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 16:46:56
+      结束时间：2018/11/26 16:46:56
+      总 时 间：223秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:46:56,594 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 16:46:56
+      结束时间：2018/11/26 16:46:56
+      总 时 间：223秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:46:56,894 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 16:46:56
+      结束时间：2018/11/26 16:46:56
+      总 时 间：298秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:46:56,923 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 16:46:56
+      结束时间：2018/11/26 16:46:56
+      总 时 间：298秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:46:56,970 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 16:46:56
+      结束时间：2018/11/26 16:46:56
+      总 时 间：43秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:46:56,973 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 16:46:56
+      结束时间：2018/11/26 16:46:56
+      总 时 间：43秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 16:46:56,979 
+线程ID:[44] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 16:46:55
+      结束时间：2018/11/26 16:46:56
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 17:00:54,964 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Index
+      开始时间：2018/11/26 17:00:54
+      结束时间：2018/11/26 17:00:54
+      总 时 间：0秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 17:00:56,261 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:OrderQuery
+      开始时间：2018/11/26 17:00:56
+      结束时间：2018/11/26 17:00:56
+      总 时 间：249秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 17:00:56,295 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:OrderQuery
+      开始时间：2018/11/26 17:00:56
+      结束时间：2018/11/26 17:00:56
+      总 时 间：249秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 17:00:56,561 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:Freight
+      开始时间：2018/11/26 17:00:56
+      结束时间：2018/11/26 17:00:56
+      总 时 间：263秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 17:00:56,584 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Freight
+      开始时间：2018/11/26 17:00:56
+      结束时间：2018/11/26 17:00:56
+      总 时 间：263秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 17:00:56,701 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：HomeController
+      ActionName:PublicHoliday
+      开始时间：2018/11/26 17:00:56
+      结束时间：2018/11/26 17:00:56
+      总 时 间：113秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 17:00:56,705 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:PublicHoliday
+      开始时间：2018/11/26 17:00:56
+      结束时间：2018/11/26 17:00:56
+      总 时 间：113秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-26 17:00:56,711 
+线程ID:[65] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：HomeController
+      ViewName:Index
+      开始时间：2018/11/26 17:00:54
+      结束时间：2018/11/26 17:00:56
+      总 时 间：0秒
+        Form：
+ 

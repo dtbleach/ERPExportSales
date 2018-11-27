@@ -35,7 +35,16 @@ namespace ERPExportSales.Web.Controllers
         public ActionResult Login(LoginViewModel model)
         {
             int userType = 0;
-            var result = userService.Login(model.LoginName, model.Password,ref userType);
+            string code = SessionHelper.Get("CheckCode");
+            if (model.ValidatedCode == null)
+            {
+                return View(model);
+            }
+            if (!model.ValidatedCode.Equals(code))
+            {
+                return View(model);
+            }
+           var result = userService.Login(model.LoginName, model.Password,ref userType);
             if (result.Result)
             {
                 if (model.RememberMe)
@@ -81,6 +90,7 @@ namespace ERPExportSales.Web.Controllers
                         user.UserType = userType.ToString();
                     }
                     SessionHelper.Add("User", user);
+                    SessionHelper.Del("CheckCode");
                     CookieHelper.SetCookie("rememberLogin", "false");
                     CookieHelper.ClearCookie("token");
                 }
@@ -88,6 +98,10 @@ namespace ERPExportSales.Web.Controllers
             }
             else
             {
+                SessionHelper.Del("User");
+                SessionHelper.Del("CheckCode");
+                CookieHelper.ClearCookie("token");
+                CookieHelper.ClearCookie("rememberLogin");
                 return View(model);
             }
         }

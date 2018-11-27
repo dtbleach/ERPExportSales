@@ -51,5 +51,13 @@ namespace ERPExportSales.Configuration
                 return "提单";
             }
         }
+
+        public string QRFolderName
+        {
+            get
+            {
+                return "质保书";
+            }
+        }
     }
 }

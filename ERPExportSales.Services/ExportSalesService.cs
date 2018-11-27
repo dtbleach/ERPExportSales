@@ -45,12 +45,41 @@ namespace ERPExportSales.Services
             this.customerRepository = customerRepository;
         }
 
-        public IList<VExportSalesOceanFreight> GetExportSalesOceanFreight(int customerID)
+        public IList<VExportSalesOceanFreight> GetExportSalesOceanFreightByCustomerID(int customerID)
         {
             var vExportSalesOceanFreight = vExportSalesOceanFreightRepository.GetMany(p => p.CustomerID == customerID);
 
             return vExportSalesOceanFreight != null ? vExportSalesOceanFreight.ToList() : null;
         }
+
+        public IList<VExportSalesOceanFreight> GetExportSalesOceanFreightByEmployee(string name)
+        {
+            var db = databaseFactory.Get();
+            int level = db.GetEmployeeLevel(name);
+            var employee = employeeRepository.Get(p => p.Name == name);
+            if (employee == null)
+            {
+                return new List<VExportSalesOceanFreight>();
+            }
+            if (level == 1)
+            {
+                var vExportSalesOceanFreight = vExportSalesOceanFreightRepository.GetMany(p => p.Sales == employee.FID||p.BScrew==employee.FID || p.SScrew==employee.FID);
+                return vExportSalesOceanFreight != null ? vExportSalesOceanFreight.ToList() : null;
+            }
+            else if (level == 2)
+            {
+                var vExportSalesOceanFreight = vExportSalesOceanFreightRepository.GetMany(p => p.CustomerID==employee.DepID);
+                return vExportSalesOceanFreight != null ? vExportSalesOceanFreight.ToList() : null;
+            }
+            else if (level == 3)
+            {
+                var vExportSalesOceanFreight = vExportSalesOceanFreightRepository.GetAll();
+                return vExportSalesOceanFreight != null ? vExportSalesOceanFreight.ToList() : null;
+            }
+
+            return new List<VExportSalesOceanFreight>();
+        }
+
 
         public IList<VPublicHoliday> GetPublicHoliday()
         {
