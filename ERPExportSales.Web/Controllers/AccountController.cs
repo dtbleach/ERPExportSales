@@ -38,19 +38,22 @@ namespace ERPExportSales.Web.Controllers
             string code = SessionHelper.Get("CheckCode");
             if (model.ValidatedCode == null)
             {
+                ViewBag.ErrorMessage = "ValidatedCode error";
                 return View(model);
             }
             if (!model.ValidatedCode.Equals(code))
             {
+                ViewBag.ErrorMessage = "ValidatedCode error";
                 return View(model);
             }
            var result = userService.Login(model.LoginName, model.Password,ref userType);
+            string ip = CommonManager.GetIP(Request);
             if (result.Result)
             {
                 if (model.RememberMe)
                 {
                     long ticks = new DateTime().Ticks;
-                    string ip = CommonManager.GetIP(Request);
+                   
                     string userAgent = CommonManager.GetUserAgent(Request);
                     string shaPassword = string.Empty;
                     if(userType==1)
@@ -67,7 +70,7 @@ namespace ERPExportSales.Web.Controllers
                     loginToken.UserName = model.LoginName;
                     loginToken.UserType = userType;
                     tokenService.SaveLoginToken(loginToken);
-                    LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "','UserType':"+userType+",'Date:'"+DateTime.Now+"'}");
+                    LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "','UserType':"+userType+",'Date:'"+DateTime.Now+ "','Msg':" + result.Message + "}");
                 }else
                 {
                     UserViewModel user = new UserViewModel();
@@ -93,6 +96,7 @@ namespace ERPExportSales.Web.Controllers
                     SessionHelper.Del("CheckCode");
                     CookieHelper.SetCookie("rememberLogin", "false");
                     CookieHelper.ClearCookie("token");
+                    LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "','UserType':" + userType + ",'Date:'" + DateTime.Now + "','Msg':"+ result.Message+ "}");
                 }
                 return RedirectToAction("Index", "Home");
             }
@@ -102,6 +106,8 @@ namespace ERPExportSales.Web.Controllers
                 SessionHelper.Del("CheckCode");
                 CookieHelper.ClearCookie("token");
                 CookieHelper.ClearCookie("rememberLogin");
+                ViewBag.ErrorMessage = result.Message;
+                LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "','UserType':" + userType + ",'Date:'" + DateTime.Now + "','Msg':" + result.Message + "}");
                 return View(model);
             }
         }

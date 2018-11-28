@@ -3,34 +3,115 @@
     <div class="box-header with-border">
         <h3 class="box-title">汇率</h3>
     </div>
-    <div class="box-body box-profile" style="height:350px">
-        <iframe id="sinaFrame" width="100%" height="100%" style="background-color:white"></iframe>
-        @*<h3 class="profile-username text-center">{[project.name]}</h3>
-            <p class="text-muted text-center">{[project.code]}</p>
+    <div id="usdcnyDiv"></div>
+    @*<div class="box-body box-profile" style="height:350px">
+            <iframe id="sinaFrame" width="100%" height="100%" style="background-color:white"></iframe>
+            @*<h3 class="profile-username text-center">{[project.name]}</h3>
+                <p class="text-muted text-center">{[project.code]}</p>
 
-            <ul class="list-group list-group-unbordered">
-                <li class="list-group-item">
-                    <b>需求数:</b> <a class="pull-right">2,103</a>
-                </li>
-                <li class="list-group-item">
-                    <b>源代码数:</b> <a class="pull-right">211</a>
-                </li>
-                <li class="list-group-item">
-                    <b>生产应用数:</b> <a class="pull-right">40</a>
-                </li>
-                <li class="list-group-item">
-                    <b>应用数:</b> <a class="pull-right">100</a>
-                </li>
-                <li class="list-group-item">
-                    <b>项目创建于 </b> <a class="pull-right">
+                <ul class="list-group list-group-unbordered">
+                    <li class="list-group-item">
+                        <b>需求数:</b> <a class="pull-right">2,103</a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>源代码数:</b> <a class="pull-right">211</a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>生产应用数:</b> <a class="pull-right">40</a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>应用数:</b> <a class="pull-right">100</a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>项目创建于 </b> <a class="pull-right">
 
-                    </a>
-                </li>
-            </ul>
-            <p class="text-muted">
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-muted">
 
-            </p>
-            {#                            <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>#}*@
-    </div>
+                </p>
+                {#                            <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>#}
+        </div>*@
     <!-- /.box-body -->
 </div>
+@section Scripts{
+<script src="@Url.Content("~/Scripts/echarts.js")"></script>
+    <script type="text/javascript">
+       var result = [];
+
+            $.getJSON("../../Files/data/data.json", function (data,status){
+                console.log("是不是成功读取"+status);
+                if(status=='success'){
+                    result = data;
+                }else{
+                    console.log("没有读取到本地文件："+status);
+                    return false;
+                }
+            })
+            var dataSource = result;
+            var myChart = echarts.init(document.getElementById('usdcnyDiv'));
+
+            // 根据配置项和数据显示图表
+            function drawLines(data) {
+                myChart.setOption({
+                    title: {
+                        text: 'USDCNY',
+                        x: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        top: 25,
+                        left: 'right',
+                        data: ['现汇卖出', '现汇买入', '现钞买入']
+                    },
+                    grid: {
+                        left: 50,
+                        right: 40
+                    },
+                    xAxis: {
+                        data: data.map(function (item) {
+                            return item[3].replace(' ', '\n');
+                        })
+                    },
+                    yAxis: {
+                        name: '金额(元)',
+                        min: 6
+                    },
+                    series: [
+                        {
+                            name: '现汇卖出',
+                            type: 'line',
+                            markPoint: {
+                                data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
+                            },
+                            data: data.map(function (item) {
+                                return item[2];
+                            })
+                        }, {
+                            name: '现汇买入',
+                            type: 'line',
+                            markPoint: {
+                                data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+                            },
+                            data: data.map(function (item) {
+                                return item[0];
+                            })
+                        }, {
+                            name: '现钞买入',
+                            type: 'line',
+                            markPoint: {
+                                data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+                            },
+                            data: data.map(function (item) {
+                                return item[1];
+                            })
+                        }
+                    ]
+                });
+            }
+            drawLines(dataSource);
+</script>
+            }

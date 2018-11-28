@@ -387,6 +387,8 @@
     <Content Include="Content\stylesheets\semantic.min.css" />
     <Content Include="Content\stylesheets\step.css" />
     <Content Include="Content\stylesheets\toaster.css" />
+    <Content Include="Scripts\bootstrap-growl.js" />
+    <Content Include="Scripts\bootstrap-notfiy.js" />
     <Content Include="Scripts\bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.css" />
     <Content Include="Scripts\bower_components\bootstrap-colorpicker\dist\css\bootstrap-colorpicker.min.css" />
     <Content Include="Scripts\bower_components\bootstrap-colorpicker\dist\img\bootstrap-colorpicker\alpha-horizontal.png" />
@@ -6679,6 +6681,7 @@
     <Content Include="Scripts\dist\js\demo.js" />
     <Content Include="Scripts\dist\js\pages\dashboard.js" />
     <Content Include="Scripts\dist\js\pages\dashboard2.js" />
+    <Content Include="Scripts\echarts.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\plugins\bootstrap-slider\bootstrap-slider.js" />
@@ -7337,6 +7340,7 @@
     <Content Include="Scripts\bower_components\select2\src\scss\_single.scss" />
     <Content Include="Scripts\dist\css\adminlte.css.map" />
     <Content Include="Scripts\dist\css\adminlte.min.css.map" />
+    <Content Include="Files\data\data.json" />
     <None Include="Properties\PublishProfiles\ERPExportSales.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

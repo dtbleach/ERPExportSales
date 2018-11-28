@@ -19822,3 +19822,59 @@
       总 时 间：84秒
         Form：
  
+
+ 
+记录时间：2018-11-27 17:04:44,345 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：AccountController
+      ActionName:Login
+      开始时间：2018/11/27 17:04:44
+      结束时间：2018/11/27 17:04:44
+      总 时 间：45秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-27 17:04:46,239 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：AccountController
+      ViewName:Login
+      开始时间：2018/11/27 17:04:44
+      结束时间：2018/11/27 17:04:46
+      总 时 间：45秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-27 17:04:46,587 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      Action执行时间监控：
+      ControllerName：ValidateCodeController
+      ActionName:GetValidateCode
+      开始时间：2018/11/27 17:04:46
+      结束时间：2018/11/27 17:04:46
+      总 时 间：134秒
+        Form：
+ 
+
+ 
+记录时间：2018-11-27 17:04:46,589 
+线程ID:[10] 
+日志级别：  INFO  
+跟踪描述：
+      View视图生成时间监控：
+      ControllerName：ValidateCodeController
+      ViewName:GetValidateCode
+      开始时间：2018/11/27 17:04:46
+      结束时间：2018/11/27 17:04:46
+      总 时 间：134秒
+        Form：
+ 

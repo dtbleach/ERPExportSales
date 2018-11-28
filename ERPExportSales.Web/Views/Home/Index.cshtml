@@ -40,26 +40,27 @@
                                                         <div class="col-sm-12" id="">
                                                             <div class="pull-left form-inline">
                                                                 @using (Ajax.BeginForm("QueryOrder", "Home",
-                                                                            new AjaxOptions
-                                                                            {
-                                                                                HttpMethod = "Post",
-                                                                                UpdateTargetId = "divOrders",
-                                                                                OnBegin = "$('#divOrders').fadeOut('slow')",
-                                                                                OnComplete = "$('#divOrders').fadeIn('slow')",
-                                                                                LoadingElementId = "loadingDiv",
-                                                                                InsertionMode = InsertionMode.Replace,
-                                                                            }))
+                        new AjaxOptions
+                        {
+                            HttpMethod = "Post",
+                            UpdateTargetId = "divOrders",
+                            OnBegin = "$('#divOrders').fadeOut('slow')",
+                            OnComplete = "$('#divOrders').fadeIn('slow')",
+                            LoadingElementId = "loadingDiv",
+                            InsertionMode = InsertionMode.Replace,
+                        }))
                                                                 {
-                                                                    <p>PO No. @Html.TextBoxFor(p => p.QueryModel.PONo, "", new { @class = "form-control" })
-                                                                    SC No. @Html.TextBoxFor(p => p.QueryModel.SCNo, "", new { @class = "form-control" })
-                                                                    Invoice No. @Html.TextBoxFor(p => p.QueryModel.InvoiceNo, "", new { @class = "form-control" })
-                                                                <button type="submit" class="btn btn-primary">Search</button>
-                                                                </p>
-                                                                        @*@Ajax.ActionLink("Previous", "OrderQuery", "Home", new { QueryModel =Model.QueryModel,InvoiceNo=Model.QueryModel.InvoiceNo ,IsBtnQuery = true }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "divOrders", OnBegin = "$('#divOrders').fadeOut('slow')", OnComplete = "$('#divOrders').fadeIn('slow')", LoadingElementId = "loadingDiv" }, new { @class = "btn btn-primary" })*@
+                                                                    <p>
+                                                                        PO No. @Html.TextBoxFor(p => p.QueryModel.PONo, "", new { @class = "form-control" })
+                                                                        SC No. @Html.TextBoxFor(p => p.QueryModel.SCNo, "", new { @class = "form-control" })
+                                                                        Invoice No. @Html.TextBoxFor(p => p.QueryModel.InvoiceNo, "", new { @class = "form-control" })
+                                                                        <button type="submit" class="btn btn-primary">Search</button>
+                                                                    </p>
+                                                                    @*@Ajax.ActionLink("Previous", "OrderQuery", "Home", new { QueryModel =Model.QueryModel,InvoiceNo=Model.QueryModel.InvoiceNo ,IsBtnQuery = true }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "divOrders", OnBegin = "$('#divOrders').fadeOut('slow')", OnComplete = "$('#divOrders').fadeIn('slow')", LoadingElementId = "loadingDiv" }, new { @class = "btn btn-primary" })*@
 
-                                                                        }
+                                                                }
 
-</div>
+                                                            </div>
                                                             <div id="loadingDiv" style="display:none" class="form-inline">
                                                                 <img src="@Url.Content("~/Content/img/loading.gif")" /><h3>Loading...</h3>
                                                             </div>
@@ -128,10 +129,9 @@
     <!--{Html.RegisterMvcPagerScriptResource();}-->
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#sinaFrame").attr("src", "http://gu.sina.cn/fx/hq/quotes.php?code=USDCNY");
+            // $("#sinaFrame").attr("src", "http://gu.sina.cn/fx/hq/quotes.php?code=USDCNY");
             $("#rbFrame").attr("src", "http://gu.sina.cn/ft/hq/nf.php?symbol=RB0");
-            var divs = $(document.getElementById('sinaFrame').contentWindow.document.body).find('#hq_chart');
-        
+
             $('#tbHoliday').DataTable({
                 "bSort": false,
                 "searching": false,
@@ -147,9 +147,10 @@
                 "pagingType": "simple",
                 "info": false,
                 "pageLength": 20,
-                "lengthChange":false
+                "lengthChange": false
             });
         })
+
     </script>
 }
 

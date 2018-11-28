@@ -81,13 +81,83 @@
     <link href="@Url.Content("~/Content/css/demo.css")" rel="stylesheet" />
     <script src="@Url.Content("~/Scripts/jquery-3.3.1.js")"></script>
     <script src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
-    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap-growl.js")"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+            $("#loginForm").validate({
+                rules: {
+                    LoginName: {
+                        required: true
+                    },
+                    Password: {
+                        required: true
+                    },
+                    ValidatedCode: {
+                        required: true,
+                        minlength: 4,
+                        maxlength: 4
+                    }
+                },
+                messages: {
+                    LoginName: {
+                        required: "Username must be filled in"
+                    },
+                    Password: {
+                        required: "Password must be filled in"
+                    },
+                    ValidatedCode: {
+                        required: "Must be filled in",
+                        minlength: "Must be four characters",
+                        maxlength: "Must be four characters"
+                    }
+                },
+                errorElement:'div',
+                errorPlacement: function(error, element) {
+                    error.addClass('tooltip tooltip-inner arrow-left');
+                    if (element.is(":radio")){
+                        error.appendTo(element.parent().next().next());
+                    }else if (element.is(":checkbox")){
+                        error.appendTo(element.next());
+                    }else{
+                        //element.after(error);
+                        element.attr("placeholder", error.html());
+                    }
+                    var pos = $.extend({}, element.offset(), {
+                        width: element.outerWidth()
+                      , height: element.outerHeight()
+                    }),
+                      actualWidth = error.outerWidth(),
+                      actualHeight = error.outerHeight();
+                    if((pos.top - actualHeight)<0){actualHeight=0;pos.width+=10;}//如果输入框距离顶端为0情况把提示放右边
+                    if(element.parents(".blockPage").attr("class")=="blockUI blockMsg blockPage"){//如果是弹出框的，那么设置如下
+                        error.css({display:'block',opacity:'0.6' ,left:300,top:pos.top - $(document).scrollTop() - actualHeight - 100, "border-left": '0px'});
+                    }
+                    else if (element.is(":radio")){//类型为radio的显示如下
+                        error.css({display:'block',opacity:'0.6',top: pos.top - actualHeight, left: pos.left + pos.width / 2 });
+                    }else{//其他均为以下显示
+                        error.css({display:'block',opacity:'0.6',top: pos.top - actualHeight, left: pos.left + pos.width-10 });
+                    }
+                },
+                highlight: function(element, errorClass) {
+                    //高亮显示
+                    $(element).addClass(errorClass);
+                    $(element).parents('li:first').children('label').addClass(errorClass);
+                },
+                unhighlight: function (element, errorClass) {
+                    $(element).removeClass(errorClass);
+                    $(element).parents('li:first').children('label').removeClass(errorClass);
+                }
+            });
+
             $("#ValidatedCodeUrl").click(function () {
                 var curTime = new Date();
                 this.src = '/ValidateCode/GetValidateCode?data=' + curTime;
             })
+            var msg = "@ViewBag.ErrorMessage";
+            if (msg != undefined && msg.length > 0) {
+                $.bootstrapGrowl(msg, {type:'danger'});
+            }
         })
     </script>
 </head>
@@ -95,7 +165,9 @@
 <body>
     <div class="header">
         <h1 class="headerLogo"><a title="Export Service Platform " href="#"><img alt="logo" src="@Url.Content("~/Content/img/logo.gif")"></a></h1>
-
+        @*<div class="headerNav">
+                <a target="_blank" href="#">Export Service Platform</a>
+            </div>*@
     </div>
 
     <div class="banner">
@@ -103,27 +175,31 @@
         <div class="login-aside" style="margin-left: 100px;">
             <div id="o-box-up"></div>
             <div id="o-box-down" style="table-layout:fixed;">
-                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "registerform", role = "form" }))
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "registerform", role = "form",id="loginForm" }))
                 {
-                    <div class="error-box">
-                        @Html.ValidationMessageFor(m => m.LoginName, "", new { @class = "text-lg-left text-warning" })
-                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-lg-left text-warning" })
-                        @Html.ValidationMessageFor(m => m.ValidatedCode, "", new { @class = "text-lg-left text-warning" })
-                    </div>
+                    @*<div class="error-box">
+                            @Html.ValidationMessageFor(m => m.LoginName, "", new { @class = "text-lg-left text-warning" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-lg-left text-warning" })
+                            @Html.ValidationMessageFor(m => m.ValidatedCode, "", new { @class = "text-lg-left text-warning" })
+                        </div>*@
 
                     <div class="fm-item">
                         <label for="logonId" class="form-label">Username：</label>
                         @Html.TextBoxFor(m => m.LoginName, new { @class = "i-text", placeholder = "Username" })
+                     
                     </div>
                     <div>
                         <label for="logonId" class="form-label">Password：</label>
                         @Html.PasswordFor(m => m.Password, new { @class = "i-text", placeholder = "Password" })
+                     
                     </div>
                     <div class="fm-item pos-r">
                         <label for="logonId" class="form-label">Validatedcode</label>
-                        @Html.TextBoxFor(m => m.ValidatedCode, new { @class = "i-text yzm", placeholder = "Validatedcode" })
+                        @Html.TextBoxFor(m => m.ValidatedCode, new { @class = "i-text yzm", placeholder = "" })
+                     
                         <div class="ui-form-explain">
                             @Html.ImageFor(m => m.ValidatedCodeUrl, new { @class = "yzm-img", id = "ValidatedCodeUrl" })
+                       
                         </div>
                     </div>
                     <div class="fm-item">
@@ -167,7 +243,7 @@
 
         <div class="bd">
             <ul>
-                <li style="background: url(../../Content/img/in-2.gif) 400px 60px no-repeat, url(../../Content/img/in-3.gif) 700px 60px no-repeat,url(../../Content/img/in-1.gif) 0 60px repeat-x;background-size:auto 70%"><a target="_blank" href="#"></a></li>
+                <li style="background: url(../../Content/img/in-2.gif) 400px 60px no-repeat, url(../../Content/img/in-3.gif) 700px 60px no-repeat,url(../../Content/img/in-1.gif) 0 60px repeat-x;background-size:auto 70%"></li>
 
             </ul>
         </div>

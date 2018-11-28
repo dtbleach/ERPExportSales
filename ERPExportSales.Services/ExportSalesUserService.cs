@@ -33,14 +33,14 @@ namespace ERPExportSales.Services
             if (string.IsNullOrEmpty(loginName))
             {
                 result.Result = false;
-                result.Message = "用户名为空";
+                result.Message = "Username is null";
                 return result;
             }
 
             if (string.IsNullOrEmpty(password))
             {
                 result.Result = false;
-                result.Message = "密码为空";
+                result.Message = "Password is null";
                 return result;
             }
 
@@ -49,9 +49,9 @@ namespace ERPExportSales.Services
 
             switch (flag.Login)
             {
-                case 0:result.Message = "密码错误"; result.Result = false; break;
-                case 1:result.Message = "登陆成功"; result.Result = true; break;
-                case -1:result.Message = "用户名不存在"; result.Result = false; break;
+                case 0:result.Message = "Password error"; result.Result = false; break;
+                case 1:result.Message = "Success"; result.Result = true; break;
+                case -1:result.Message = "Username does not exist"; result.Result = false; break;
             }
             userType = flag.UserType;
             return result;
