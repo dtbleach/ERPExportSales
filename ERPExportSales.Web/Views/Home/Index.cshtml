@@ -5,6 +5,12 @@
 @model ExportSalesModel
 @section Css{
     <link href="@Url.Content("~/Content/pagestyle.css")" rel="Stylesheet" type="text/css" />
+    <style type="text/css">
+        #usdcnyDiv {
+            width: 100%;
+            height: 50vh;
+        }
+    </style>
 }
 <ul class="breadcrumb">
     <li><a href="/Home/Index">Home</a></li>
@@ -40,15 +46,15 @@
                                                         <div class="col-sm-12" id="">
                                                             <div class="pull-left form-inline">
                                                                 @using (Ajax.BeginForm("QueryOrder", "Home",
-                        new AjaxOptions
-                        {
-                            HttpMethod = "Post",
-                            UpdateTargetId = "divOrders",
-                            OnBegin = "$('#divOrders').fadeOut('slow')",
-                            OnComplete = "$('#divOrders').fadeIn('slow')",
-                            LoadingElementId = "loadingDiv",
-                            InsertionMode = InsertionMode.Replace,
-                        }))
+new AjaxOptions
+{
+    HttpMethod = "Post",
+    UpdateTargetId = "divOrders",
+    OnBegin = "$('#divOrders').fadeOut('slow')",
+    OnComplete = "$('#divOrders').fadeIn('slow')",
+    LoadingElementId = "loadingDiv",
+    InsertionMode = InsertionMode.Replace,
+}))
                                                                 {
                                                                     <p>
                                                                         PO No. @Html.TextBoxFor(p => p.QueryModel.PONo, "", new { @class = "form-control" })
@@ -127,7 +133,9 @@
 </section>
 @section Scripts{
     <!--{Html.RegisterMvcPagerScriptResource();}-->
+    <script src="@Url.Content("~/Scripts/echarts.js")"></script>
     <script type="text/javascript">
+
         $(document).ready(function () {
             // $("#sinaFrame").attr("src", "http://gu.sina.cn/fx/hq/quotes.php?code=USDCNY");
             $("#rbFrame").attr("src", "http://gu.sina.cn/ft/hq/nf.php?symbol=RB0");
@@ -149,6 +157,85 @@
                 "pageLength": 20,
                 "lengthChange": false
             });
+
+            var result = [];
+
+            $.ajaxSettings.async = false;
+            $.getJSON("../../Files/data/data.json", function (data, status) {
+                if (status == 'success') {
+                    result = data;
+                    drawLines(data);
+                } else {
+                    return false;
+                }
+            })
+            // var dataSource = getData();
+
+
+            // 根据配置项和数据显示图表
+            function drawLines(data) {
+                $('#usdcnyDiv').width("800px");
+                $('#usdcnyDiv').height("350px")
+                var myChart = echarts.init(document.getElementById('usdcnyDiv'));
+              
+                myChart.setOption({
+                    title: {
+                        text: 'USDCNY',
+                        x: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        top: 25,
+                        left: 'right',
+                        data: ['现汇卖出', '现汇买入', '现钞买入']
+                    },
+                    grid: {
+                        left: 50,
+                        right: 40
+                    },
+                    xAxis: {
+                        data: data.map(function (item) {
+                            return item[3].replace(' ', '\n');
+                        })
+                    },
+                    yAxis: {
+                        name: '金额(元)',
+                        min: 6
+                    },
+                    series: [
+                        {
+                            name: '现汇卖出',
+                            type: 'line',
+                            markPoint: {
+                                data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
+                            },
+                            data: data.map(function (item) {
+                                return item[2];
+                            })
+                        }, {
+                            name: '现汇买入',
+                            type: 'line',
+                            markPoint: {
+                                data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+                            },
+                            data: data.map(function (item) {
+                                return item[0];
+                            })
+                        }, {
+                            name: '现钞买入',
+                            type: 'line',
+                            markPoint: {
+                                data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+                            },
+                            data: data.map(function (item) {
+                                return item[1];
+                            })
+                        }
+                    ]
+                });
+            }
         })
 
     </script>
