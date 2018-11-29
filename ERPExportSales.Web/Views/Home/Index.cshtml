@@ -189,7 +189,7 @@ new AjaxOptions
                     legend: {
                         top: 25,
                         left: 'right',
-                        data: ['现汇卖出', '现汇买入', '现钞买入']
+                        data: ['央行折算']
                     },
                     grid: {
                         left: 50,
@@ -197,42 +197,44 @@ new AjaxOptions
                     },
                     xAxis: {
                         data: data.map(function (item) {
-                            return item[3].replace(' ', '\n');
-                        })
+                            return item[1].replace(' ', '\n');
+                        }),
+                        inverse:true
                     },
                     yAxis: {
-                        name: '金额(元)',
+                        name: 'RMB',
                         min: 6
                     },
                     series: [
                         {
-                            name: '现汇卖出',
+                            name: 'USDCNY',
                             type: 'line',
                             markPoint: {
                                 data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
                             },
                             data: data.map(function (item) {
-                                return item[2];
-                            })
-                        }, {
-                            name: '现汇买入',
-                            type: 'line',
-                            markPoint: {
-                                data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
-                            },
-                            data: data.map(function (item) {
                                 return item[0];
                             })
-                        }, {
-                            name: '现钞买入',
-                            type: 'line',
-                            markPoint: {
-                                data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
-                            },
-                            data: data.map(function (item) {
-                                return item[1];
-                            })
                         }
+                        //, {
+                        //    name: '现汇买入',
+                        //    type: 'line',
+                        //    markPoint: {
+                        //        data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+                        //    },
+                        //    data: data.map(function (item) {
+                        //        return item[0];
+                        //    })
+                        //}, {
+                        //    name: '现钞买入',
+                        //    type: 'line',
+                        //    markPoint: {
+                        //        data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+                        //    },
+                        //    data: data.map(function (item) {
+                        //        return item[1];
+                        //    })
+                        //}
                     ]
                 });
             }
