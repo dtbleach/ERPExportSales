@@ -93,5 +93,9 @@ namespace ERPExportSales.Repositories
 
         public DbSet<LoginStatus> LoginStatusEntities { get; set; }
 
+        public DbSet<Q195> Q195Entities { get; set; }
+
+        public DbSet<USDCNY> USDCNYEntities { get; set; }
+
     }
 }

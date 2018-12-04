@@ -46,15 +46,15 @@
                                                         <div class="col-sm-12" id="">
                                                             <div class="pull-left form-inline">
                                                                 @using (Ajax.BeginForm("QueryOrder", "Home",
-new AjaxOptions
-{
-    HttpMethod = "Post",
-    UpdateTargetId = "divOrders",
-    OnBegin = "$('#divOrders').fadeOut('slow')",
-    OnComplete = "$('#divOrders').fadeIn('slow')",
-    LoadingElementId = "loadingDiv",
-    InsertionMode = InsertionMode.Replace,
-}))
+                                                                        new AjaxOptions
+                                                                        {
+                                                                            HttpMethod = "Post",
+                                                                            UpdateTargetId = "divOrders",
+                                                                            OnBegin = "$('#divOrders').fadeOut('slow')",
+                                                                            OnComplete = "$('#divOrders').fadeIn('slow')",
+                                                                            LoadingElementId = "loadingDiv",
+                                                                            InsertionMode = InsertionMode.Replace,
+                                                                        }))
                                                                 {
                                                                     <p>
                                                                         PO No. @Html.TextBoxFor(p => p.QueryModel.PONo, "", new { @class = "form-control" })
@@ -158,22 +158,36 @@ new AjaxOptions
                 "lengthChange": false
             });
 
-            var result = [];
 
-            $.ajaxSettings.async = false;
-            $.getJSON("../../Files/data/data.json", function (data, status) {
-                if (status == 'success') {
-                    result = data;
-                    drawLines(data);
-                } else {
-                    return false;
+            $.ajax({
+                type: "POST",
+                url: "/Chart/GetUSDCNY",
+                dataType: "json",
+                success: function (data) {
+                    drawUSDCNYLines(data);
                 }
-            })
+            });
+            $.ajax({
+                type: "POST",
+                url: "/Chart/GetQ195",
+                dataType: "json",
+                success: function (data) {
+                    drawQ195Lines(data);
+                }
+            });
+            //$.getJSON("../../Files/data/data.json", function (data, status) {
+            //    if (status == 'success') {
+            //        result = data;
+            //        drawLines(data);
+            //    } else {
+            //        return false;
+            //    }
+            //})
             // var dataSource = getData();
 
 
             // 根据配置项和数据显示图表
-            function drawLines(data) {
+            function drawUSDCNYLines(data) {
                 $('#usdcnyDiv').width("800px");
                 $('#usdcnyDiv').height("350px")
                 var myChart = echarts.init(document.getElementById('usdcnyDiv'));
@@ -197,7 +211,7 @@ new AjaxOptions
                     },
                     xAxis: {
                         data: data.map(function (item) {
-                            return item[1].replace(' ', '\n');
+                            return item.PublishDate;
                         }),
                         inverse:true
                     },
@@ -213,7 +227,7 @@ new AjaxOptions
                                 data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
                             },
                             data: data.map(function (item) {
-                                return item[0];
+                                return item.Price;
                             })
                         }
                         //, {
@@ -235,6 +249,52 @@ new AjaxOptions
                         //        return item[1];
                         //    })
                         //}
+                    ]
+                });
+            }
+            function drawQ195Lines(data) {
+                $('#q195Div').width("800px");
+                $('#q195Div').height("350px")
+                var myChart = echarts.init(document.getElementById('q195Div'));
+
+                myChart.setOption({
+                    title: {
+                        text: 'Q195',
+                        x: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        top: 25,
+                        left: 'right',
+                        data: []
+                    },
+                    grid: {
+                        left: 50,
+                        right: 40
+                    },
+                    xAxis: {
+                        data: data.map(function (item) {
+                            return item.PublishDate;
+                        }),
+                        inverse: true
+                    },
+                    yAxis: {
+                        name: 'Price',
+                        min:2500
+                    },
+                    series: [
+                        {
+                            name: 'Q195 Price',
+                            type: 'line',
+                            markPoint: {
+                                data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
+                            },
+                            data: data.map(function (item) {
+                                return item.Price;
+                            })
+                        }
                     ]
                 });
             }

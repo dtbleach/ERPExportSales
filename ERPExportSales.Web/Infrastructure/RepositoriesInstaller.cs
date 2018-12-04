@@ -46,6 +46,14 @@ namespace ERPExportSales.Web.Infrastructure
                 .ImplementedBy<CustomerRepository>()
                 .LifestyleTransient());
 
+            container.Register(Component.For<IUSDCNYRepository>()
+               .ImplementedBy<USDCNYRepository>()
+               .LifestyleTransient());
+
+            container.Register(Component.For<IQ195Repository>()
+               .ImplementedBy<Q195Repository>()
+               .LifestyleTransient());
+
         }
     }
 }

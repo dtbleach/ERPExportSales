@@ -33,7 +33,11 @@ namespace ERPExportSales.Web.Infrastructure
 
             container.Register(Component.For<IExportSalesService>()
              .ImplementedBy<ExportSalesService>()
-             .LifestylePerWebRequest()); 
+             .LifestylePerWebRequest());
+
+            container.Register(Component.For<IChartService>()
+          .ImplementedBy<ChartService>()
+          .LifestylePerWebRequest());
 
         }
     }

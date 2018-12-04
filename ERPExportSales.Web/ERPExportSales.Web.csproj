@@ -249,6 +249,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ChartController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\FilesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -272,6 +273,7 @@
     <Compile Include="Infrastructure\WindsorDependencyResolver.cs" />
     <Compile Include="Infrastructure\WindsorDependencyScope.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ChartViewModel.cs" />
     <Compile Include="Models\ExportSalesModel.cs" />
     <Compile Include="Models\ExportSalesOceanFreightViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -7420,6 +7422,7 @@
     <Folder Include="Files\质保书\" />
     <Folder Include="Log\LogError\" />
     <Folder Include="Log\LogInfo\" />
+    <Folder Include="Views\Chart\" />
     <Folder Include="Views\ValidateCode\" />
   </ItemGroup>
   <ItemGroup>
