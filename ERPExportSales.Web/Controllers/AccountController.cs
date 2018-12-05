@@ -128,5 +128,14 @@ namespace ERPExportSales.Web.Controllers
                 return View(model);
             }
         }
+
+        public ActionResult Logout()
+        {
+            SessionHelper.Del("User");
+            SessionHelper.Del("CheckCode");
+            CookieHelper.ClearCookie("token");
+            CookieHelper.ClearCookie("rememberLogin");
+            return RedirectToAction("Login");
+        }
     }
 }

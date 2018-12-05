@@ -12,10 +12,21 @@
         }
     </style>
 }
-<ul class="breadcrumb">
+@*<ul class="breadcrumb">
     <li><a href="/Home/Index">Home</a></li>
     <li class="active">Order</li>
-</ul>
+</ul>*@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    @*<h1>
+        Top Navigation
+        <small>Example 2.0</small>
+    </h1>*@
+    <ol class="breadcrumb">
+        <li><a href="/Home/Index">Home</a></li>
+        <li class="active">Order</li>
+    </ol>
+</section>
 <section class="content">
     <form role="form" ng-app="myApp" ng-controller="formCtrl" class="form-horizontal" style="margin-top: 20px;"
           name="myForm" novalidate>
@@ -23,8 +34,8 @@
         <div class="col-md-12">
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#settings" data-toggle="tab" aria-expanded="true">Query</a></li>
-                    <li class=""><a href="#activity" data-toggle="tab" aria-expanded="false">Info</a></li>
+                    <li class="active"><a href="#settings" data-toggle="tab" aria-expanded="true">Search</a></li>
+                    <li class=""><a href="#activity" data-toggle="tab" aria-expanded="false">Information</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="settings">
@@ -136,12 +147,10 @@
 </section>
 @section Scripts{
     <!--{Html.RegisterMvcPagerScriptResource();}-->
-    <script src="@Url.Content("~/Scripts/echarts.js")"></script>
     <script type="text/javascript">
-
         $(document).ready(function () {
             // $("#sinaFrame").attr("src", "http://gu.sina.cn/fx/hq/quotes.php?code=USDCNY");
-            $("#rbFrame").attr("src", "http://gu.sina.cn/ft/hq/nf.php?symbol=RB0");
+            //$("#rbFrame").attr("src", "http://gu.sina.cn/ft/hq/nf.php?symbol=RB0");
 
             var queryScNo = '@ViewBag.ScNo';
             var queryPoNo = '@ViewBag.PoNo';
@@ -170,7 +179,7 @@
                 "searching": false,
                 "pagingType": "simple",
                 "info": false,
-                "pageLength": 20,
+                "pageLength": 15,
                 "lengthChange": false
             });
 
@@ -204,7 +213,7 @@
 
             // 根据配置项和数据显示图表
             function drawUSDCNYLines(data) {
-                $('#usdcnyDiv').width("800px");
+                $('#usdcnyDiv').width("680px");
                 $('#usdcnyDiv').height("350px")
                 var myChart = echarts.init(document.getElementById('usdcnyDiv'));
 
@@ -269,7 +278,7 @@
                 });
             }
             function drawQ195Lines(data) {
-                $('#q195Div').width("800px");
+                $('#q195Div').width("680px");
                 $('#q195Div').height("350px")
                 var myChart = echarts.init(document.getElementById('q195Div'));
 

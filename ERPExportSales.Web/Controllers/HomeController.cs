@@ -29,7 +29,8 @@ namespace ERPExportSales.Web.Controllers
         public ActionResult Index()
         {
             var user = SessionHelper.Get<UserViewModel>("User");
-
+            if(user!=null)
+                ViewBag.NickName = user.UserName;
             ExportSalesModel model = new ExportSalesModel();
             model.UserModel = user;
             model.QueryModel = new QueryViewModel();

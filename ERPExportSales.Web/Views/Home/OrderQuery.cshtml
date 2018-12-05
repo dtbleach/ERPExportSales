@@ -6,7 +6,7 @@
         @Ajax.ActionLink("Next", "OrderQuery", "Home", new { pageNum = ViewBag.PageNum + 1, IsBtnQuery = false }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "divOrders", OnBegin = "$('#divOrders').fadeOut('slow')", OnComplete = "$('#divOrders').fadeIn('slow')", LoadingElementId = "loadingDiv" }, new { @class = "btn btn-default" })
     </div>
 
-    <table id="tbOrders" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+    <table id="tbOrders" class="table table-border table-bordered table-bg table-hover table-sort" role="grid" aria-describedby="example1_info">
         <thead>
             <tr role="row">
                 <th style="width:300px">Customer</th>
