@@ -29,7 +29,7 @@
     <script src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
     <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"></script>
     <!-- jQuery 3 -->
-    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")" type="text/javascript"></script>  
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")" type="text/javascript"></script>
     <!-- Bootstrap 3.3.7 -->
     <script src="@Url.Content("~/Scripts/bower_components/bootstrap/dist/js/bootstrap.min.js")"></script>
     <!-- DataTables -->
@@ -47,18 +47,17 @@
     @*<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
     <script type="text/javascript">
         function linkout() {
-                window.location.href = "/Account/Logout";
+            window.location.href = "/Account/Logout";
         }
     </script>
 </head>
 <body class="hold-transition skin-blue layout-top-nav">
     <div class="wrapper">
-
         <header class="main-header">
             <nav class="navbar navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
-                        <a href="/Home/Index" class="navbar-brand"><b>Export Service</b>Platform</a>
+                        <a href="/Home/Index" class="navbar-brand"><b>Export Service</b>  Platform</a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                             <i class="fa fa-bars"></i>
                         </button>
@@ -67,14 +66,14 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="/Home/Index">Home</a></li>    
+                            <li><a href="/Home/Index">Home</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">System Setting <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#" data-toggle="modal" data-target="#modal-default">Logout</a></li>        
+                                    <li><a href="#" data-toggle="modal" data-target="#modal-default">Logout</a></li>
                                 </ul>
                             </li>
-                        </ul>          
+                        </ul>
                     </div>
                     <!-- /.navbar-collapse -->
                     <!-- Navbar Right Menu -->
@@ -86,7 +85,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                     <span class="hidden-xs">Welcome,@ViewBag.NickName</span>
-                                </a>         
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -97,7 +96,7 @@
         </header>
         <!-- Full Width Column -->
         <div class="content-wrapper">
-            <div class="container" style="min-width:1500px">         
+            <div class="container" style="min-width:1500px">
                 <!-- Main content -->
                 @RenderBody()
                 <!-- /.content -->
@@ -107,11 +106,28 @@
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <div class="container">
+                <div class="pull-left hidden-xs">
+                    <img src="../../Content/img/logo3.gif" />
+                </div>
                 <div class="pull-right hidden-xs">
                     <b>Version</b> 1.0.0
                 </div>
-                <strong>Copyright &copy; 2018-2018 <a href="">xxxxxxx</a>.</strong> All rights
-                reserved.
+                <strong>
+                    Address:
+                </strong>15 FLOOR,600 HENG FENG ROAD SHANGHAI
+                <strong>
+                    CHINA POST CODE:
+                </strong>200070<br />
+                <strong>
+                    Tel:
+                </strong>(86-21)63177707,63178900 Fax:(86-21)63178909,63177538
+                <strong>
+                    Email:
+                </strong>export@sfiec.com; sfc@sfiec.com
+
+                <div class="center hidden-xs">
+                    <strong> Copyright:Shanghai Prime Machinery Co.,Ltd.</strong> All rights reserved.
+                </div>
             </div>
             <!-- /.container -->
         </footer>

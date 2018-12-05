@@ -50,6 +50,7 @@ namespace ERPExportSales.Web.Controllers
             }
            var result = userService.Login(model.LoginName, model.Password,ref userType);
            string ip = CommonManager.GetIP(Request);
+            LoggerHelper.Info("{'IP':'" + ip + "','Msg':'获取IP'}");
             if (result.Result)
             {
                 if (userType == 1)
@@ -109,6 +110,7 @@ namespace ERPExportSales.Web.Controllers
                         user.UserName = customer.Name;
                         user.UserType = userType.ToString();
                     }
+                    SessionHelper.Add("NickName", user.UserName);
                     SessionHelper.Add("User", user);
                     SessionHelper.Del("CheckCode");
                     CookieHelper.SetCookie("rememberLogin", "false");
@@ -120,6 +122,7 @@ namespace ERPExportSales.Web.Controllers
             else
             {
                 SessionHelper.Del("User");
+                SessionHelper.Del("NickName");
                 SessionHelper.Del("CheckCode");
                 CookieHelper.ClearCookie("token");
                 CookieHelper.ClearCookie("rememberLogin");
@@ -133,6 +136,7 @@ namespace ERPExportSales.Web.Controllers
         {
             SessionHelper.Del("User");
             SessionHelper.Del("CheckCode");
+            SessionHelper.Del("NickName");
             CookieHelper.ClearCookie("token");
             CookieHelper.ClearCookie("rememberLogin");
             return RedirectToAction("Login");

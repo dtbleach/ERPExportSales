@@ -375,6 +375,7 @@
     <Content Include="Content\img\in-3.gif" />
     <Content Include="Content\img\loading.gif" />
     <Content Include="Content\img\logo.gif" />
+    <Content Include="Content\img\logo3.gif" />
     <Content Include="Content\img\tick.png" />
     <Content Include="Content\pagestyle.css" />
     <Content Include="Content\stylesheets\bootoast.css" />

@@ -23,6 +23,7 @@ namespace ERPExportSales.Web.Controllers
         {
             try
             {
+                ViewBag.NickName = SessionHelper.Get("NickName");
                 string fileName = string.Empty;
                 string folder = string.Empty;
                 if (!string.IsNullOrEmpty(file))

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ERPExportSales.Entities;
 using ERPExportSales.Repositories;
+using ERPExportSales.Framework;
 
 namespace ERPExportSales.Services
 {
@@ -29,7 +30,8 @@ namespace ERPExportSales.Services
             }
 
             int i = ip.LastIndexOf(".");
-            ip = ip.Substring(0, ip.Length - i);
+            ip = ip.Substring(0,i);
+            LoggerHelper.Info("{'IP':'" + ip + "','Msg':'判断ip'}");
             var whiteList = GetIPWhiteList();
             if (whiteList != null && whiteList.Count() > 0)
             {
