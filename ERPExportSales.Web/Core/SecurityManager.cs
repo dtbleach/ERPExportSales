@@ -69,6 +69,17 @@ namespace ERPExportSales.Web.Core
                 Models.UserViewModel model = new Models.UserViewModel();
                 if (int.Parse(userType) == 1)
                 {
+                    string ip = request.UserHostAddress;
+                    if (!ip.Equals("::1"))
+                    {
+                        int i = ip.LastIndexOf(".");
+                        ip = ip.Substring(0, ip.Length - i);
+                        var iplist = db.IPWhiteListEntities.Select(p => p.IP).ToList();
+                        if (!iplist.Contains(ip))
+                        {
+                            return false;
+                        }
+                    }
                     Employee user = db.EmployeeEntities.Where(p => p.LoginName == username).FirstOrDefault();
                     model.LoginName = user.LoginName;
                     model.UserName = user.Name;

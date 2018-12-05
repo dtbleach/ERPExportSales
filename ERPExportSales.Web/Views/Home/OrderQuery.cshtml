@@ -1,4 +1,5 @@
-﻿@model IList<ERPExportSales.Web.Models.OrderViewModel>
+﻿@using ERPExportSales.Web.Models
+@model ExportSalesModel
 <div id="divOrders">
     <div class="pull-right">
         @Ajax.ActionLink("Previous", "OrderQuery", "Home", new { pageNum = ViewBag.PageNum - 1, IsBtnQuery = false }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "divOrders", OnBegin = "$('#divOrders').fadeOut('slow')", OnComplete = "$('#divOrders').fadeIn('slow')", LoadingElementId = "loadingDiv" }, new { @class = "btn btn-default" })
@@ -25,7 +26,7 @@
 
         </thead>
         <tbody id="tbOrdersBody">
-            @foreach (var item in Model)
+            @foreach (var item in Model.OrderList)
             {
                 <tr role="row">
                     <td>@item.Customer</td>

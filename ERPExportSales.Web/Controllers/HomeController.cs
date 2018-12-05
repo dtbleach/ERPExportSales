@@ -33,6 +33,7 @@ namespace ERPExportSales.Web.Controllers
             ExportSalesModel model = new ExportSalesModel();
             model.UserModel = user;
             model.QueryModel = new QueryViewModel();
+            model.OrderList = new List<OrderViewModel>();
             return View(model);
         }
 
@@ -57,7 +58,14 @@ namespace ERPExportSales.Web.Controllers
                 if (model.QueryModel == null)
                 {
                     model.QueryModel = new QueryViewModel();
+                }else
+                {
+                    ViewBag.ScNo = model.QueryModel.SCNo;
+                    ViewBag.PoNo = model.QueryModel.PONo;
+                    ViewBag.InvoiceNo = model.QueryModel.InvoiceNo;
                 }
+
+
                 if (model.UserModel == null)
                 {
                     model.UserModel = user;
@@ -104,8 +112,8 @@ namespace ERPExportSales.Web.Controllers
                 order.QRHref = Encryption64.Encrypt(item.InvoiceNo + ":" + config.QRFolderName, config.Encryption64Key);
                 orderList.Add(order);
             }
-
-            return PartialView(orderList);
+            model.OrderList = orderList;
+            return PartialView(model);
         }
 
 

@@ -23,7 +23,7 @@ namespace ERPExportSales.Web.Infrastructure
                      .ImplementedBy<EmployeeService>()
                      .LifestylePerWebRequest());
 
-                container.Register(Component.For<ICustomerService>()
+            container.Register(Component.For<ICustomerService>()
                  .ImplementedBy<CustomerService>()
                  .LifestylePerWebRequest());
 
@@ -36,8 +36,12 @@ namespace ERPExportSales.Web.Infrastructure
              .LifestylePerWebRequest());
 
             container.Register(Component.For<IChartService>()
-          .ImplementedBy<ChartService>()
-          .LifestylePerWebRequest());
+              .ImplementedBy<ChartService>()
+              .LifestylePerWebRequest());
+
+            container.Register(Component.For<IIPWhiteListService>()
+              .ImplementedBy<IPWhiteListService>()
+              .LifestylePerWebRequest());
 
         }
     }

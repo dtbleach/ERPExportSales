@@ -62,6 +62,8 @@
     <Compile Include="IExportSalesLoginTokenService.cs" />
     <Compile Include="IExportSalesService.cs" />
     <Compile Include="IExportSalesUserService.cs" />
+    <Compile Include="IIPWhiteListService.cs" />
+    <Compile Include="IPWhiteListService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

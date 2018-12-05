@@ -18,12 +18,14 @@ namespace ERPExportSales.Web.Controllers
         public IEmployeeService employeeService;
         public IExportSalesLoginTokenService tokenService;
         public ICustomerService customerService;
-        public AccountController(IExportSalesUserService userService, IEmployeeService employeeService,IExportSalesLoginTokenService tokenService, ICustomerService customerService)
+        public IIPWhiteListService ipWhiteListService;
+        public AccountController(IExportSalesUserService userService, IEmployeeService employeeService,IExportSalesLoginTokenService tokenService, ICustomerService customerService, IIPWhiteListService ipWhiteListService)
         {
             this.userService = userService;
             this.employeeService = employeeService;
             this.tokenService = tokenService;
             this.customerService = customerService;
+            this.ipWhiteListService = ipWhiteListService;
         }
         public ActionResult Login()
         {
@@ -47,9 +49,24 @@ namespace ERPExportSales.Web.Controllers
                 return View(model);
             }
            var result = userService.Login(model.LoginName, model.Password,ref userType);
-            string ip = CommonManager.GetIP(Request);
+           string ip = CommonManager.GetIP(Request);
             if (result.Result)
             {
+                if (userType == 1)
+                {
+                    bool ipFlag = ipWhiteListService.IsIPExistWhiteList(ip);
+                    if (!ipFlag)
+                    {
+                        SessionHelper.Del("User");
+                        SessionHelper.Del("CheckCode");
+                        CookieHelper.ClearCookie("token");
+                        CookieHelper.ClearCookie("rememberLogin");
+                        ViewBag.ErrorMessage = "Employees are not allowed to visit this website on the Internet";
+                        LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "','UserType':" + userType + ",'Date:'" + DateTime.Now + "','Msg':" + result.Message + "}");
+                        return View(model);
+                    }
+                }
+
                 if (model.RememberMe)
                 {
                     long ticks = new DateTime().Ticks;

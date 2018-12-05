@@ -74,3 +74,33 @@ System.InvalidOperationException: ´ËÇëÇóÒÑ±»×èÖ¹£¬ÒòÎªµ±ÓÃÔÚ GET ÇëÇóÖĞÊ±£¬»á½«Ã
    ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
    ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
    ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+¼ÇÂ¼Ê±¼ä£º2018-12-04 16:54:02,026 
+Ïß³ÌID:[9] 
+ÈÕÖ¾¼¶±ğ£º  ERROR 
+´íÎóÃèÊö£ºÔ¤ÀÀPDF³ö´í
+ 
+System.ServiceModel.EndpointNotFoundException: Ã»ÓĞÖÕ½áµãÔÚÕìÌı¿ÉÒÔ½ÓÊÜÏûÏ¢µÄ http://haiyun.sfiec.cn:8081/SFCService.asmx¡£ÕâÍ¨³£ÊÇÓÉÓÚ²»ÕıÈ·µÄµØÖ·»òÕß SOAP ²Ù×÷µ¼ÖÂµÄ¡£Èç¹û´æÔÚ´ËÇé¿ö£¬Çë²Î¼û InnerException ÒÔÁË½âÏêÏ¸ĞÅÏ¢¡£ ---> System.Net.WebException: Î´ÄÜ½âÎö´ËÔ¶³ÌÃû³Æ: 'haiyun.sfiec.cn'
+   ÔÚ System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   ÔÚ System.Net.HttpWebRequest.GetRequestStream()
+   ÔÚ System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- ÄÚ²¿Òì³£¶ÑÕ»¸ú×ÙµÄ½áÎ² ---
+
+Server stack trace: 
+   ÔÚ System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   ÔÚ System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   ÔÚ System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   ÔÚ System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   ÔÚ System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   ÔÚ System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   ÔÚ System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   ÔÚ System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   ÔÚ System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   ÔÚ System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   ÔÚ ERPExportSales.Web.ExportSalesWebService.SFCServiceSoap.ÏÂÔØ¸½¼ş(ÏÂÔØ¸½¼şRequest request)
+   ÔÚ ERPExportSales.Web.ExportSalesWebService.SFCServiceSoapClient.ERPExportSales.Web.ExportSalesWebService.SFCServiceSoap.ÏÂÔØ¸½¼ş(ÏÂÔØ¸½¼şRequest request) Î»ÖÃ D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Service References\ExportSalesWebService\Reference.cs:ĞĞºÅ 617
+   ÔÚ ERPExportSales.Web.ExportSalesWebService.SFCServiceSoapClient.ÏÂÔØ¸½¼ş(String ¿Í»§¶ËIP, String ´óÀà, String ±ê×¼ÏµÁĞ, String ÎÄ¼şÃû, String Èı¼¶Ä¿Â¼, String ËÄ¼¶Ä¿Â¼) Î»ÖÃ D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Service References\ExportSalesWebService\Reference.cs:ĞĞºÅ 629
+   ÔÚ ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) Î»ÖÃ D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:ĞĞºÅ 37

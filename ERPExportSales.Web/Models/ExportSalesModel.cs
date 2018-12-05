@@ -17,7 +17,7 @@ namespace ERPExportSales.Web.Models
 
         //public IList<PublicHolidayViewModel> PublicHoliday { get; set; }
 
-        //public IList<OrderViewModel> OrderList { get; set; }
+        public IList<OrderViewModel> OrderList { get; set; }
     }
 
     public class QueryViewModel

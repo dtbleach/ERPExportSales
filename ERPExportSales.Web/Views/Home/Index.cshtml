@@ -46,15 +46,15 @@
                                                         <div class="col-sm-12" id="">
                                                             <div class="pull-left form-inline">
                                                                 @using (Ajax.BeginForm("QueryOrder", "Home",
-                                                                        new AjaxOptions
-                                                                        {
-                                                                            HttpMethod = "Post",
-                                                                            UpdateTargetId = "divOrders",
-                                                                            OnBegin = "$('#divOrders').fadeOut('slow')",
-                                                                            OnComplete = "$('#divOrders').fadeIn('slow')",
-                                                                            LoadingElementId = "loadingDiv",
-                                                                            InsertionMode = InsertionMode.Replace,
-                                                                        }))
+                                                                            new AjaxOptions
+                                                                            {
+                                                                                HttpMethod = "Post",
+                                                                                UpdateTargetId = "searchResult",
+                                                                                OnBegin = "$('#divOrders').fadeOut('slow')",
+                                                                                OnComplete = "$('#divOrders').fadeIn('slow')",
+                                                                                LoadingElementId = "loadingDiv",
+                                                                                InsertionMode = InsertionMode.Replace,
+                                                                            }))
                                                                 {
                                                                     <p>
                                                                         PO No. @Html.TextBoxFor(p => p.QueryModel.PONo, "", new { @class = "form-control" })
@@ -64,7 +64,10 @@
                                                                     </p>
                                                                     @*@Ajax.ActionLink("Previous", "OrderQuery", "Home", new { QueryModel =Model.QueryModel,InvoiceNo=Model.QueryModel.InvoiceNo ,IsBtnQuery = true }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "divOrders", OnBegin = "$('#divOrders').fadeOut('slow')", OnComplete = "$('#divOrders').fadeIn('slow')", LoadingElementId = "loadingDiv" }, new { @class = "btn btn-primary" })*@
 
+
+
                                                                 }
+
 
                                                             </div>
                                                             <div id="loadingDiv" style="display:none" class="form-inline">
@@ -140,6 +143,19 @@
             // $("#sinaFrame").attr("src", "http://gu.sina.cn/fx/hq/quotes.php?code=USDCNY");
             $("#rbFrame").attr("src", "http://gu.sina.cn/ft/hq/nf.php?symbol=RB0");
 
+            var queryScNo = '@ViewBag.ScNo';
+            var queryPoNo = '@ViewBag.PoNo';
+            var queryInvoiceNo = '@ViewBag.InvoiceNo';
+            if (queryScNo.length > 0) {
+                $("#QueryModel_SCNo").val(queryScNo);
+            }
+            if (queryPoNo.length > 0) {
+                $("#QueryModel_PONo").val(queryPoNo);
+            }
+            if (queryInvoiceNo.length > 0) {
+                $("#QueryModel_InvoiceNo").val(queryInvoiceNo);
+            }
+
             $('#tbHoliday').DataTable({
                 "bSort": false,
                 "searching": false,
@@ -191,7 +207,7 @@
                 $('#usdcnyDiv').width("800px");
                 $('#usdcnyDiv').height("350px")
                 var myChart = echarts.init(document.getElementById('usdcnyDiv'));
-              
+
                 myChart.setOption({
                     title: {
                         text: 'USDCNY',
@@ -213,7 +229,7 @@
                         data: data.map(function (item) {
                             return item.PublishDate;
                         }),
-                        inverse:true
+                        inverse: true
                     },
                     yAxis: {
                         name: 'RMB',
@@ -223,9 +239,9 @@
                         {
                             name: 'USDCNY',
                             type: 'line',
-                            markPoint: {
-                                data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
-                            },
+                            //markPoint: {
+                            //    data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
+                            //},
                             data: data.map(function (item) {
                                 return item.Price;
                             })
@@ -282,15 +298,15 @@
                     },
                     yAxis: {
                         name: 'Price',
-                        min:2500
+                        min: 2500
                     },
                     series: [
                         {
                             name: 'Q195 Price',
                             type: 'line',
-                            markPoint: {
-                                data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
-                            },
+                            //markPoint: {
+                            //    data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
+                            //},
                             data: data.map(function (item) {
                                 return item.Price;
                             })

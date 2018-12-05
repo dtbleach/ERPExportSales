@@ -1,6 +1,7 @@
 ﻿using ERPExportSales.Entities;
 using ERPExportSales.Framework;
 using ERPExportSales.Services;
+using ERPExportSales.Web.Filter;
 using ERPExportSales.Web.Models;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace ERPExportSales.Web.Controllers
         }
         // GET: Chart
         
-
+        [AuthorizeUser]
         public JsonResult GetQ195()
         {
 
@@ -30,13 +31,14 @@ namespace ERPExportSales.Web.Controllers
             {
                 foreach (var item in listQ195)
                 {
+                    item.PublishDate = DateTime.Parse(item.PublishDate).ToString("yyyy-MM-dd");
                     var q195 = ConvertHelper.Trans<Q195, ChartViewModel>(item);
                     list.Add(q195);
                 }
             }
             return Json(list);
         }
-
+        [AuthorizeUser]
         public JsonResult GetUSDCNY()
         {
             IList<ChartViewModel> list = new List<ChartViewModel>();
@@ -44,7 +46,7 @@ namespace ERPExportSales.Web.Controllers
             if (listUSDCNY != null && listUSDCNY.Count > 0)
             {
                 foreach (var item in listUSDCNY)
-                {
+                {    
                     var usdcny = ConvertHelper.Trans<USDCNY, ChartViewModel>(item);
                     list.Add(usdcny);
                 }
