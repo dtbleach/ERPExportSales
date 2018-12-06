@@ -44,6 +44,7 @@ namespace ERPExportSales.Web.Filter
                 {
                     HttpRequestBase request = actionContext.RequestContext.HttpContext.Request;
                     string token = CookieHelper.GetCookieValue(_securityToken);
+                    LoggerHelper.Info("{'msg':'开始进入attr验证',token:'" + token + "'}");
                     return SecurityManager.VerifyToken(token, request);
                 }else
                 {

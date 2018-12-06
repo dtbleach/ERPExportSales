@@ -53,5 +53,20 @@ namespace ERPExportSales.Web.Controllers
             }
             return Json(list);
         }
+
+        [AuthorizeUser]
+        public JsonResult GetNewUSDCNY()
+        {
+            var usdcny = chartService.GetNewUSDCNY();
+            return Json(usdcny);
+        }
+
+        [AuthorizeUser]
+        public JsonResult GetNewQ195()
+        {
+            var q195 = chartService.GetNewQ195();
+            q195.PublishDate= DateTime.Parse(q195.PublishDate).ToString("yyyy-MM-dd");
+            return Json(q195);
+        }
     }
 }

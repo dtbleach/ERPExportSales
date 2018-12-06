@@ -31,7 +31,10 @@ namespace ERPExportSales.Services
         {
             var tokenEntity = exportSalesLoginTokenRepository.Get(p=>p.UserName==name);
             if (tokenEntity != null)
+            {
                 exportSalesLoginTokenRepository.Delete(tokenEntity);
+                unitOfWork.Commit();
+            }
         }
 
         public void SaveLoginToken(ExportSalesLoginToken model)

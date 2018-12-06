@@ -29,5 +29,15 @@ namespace ERPExportSales.Services
             var usdcnyList = iUSDCNYRepository.GetAll();
             return usdcnyList != null ? usdcnyList.ToList() : null;
         }
+
+        public USDCNY GetNewUSDCNY()
+        {
+            return iUSDCNYRepository.GetAll().OrderByDescending(p => p.PublishDate).FirstOrDefault();
+        }
+
+        public Q195 GetNewQ195()
+        {
+            return iQ195Repository.GetAll().OrderByDescending(p => p.PublishDate).FirstOrDefault();
+        }
     }
 }

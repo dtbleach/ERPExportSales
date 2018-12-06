@@ -12,5 +12,9 @@ namespace ERPExportSales.Services
         IList<Q195> GetAllQ195();
 
         IList<USDCNY> GetAllUSDCNY();
+
+        USDCNY GetNewUSDCNY();
+
+        Q195 GetNewQ195();
     }
 }

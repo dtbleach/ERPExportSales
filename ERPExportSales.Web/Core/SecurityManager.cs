@@ -64,7 +64,7 @@ namespace ERPExportSales.Web.Core
                 string username = parts[1];
                 string userType = parts[2];
                 long ticks = 0; long.TryParse(parts[3], out ticks);
-
+                LoggerHelper.Info("{'msg':'开始进入attr验证2',usertype:'" + userType + "','username':'"+username+"'}");
                 //string password = _employeeService.GetEmployeeSHAPassword(username);
                 Models.UserViewModel model = new Models.UserViewModel();
                 if (int.Parse(userType) == 1)
@@ -73,13 +73,15 @@ namespace ERPExportSales.Web.Core
                     if (!ip.Equals("::1"))
                     {
                         int i = ip.LastIndexOf(".");
-                        ip = ip.Substring(0, ip.Length - i);
+                        ip = ip.Substring(0,i);
                         var iplist = db.IPWhiteListEntities.Select(p => p.IP).ToList();
                         if (!iplist.Contains(ip))
                         {
+                            LoggerHelper.Info("{'msg':'开始进入attr验证3',ip:'" + ip + "','msg':'ip错误'}");
                             return false;
                         }
                     }
+                    LoggerHelper.Info("{'msg':'开始进入attr验证3',ip:'" + ip + "'}");
                     Employee user = db.EmployeeEntities.Where(p => p.LoginName == username).FirstOrDefault();
                     model.LoginName = user.LoginName;
                     model.UserName = user.Name;
@@ -100,7 +102,7 @@ namespace ERPExportSales.Web.Core
 
                 string password = ConvertHelper.BytesToString(model.Password, Encoding.UTF8);;
                 bool cookieExpires = CookieHelper.CookieExpires("token");
-               
+                LoggerHelper.Info("{'msg':'开始进入attr验证4',cookieExpires:'" + cookieExpires + "'}");
                 if (!cookieExpires)
                 {
                     string computedToken = GenerateToken(username, password, CommonManager.GetIP(request), request.UserAgent, userType,ticks);
@@ -108,11 +110,15 @@ namespace ERPExportSales.Web.Core
                    // var loginToken = _tokenService.GetExportSalesLoginToken(username);
                     if (null != loginToken)
                     {
+                        LoggerHelper.Info("{'用户':'" + loginToken.UserName + "'.'数据库token':'" + loginToken.Token + "','CookieToken':'" + token + "'}");
                         if (token == computedToken && token == loginToken.Token)
                         {
                             SessionHelper.Add<Models.UserViewModel>("User", model);
                             return true;
                         }
+                    }else
+                    {
+                        LoggerHelper.Info("{'用户':'"+ loginToken .UserName+ "','msg':loginToken为null}");
                     }
 
                 }

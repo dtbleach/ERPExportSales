@@ -327,3 +327,213 @@
 日志级别：  INFO  
 日志描述：{'IP':'::1','Name':'llh','UserType':1,'Date:'2018/12/6 14:11:48','Msg':Success}
  
+
+ 
+记录时间：2018-12-06 14:25:07,860 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Msg':'获取IP'}
+ 
+
+ 
+记录时间：2018-12-06 14:25:23,432 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Name':'llh','UserType':1,'Date:'2018/12/6 14:25:23','Msg':Success}
+ 
+
+ 
+记录时间：2018-12-06 14:26:43,927 
+线程ID:[9] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Msg':'获取IP'}
+ 
+
+ 
+记录时间：2018-12-06 14:26:45,629 
+线程ID:[9] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Name':'llh','UserType':1,'Date:'2018/12/6 14:26:45','Msg':Success}
+ 
+
+ 
+记录时间：2018-12-06 14:30:08,463 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Msg':'获取IP'}
+ 
+
+ 
+记录时间：2018-12-06 14:30:12,007 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Name':'llh','UserType':1,'Date:'2018/12/6 14:30:12','Msg':Success}
+ 
+
+ 
+记录时间：2018-12-06 14:44:41,358 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Msg':'获取IP'}
+ 
+
+ 
+记录时间：2018-12-06 14:44:41,549 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Name':'llh','UserType':1,'Date:'2018/12/6 14:44:41','Msg':Success}
+ 
+
+ 
+记录时间：2018-12-06 14:44:41,575 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证',token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:44:41,622 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证2',cookieExpires:'False'}
+ 
+
+ 
+记录时间：2018-12-06 14:44:52,167 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{用户:'llh'.数据库token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA==',CookieToken:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:44:56,756 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证',token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:44:56,804 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证2',cookieExpires:'False'}
+ 
+
+ 
+记录时间：2018-12-06 14:45:02,073 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{用户:'llh'.数据库token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA==',CookieToken:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:45:03,368 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证',token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:45:03,423 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证2',cookieExpires:'False'}
+ 
+
+ 
+记录时间：2018-12-06 14:45:05,209 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{用户:'llh'.数据库token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA==',CookieToken:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:45:05,674 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证',token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:45:05,714 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证2',cookieExpires:'False'}
+ 
+
+ 
+记录时间：2018-12-06 14:45:07,623 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{用户:'llh'.数据库token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA==',CookieToken:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:45:09,387 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证',token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:45:09,419 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证2',cookieExpires:'False'}
+ 
+
+ 
+记录时间：2018-12-06 14:45:12,647 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{用户:'llh'.数据库token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA==',CookieToken:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:45:12,902 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证',token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 14:45:13,095 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{msg:'开始进入attr验证2',cookieExpires:'False'}
+ 
+
+ 
+记录时间：2018-12-06 14:45:15,033 
+线程ID:[11] 
+日志级别：  INFO  
+日志描述：{用户:'llh'.数据库token:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA==',CookieToken:'NmFhb0ZoVTlWT2YwcXlUVkFpb21BUkJEdk1xejh0ZDNlb1dTS2NOYklOND06bGxoOjE6MA=='}
+ 
+
+ 
+记录时间：2018-12-06 15:49:39,550 
+线程ID:[8] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Msg':'获取IP'}
+ 
+
+ 
+记录时间：2018-12-06 15:49:39,658 
+线程ID:[8] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Name':'llh','UserType':1,'Date:'2018/12/6 15:49:39','Msg':Success}
+ 
+
+ 
+记录时间：2018-12-06 15:55:29,102 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Msg':'获取IP'}
+ 
+
+ 
+记录时间：2018-12-06 15:55:29,219 
+线程ID:[16] 
+日志级别：  INFO  
+日志描述：{'IP':'::1','Name':'llh','UserType':1,'Date:'2018/12/6 15:55:29','Msg':Success}
+ 

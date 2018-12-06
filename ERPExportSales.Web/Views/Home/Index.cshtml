@@ -191,6 +191,23 @@
                     drawQ195Lines(data);
                 }
             });
+
+            $.ajax({
+                type: "POST",
+                url: "/Chart/GetNewUSDCNY",
+                dataType: "json",
+                success: function (data) {
+                    $("#newUSDCNY").html("Date:<b>" + data.PublishDate + "</b> USDCNY:<b>" + data.Price + "</b> RMB");
+                }
+            });
+            $.ajax({
+                type: "POST",
+                url: "/Chart/GetNewQ195",
+                dataType: "json",
+                success: function (data) {
+                    $("#newQ195").html("Date:<b>" + data.PublishDate + "</b> Price:<b>" + data.Price + "</b> RMB");
+                }
+            });
             //$.getJSON("../../Files/data/data.json", function (data, status) {
             //    if (status == 'success') {
             //        result = data;

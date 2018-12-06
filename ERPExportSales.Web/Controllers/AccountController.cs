@@ -115,6 +115,7 @@ namespace ERPExportSales.Web.Controllers
                     SessionHelper.Del("CheckCode");
                     CookieHelper.SetCookie("rememberLogin", "false");
                     CookieHelper.ClearCookie("token");
+                    tokenService.RemoveLoginToken(model.LoginName);
                     LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "','UserType':" + userType + ",'Date:'" + DateTime.Now + "','Msg':"+ result.Message+ "}");
                 }
                 return RedirectToAction("Index", "Home");
