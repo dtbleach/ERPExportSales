@@ -1,0 +1,416 @@
+
+ 
+记录时间：2018-12-06 10:48:52,655 
+线程ID:[15] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 10:58:40,808 
+线程ID:[22] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 10:58:50,456 
+线程ID:[22] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 10:58:57,494 
+线程ID:[23] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.IO.IOException: 文件“D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Files\质保书\10015313.pdf”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 42
+
+ 
+记录时间：2018-12-06 10:59:47,807 
+线程ID:[31] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.IO.IOException: 文件“D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Files\质保书\10015313.pdf”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 42
+
+ 
+记录时间：2018-12-06 11:00:37,552 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.IO.IOException: 文件“D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Files\质保书\10015313.pdf”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 42
+
+ 
+记录时间：2018-12-06 11:03:18,677 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 11:42:11,196 
+线程ID:[10] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 11:47:55,464 
+线程ID:[16] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 11:48:32,530 
+线程ID:[9] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 11:48:40,674 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.IO.IOException: 文件“D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Files\质保书\10015313.pdf”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 42
+
+ 
+记录时间：2018-12-06 11:48:42,807 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 11:48:44,801 
+线程ID:[15] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 12:06:51,396 
+线程ID:[77] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 12:56:31,010 
+线程ID:[11] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 13:00:57,916 
+线程ID:[26] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Shared\\_Layout.cshtml(16): error CS1026: 应输入 )",
+  "Path": "/",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.AssemblyBuilder.Compile()\r\n   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()\r\n   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)\r\n   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)\r\n   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)\r\n   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)\r\n   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)\r\n   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)\r\n   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass40_0.<RenderPageCore>b__0(TextWriter writer)\r\n   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)\r\n   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)\r\n   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)\r\n   在 System.Web.WebPages.WebPageBase.PopContext()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-12-06 13:00:57",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Shared\_Layout.cshtml(16): error CS1026: 应输入 )
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass40_0.<RenderPageCore>b__0(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-12-06 13:01:05,852 
+线程ID:[32] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "d:\\Workspace\\ERP\\ERPExportSales\\ERPExportSales.Web\\Views\\Shared\\_Layout.cshtml(16): error CS1026: 应输入 )",
+  "Path": "/",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)\r\n   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)\r\n   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)\r\n   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)\r\n   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)\r\n   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)\r\n   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass40_0.<RenderPageCore>b__0(TextWriter writer)\r\n   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)\r\n   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)\r\n   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)\r\n   在 System.Web.WebPages.WebPageBase.PopContext()\r\n   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)\r\n   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-12-06 13:01:05",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): d:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Views\Shared\_Layout.cshtml(16): error CS1026: 应输入 )
+   在 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   在 System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   在 System.Web.WebPages.WebPageBase.CreatePageFromVirtualPath(String virtualPath, HttpContextBase httpContext, Func`2 virtualPathExists, DisplayModeProvider displayModeProvider, IDisplayMode displayMode)
+   在 System.Web.WebPages.WebPageBase.<>c__DisplayClass40_0.<RenderPageCore>b__0(TextWriter writer)
+   在 System.Web.WebPages.HelperResult.WriteTo(TextWriter writer)
+   在 System.Web.WebPages.WebPageBase.Write(HelperResult result)
+   在 System.Web.WebPages.WebPageBase.RenderSurrounding(String partialViewName, Action`1 body)
+   在 System.Web.WebPages.WebPageBase.PopContext()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-12-06 13:08:43,852 
+线程ID:[14] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "c:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Temporary ASP.NET Files\\root\\0f1dc638\\3ad89386\\App_Web_index.cshtml.a8d08dba.vahslueo.0.cs(972): error CS1513: 应输入 }",
+  "Path": "/",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.AssemblyBuilder.Compile()\r\n   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()\r\n   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-12-06 13:08:43",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\0f1dc638\3ad89386\App_Web_index.cshtml.a8d08dba.vahslueo.0.cs(972): error CS1513: 应输入 }
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-12-06 13:09:20,448 
+线程ID:[13] 
+日志级别：  ERROR 
+错误描述：{
+  "MsgType": "HttpCompileException",
+  "Message": "c:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Temporary ASP.NET Files\\root\\0f1dc638\\3ad89386\\App_Web_index.cshtml.a8d08dba.hcvezmfo.0.cs(972): error CS1513: 应输入 }",
+  "Path": "/",
+  "Assembly": "System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+  "ActionArguments": null,
+  "HttpMethod": "GET",
+  "StackTrace": "   在 System.Web.Compilation.AssemblyBuilder.Compile()\r\n   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()\r\n   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)\r\n   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)\r\n   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)\r\n   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)\r\n   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)\r\n   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()\r\n   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)",
+  "Source": "System.Web",
+  "IP": "192.168.1.44:11291",
+  "UserAgent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",
+  "DotNetVersion": "4.0.30319.42000",
+  "DotNetBit": "32位",
+  "OSVersion": "Microsoft Windows NT 6.1.7601 Service Pack 1",
+  "OSBit": "64位",
+  "CPUCount": "4",
+  "CPUType": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+  "IISVersion": "Microsoft-IIS/10.0",
+  "Type": "页面",
+  "ShowException": true,
+  "Time": "2018-12-06 13:09:20",
+  "Method": "Compile"
+}
+ 
+System.Web.HttpCompileException (0x80004005): c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\0f1dc638\3ad89386\App_Web_index.cshtml.a8d08dba.hcvezmfo.0.cs(972): error CS1513: 应输入 }
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+
+ 
+记录时间：2018-12-06 13:15:57,574 
+线程ID:[16] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-06 13:21:36,679 
+线程ID:[18] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43

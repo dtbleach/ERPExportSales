@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    @*<meta name="viewport" content="width=device-width, initial-scale=1">*@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Export Service Platform</title>
+    <title>Shanghai Prime Machinery Co.,Ltd. Export Service Platform</title>
     @*<link rel="stylesheet" type="text/css"
               href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/stylesheets/bootstrap.extend.css")" />
@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/stylesheets/semantic.min.css")" />*@
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/bootstrap/dist/css/bootstrap.min.css")">
+    <link href="@Url.Content("~/Content/css/scroll.css")"  rel="stylesheet" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/font-awesome/css/font-awesome.min.css")">
     <!-- Ionicons -->
@@ -24,6 +25,7 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="@Url.Content("~/Scripts/dist/css/skins/_all-skins.min.css")">
+
     @RenderSection("Css", false)
     <script src="@Url.Content("~/Scripts/jquery-3.3.1.js")"></script>
     <script src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
@@ -45,13 +47,22 @@
     <script src="@Url.Content("~/Scripts/echarts.js")"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     @*<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
+    <style type="text/css">
+        container {
+            width: 1500px;
+            max-width: none !important;
+        }
+        html{
+            overflow:scroll;
+        }
+    </style>
     <script type="text/javascript">
         function linkout() {
             window.location.href = "/Account/Logout";
         }
     </script>
 </head>
-<body class="hold-transition skin-blue layout-top-nav">
+<body class="hold-transition skin-blue layout-top-nav" style="padding-top:0px">
     <div class="wrapper">
         <header class="main-header">
             <nav class="navbar navbar-static-top">
@@ -96,7 +107,7 @@
         </header>
         <!-- Full Width Column -->
         <div class="content-wrapper">
-            <div class="container" style="min-width:1500px">
+            <div class="container" style="width:1500px">
                 <!-- Main content -->
                 @RenderBody()
                 <!-- /.content -->
@@ -156,4 +167,3 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
-

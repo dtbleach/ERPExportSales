@@ -6,22 +6,20 @@
         @Ajax.ActionLink("Next", "OrderQuery", "Home", new { pageNum = ViewBag.PageNum + 1, IsBtnQuery = false }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "divOrders", OnBegin = "$('#divOrders').fadeOut('slow')", OnComplete = "$('#divOrders').fadeIn('slow')", LoadingElementId = "loadingDiv" }, new { @class = "btn btn-default" })
     </div>
 
-    <table id="tbOrders" class="table table-border table-bordered table-bg table-hover table-sort" role="grid" aria-describedby="example1_info">
+    <table id="tbOrders" class="table table-border table-bordered table-bg table-hover table-sort" style="table-layout: fixed;" role="grid">
         <thead>
             <tr role="row">
-                <th style="width:300px">Customer</th>
-                <th style="width:100px">PO No.</th>
-                <th>Sc No.</th>
-                <th>Amount</th>
-                <th>ETD</th>
-                <th>Progess</th>  
-                <th>Sales</th>
-                <th>Making</th>
-                <th>Weight (kg)</th>
-                <th>Invoice No.</th>
-                <th>Packing List</th>
-                <th>BL Copy</th>
-                <th>Quality Report</th>
+                <th class="col-xs-2">Customer</th>
+                <th class="col-xs-1">PO No.</th>
+                <th class="col-xs-1">Sc No.</th>
+                <th class="col-xs-1">Amount</th>
+                <th class="col-xs-1">ETD</th>
+                <th class="col-xs-1">Progess</th>  
+                <th class="col-xs-1">Weight (kg)</th>
+                <th class="col-xs-1">Invoice No.</th>
+                <th class="col-xs-1">Packing List</th>
+                <th class="col-xs-1">BL Copy</th>
+                <th class="col-xs-1">Quality Report</th>
             </tr>
 
         </thead>
@@ -29,12 +27,12 @@
             @foreach (var item in Model.OrderList)
             {
                 <tr role="row">
-                    <td>@item.Customer</td>
-                    <td>@item.PONo</td>
+                    <td style="word-wrap:break-word;word-break:break-all;">@item.Customer</td>
+                    <td style="word-wrap:break-word;word-break:break-all;">@item.PONo</td>
                     <td>@Html.ActionLink(item.SCNo, "PDF", "Files", new { file = item.SCNoHref }, new { target = "_blank" })</td>
                     <td>@item.Amount</td>
                     <td>@item.ETD</td>
-                    <td style="min-width:120px">
+                    <td>
 
                         <div class="progress progress-xs progress-striped active">
                             @if (item.Progress < 50 && item.Progress >= 30)
@@ -56,9 +54,6 @@
                         </div>
                         @item.Progress%
                     </td>
-                 
-                    <td>@item.Sales</td>
-                    <td>@item.Maker</td>
                     <td>@item.Weight</td>
                     <td>@Html.ActionLink(item.InvoiceNo, "PDF", "Files", new { file = item.InvoiceHref }, new { target = "_blank" })</td>
                     <td>@Html.ActionLink(item.PackingList, "PDF", "Files", new { file = item.PackingHref }, new { target = "_blank" })</td>

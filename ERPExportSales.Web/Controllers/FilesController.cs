@@ -54,7 +54,8 @@ namespace ERPExportSales.Web.Controllers
             }catch(Exception ex)
             {
                 LoggerHelper.Error("预览PDF出错", ex);
-                return null;
+                string nopdf=System.Web.HttpContext.Current.Server.MapPath("~/Files/nopdf.pdf");
+                return new FilePathResult(nopdf, "application/pdf");
             }
         }
 

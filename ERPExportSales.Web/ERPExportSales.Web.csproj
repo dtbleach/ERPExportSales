@@ -299,6 +299,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\demo.css" />
     <Content Include="Content\css\login.css" />
+    <Content Include="Content\css\scroll.css" />
     <Content Include="Content\css\style.css" />
     <Content Include="Content\dist\css\AdminLTE.css" />
     <Content Include="Content\dist\css\AdminLTE.min.css" />
@@ -7345,6 +7346,7 @@
     <Content Include="Scripts\dist\css\adminlte.css.map" />
     <Content Include="Scripts\dist\css\adminlte.min.css.map" />
     <Content Include="Files\data\data.json" />
+    <Content Include="Files\nopdf.pdf" />
     <None Include="Properties\PublishProfiles\ERPExportSales.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
