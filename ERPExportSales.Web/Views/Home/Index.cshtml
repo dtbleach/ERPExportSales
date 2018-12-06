@@ -197,7 +197,7 @@
                 url: "/Chart/GetNewUSDCNY",
                 dataType: "json",
                 success: function (data) {
-                    $("#newUSDCNY").html("Date:<b>" + data.PublishDate + "</b> USDCNY:<b>" + data.Price + "</b> RMB");
+                    $("#newUSDCNY").html("Data update time:<b>" + data.PublishDate + "</b> USDCNY:<b>" + data.Price + "</b> RMB");
                 }
             });
             $.ajax({
@@ -205,7 +205,7 @@
                 url: "/Chart/GetNewQ195",
                 dataType: "json",
                 success: function (data) {
-                    $("#newQ195").html("Date:<b>" + data.PublishDate + "</b> Price:<b>" + data.Price + "</b> RMB");
+                    $("#newQ195").html("Data update time:<b>" + data.PublishDate + "</b> Price:<b>" + data.Price + "</b> RMB");
                 }
             });
             //$.getJSON("../../Files/data/data.json", function (data, status) {

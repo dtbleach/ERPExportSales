@@ -20,13 +20,13 @@ namespace ERPExportSales.Services
         }
         public IList<Q195> GetAllQ195()
         {
-            var q195List = iQ195Repository.GetAll();
+            var q195List = iQ195Repository.GetAll().OrderByDescending(p=>p.PublishDate);
             return q195List != null ? q195List.ToList() : null;
         }
 
         public IList<USDCNY> GetAllUSDCNY()
         {
-            var usdcnyList = iUSDCNYRepository.GetAll();
+            var usdcnyList = iUSDCNYRepository.GetAll().OrderByDescending(p => p.PublishDate);
             return usdcnyList != null ? usdcnyList.ToList() : null;
         }
 
