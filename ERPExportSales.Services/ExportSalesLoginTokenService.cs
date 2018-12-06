@@ -27,6 +27,13 @@ namespace ERPExportSales.Services
             return null;
         }
 
+        public void RemoveLoginToken(string name)
+        {
+            var tokenEntity = exportSalesLoginTokenRepository.Get(p=>p.UserName==name);
+            if (tokenEntity != null)
+                exportSalesLoginTokenRepository.Delete(tokenEntity);
+        }
+
         public void SaveLoginToken(ExportSalesLoginToken model)
         {
             if (null != model)

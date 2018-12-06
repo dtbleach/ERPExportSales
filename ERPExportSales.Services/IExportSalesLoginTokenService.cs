@@ -12,5 +12,7 @@ namespace ERPExportSales.Services
         void SaveLoginToken(ExportSalesLoginToken model);
 
         ExportSalesLoginToken GetExportSalesLoginToken(string username);
+
+        void RemoveLoginToken(string name);
     }
 }

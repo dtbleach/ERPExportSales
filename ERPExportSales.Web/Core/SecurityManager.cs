@@ -104,7 +104,6 @@ namespace ERPExportSales.Web.Core
                 if (!cookieExpires)
                 {
                     string computedToken = GenerateToken(username, password, CommonManager.GetIP(request), request.UserAgent, userType,ticks);
-
                     var loginToken = db.ExportSalesLoginTokenEntities.Where(p => p.UserName == username).FirstOrDefault();
                    // var loginToken = _tokenService.GetExportSalesLoginToken(username);
                     if (null != loginToken)

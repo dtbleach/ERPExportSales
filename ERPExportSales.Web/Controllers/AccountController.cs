@@ -126,6 +126,7 @@ namespace ERPExportSales.Web.Controllers
                 SessionHelper.Del("CheckCode");
                 CookieHelper.ClearCookie("token");
                 CookieHelper.ClearCookie("rememberLogin");
+                tokenService.RemoveLoginToken(model.LoginName);
                 ViewBag.ErrorMessage = result.Message;
                 LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "','UserType':" + userType + ",'Date:'" + DateTime.Now + "','Msg':" + result.Message + "}");
                 return View(model);
@@ -134,11 +135,14 @@ namespace ERPExportSales.Web.Controllers
 
         public ActionResult Logout()
         {
+            var user = SessionHelper.Get<UserViewModel>("User");
             SessionHelper.Del("User");
             SessionHelper.Del("CheckCode");
             SessionHelper.Del("NickName");
             CookieHelper.ClearCookie("token");
             CookieHelper.ClearCookie("rememberLogin");
+            if(user!=null)
+                 tokenService.RemoveLoginToken(user.LoginName);
             return RedirectToAction("Login");
         }
     }
