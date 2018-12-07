@@ -14,7 +14,7 @@
                 <th class="col-xs-1">Sc No.</th>
                 <th class="col-xs-1">Amount</th>
                 <th class="col-xs-1">ETD</th>
-                <th class="col-xs-1">Progess</th>  
+                <th class="col-xs-1">Progess</th>
                 <th class="col-xs-1">Weight (kg)</th>
                 <th class="col-xs-1">Invoice No.</th>
                 <th class="col-xs-1">Packing List</th>
@@ -29,7 +29,14 @@
                 <tr role="row">
                     <td style="word-wrap:break-word;word-break:break-all;">@item.Customer</td>
                     <td style="word-wrap:break-word;word-break:break-all;">@item.PONo</td>
-                    <td>@Html.ActionLink(item.SCNo, "PDF", "Files", new { file = item.SCNoHref }, new { target = "_blank" })</td>
+                    @if (item.SCNo != null && !item.SCNo.Equals(""))
+                    {
+                        <td>@Html.ActionLink(item.SCNo, "PDF", "Files", new { file = item.SCNoHref }, new { target = "_blank" })</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
                     <td>@item.Amount</td>
                     <td>@item.ETD</td>
                     <td>
@@ -55,10 +62,38 @@
                         @item.Progress%
                     </td>
                     <td>@item.Weight</td>
-                    <td>@Html.ActionLink(item.InvoiceNo, "PDF", "Files", new { file = item.InvoiceHref }, new { target = "_blank" })</td>
-                    <td>@Html.ActionLink(item.PackingList, "PDF", "Files", new { file = item.PackingHref }, new { target = "_blank" })</td>
-                    <td>@Html.ActionLink(item.BLCopy, "PDF", "Files", new { file = item.BLNoHref }, new { target = "_blank" })</td>
-                    <td>@Html.ActionLink(item.QualityReport, "PDF", "Files", new { file = item.QRHref }, new { target = "_blank" })</td>
+                    @if (item.InvoiceNo != null && !item.InvoiceNo.Equals(""))
+                    {
+                        <td>@Html.ActionLink(item.InvoiceNo, "PDF", "Files", new { file = item.InvoiceHref }, new { target = "_blank" })</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+                    @if (item.PackingList != null && !item.PackingList.Equals(""))
+                    {
+                        <td>@Html.ActionLink(item.PackingList, "PDF", "Files", new { file = item.PackingHref }, new { target = "_blank" })</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+                    @if (item.BLCopy != null && !item.BLCopy.Equals(""))
+                    {
+                        <td>@Html.ActionLink(item.BLCopy, "PDF", "Files", new { file = item.BLNoHref }, new { target = "_blank" })</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+                    @if (item.QualityReport != null && !item.QualityReport.Equals(""))
+                    {
+                        <td>@Html.ActionLink(item.QualityReport, "PDF", "Files", new { file = item.QRHref }, new { target = "_blank" })</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
                 </tr>
             }
         </tbody>

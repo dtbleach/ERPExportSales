@@ -14,10 +14,13 @@ namespace ERPExportSales.Services
 
         public IUnitOfWork unitOfWork;
 
-        public ExportSalesUserService(IDatabaseFactory databaseFactory,IUnitOfWork unitOfWork)
+        public ICustomerRepository customerRepository;
+
+        public ExportSalesUserService(IDatabaseFactory databaseFactory,IUnitOfWork unitOfWork, ICustomerRepository customerRepository)
 		{
             this.databaseFactory = databaseFactory;
             this.unitOfWork = unitOfWork;
+            this.customerRepository = customerRepository;
         }
 
         /// <summary>
@@ -55,6 +58,25 @@ namespace ERPExportSales.Services
             }
             userType = flag.UserType;
             return result;
+        }
+
+        public BizResult<bool> Modify(string oldPassword,string password, string confirmPassword, string loginName)
+        {
+            //BizResult<bool> result = new BizResult<bool>();
+            //var customer = customerRepository.Get(p => p.LoginName == loginName);
+            // if (customer != null)
+            //{
+            //    if (customer.Password == oldPassword)
+            //    {
+
+            //    }
+            //}
+            return null;
+        }
+
+        public BizResult<bool> Modify(string password, string confirmPassword, string loginName)
+        {
+            return null;
         }
     }
 }

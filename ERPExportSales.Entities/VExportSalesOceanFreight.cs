@@ -33,6 +33,9 @@ namespace ERPExportSales.Entities
         [Column("客户ID")]
         public int CustomerID { get; set; }
 
+        [Column("部门ID")]
+        public int DepID { get; set; }
+
         [Column("名称")]
         public string Name { get; set; }
 

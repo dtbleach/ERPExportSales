@@ -80,7 +80,9 @@ namespace ERPExportSales.Web.Controllers
             }
             if (IsBtnQuery)
             {
-                if(!string.IsNullOrEmpty(model.QueryModel.InvoiceNo))
+                if (!string.IsNullOrEmpty(model.QueryModel.Customer))
+                    model.QueryModel.Customer = model.QueryModel.Customer;
+                if (!string.IsNullOrEmpty(model.QueryModel.InvoiceNo))
                     model.QueryModel.InvoiceNo = model.QueryModel.InvoiceNo.Trim();
                 if (!string.IsNullOrEmpty(model.QueryModel.PONo))
                     model.QueryModel.PONo = model.QueryModel.PONo.Trim();
@@ -97,7 +99,7 @@ namespace ERPExportSales.Web.Controllers
             IList<Order> orders = new List<Order>();
             if (userType == 1)
             {
-                orders = exportSalesService.GetOrdersByEmployeeName(model.UserModel.UserName,model.UserModel.DepID, 50, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo);
+                orders = exportSalesService.GetOrdersByEmployeeName(model.UserModel.UserName,model.UserModel.DepID, 50, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo,model.QueryModel.Customer);
             }else if (userType == 2)
             {
                 orders = exportSalesService.GetOrdersByCustomerID(model.UserModel.ID, 50, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo);

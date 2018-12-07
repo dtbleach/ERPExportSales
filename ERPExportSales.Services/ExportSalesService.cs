@@ -68,7 +68,7 @@ namespace ERPExportSales.Services
             }
             else if (level == 2)
             {
-                var vExportSalesOceanFreight = vExportSalesOceanFreightRepository.GetMany(p => p.CustomerID==employee.DepID);
+                var vExportSalesOceanFreight = vExportSalesOceanFreightRepository.GetMany(p => p.DepID==employee.DepID);
                 return vExportSalesOceanFreight != null ? vExportSalesOceanFreight.ToList() : null;
             }
             else if (level == 3)
@@ -109,7 +109,7 @@ namespace ERPExportSales.Services
         /// <param name="pageNum">第几页</param>
         /// <param name="totalCount">总记录数</param>
         /// <returns></returns>
-        public IList<Order> GetOrdersByEmployeeName(string name, int depId,int pageSize, int pageNum, string pono, string scno, string invoiceno)
+        public IList<Order> GetOrdersByEmployeeName(string name, int depId,int pageSize, int pageNum, string pono, string scno, string invoiceno,string customer)
         {
             var db = databaseFactory.Get();
             int level = db.GetEmployeeLevel(name);
@@ -119,6 +119,11 @@ namespace ERPExportSales.Services
             //paramTotalRecord.Direction = System.Data.ParameterDirection.Output;
             string sqlWhere = string.Empty;
             StringBuilder str = new StringBuilder();
+            if (!string.IsNullOrEmpty(customer))
+            {
+                sqlWhere += " and 客户名称 like '%" + customer + "%'";
+            }
+
             if (!string.IsNullOrEmpty(pono))
             {
                 sqlWhere += " and [PO No.]='" + pono + "'";

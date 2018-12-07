@@ -59,11 +59,26 @@
                                                                             }))
                                                                 {
                                                                     <p>
-                                                                        PO No. @Html.TextBoxFor(p => p.QueryModel.PONo, "", new { @class = "form-control" })
-                                                                        SC No. @Html.TextBoxFor(p => p.QueryModel.SCNo, "", new { @class = "form-control" })
-                                                                        Invoice No. @Html.TextBoxFor(p => p.QueryModel.InvoiceNo, "", new { @class = "form-control" })
-                                                                        <button type="submit" class="btn btn-primary">Search</button>
-                                                                    </p>
+                                                                        @if (Model != null && Model.UserModel != null) {
+                                                                            if (Model.UserModel.UserType.Equals("1"))
+                                                                            {
+                                                                                <label>Customer</label>@Html.TextBoxFor(p => p.QueryModel.Customer, "", new { @class = "form-control" });
+                                                                            }else
+                                                                            {
+                                                                                Model.QueryModel.Customer = "";
+                                                                            }
+                                                                        }
+                                                                        <label>
+                                                                            PO No. @Html.TextBoxFor(p => p.QueryModel.PONo, "", new { @class = "form-control" })
+                                                                        </label>
+                                                                        <label>
+                                                                            SC No. @Html.TextBoxFor(p => p.QueryModel.SCNo, "", new { @class = "form-control" })
+                                                                        </label>
+                                                                                <label>
+                                                                                    Invoice No.</label> @Html.TextBoxFor(p => p.QueryModel.InvoiceNo, "", new { @class = "form-control" })
+                                                                                    
+                                                                                    <button type="submit" class="btn btn-primary">Search</button>
+</p>
                                                                     @*@Ajax.ActionLink("Previous", "OrderQuery", "Home", new { QueryModel =Model.QueryModel,InvoiceNo=Model.QueryModel.InvoiceNo ,IsBtnQuery = true }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "divOrders", OnBegin = "$('#divOrders').fadeOut('slow')", OnComplete = "$('#divOrders').fadeIn('slow')", LoadingElementId = "loadingDiv" }, new { @class = "btn btn-primary" })*@
 
 
@@ -197,7 +212,7 @@
                 url: "/Chart/GetNewUSDCNY",
                 dataType: "json",
                 success: function (data) {
-                    $("#newUSDCNY").html("Data update time:<b>" + data.PublishDate + "</b> USDCNY:<b>" + data.Price + "</b> RMB");
+                    $("#newUSDCNY").html("Update time:  <b>" + data.PublishDate + "</b> USDCNY: <h4 class='box-title'><b>" + data.Price + "</b></h4>");
                 }
             });
             $.ajax({
@@ -205,7 +220,7 @@
                 url: "/Chart/GetNewQ195",
                 dataType: "json",
                 success: function (data) {
-                    $("#newQ195").html("Data update time:<b>" + data.PublishDate + "</b> Price:<b>" + data.Price + "</b> RMB");
+                    $("#newQ195").html("Update time:  <b>" + data.PublishDate + "</b> Price: <h4 class='box-title'><b>" + data.Price + "</b></h4> RMB/T");
                 }
             });
             //$.getJSON("../../Files/data/data.json", function (data, status) {

@@ -22,6 +22,8 @@ namespace ERPExportSales.Web.Models
 
     public class QueryViewModel
     {
+        public string Customer { get; set; }
+
         public string PONo { get; set; }
 
         public string SCNo { get; set; }
