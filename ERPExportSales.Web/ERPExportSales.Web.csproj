@@ -7415,6 +7415,7 @@
     <Content Include="Views\Home\Q195.cshtml" />
     <None Include="Service References\ExportSalesWebService\SFCService.wsdl" />
     <Content Include="Views\Files\PDF.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

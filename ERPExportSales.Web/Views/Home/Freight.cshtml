@@ -16,7 +16,7 @@
                             <div class="col-md-12">
                                 <table id="tbFreight" class="table table-border table-bordered table-bg table-hover table-sort" role="grid">
                                     <thead>
-                                        <tr role="row"><th style="width:200px">Customer</th><th>Port</th><th>Freight</th><th>Schedule</th><th>Days to port</th></tr>
+                                        <tr role="row"><th style="width:200px">Customer</th><th>Port</th><th>Freight</th><th>Days to port</th></tr>
                                     </thead>
                                     <tbody>
                                         @foreach (var item in Model)
@@ -24,10 +24,8 @@
                                             <tr role="row">
                                                 <td>@item.Name</td>
                                                 <td>@item.Port</td>
-                                                <td>@item.Freight</td>
-                                                <td>@item.Schedule</td>
-                                                <td>@item.DaysToPort</td>
-                                          
+                                                <td>@item.Freight</td>             
+                                                <td>@item.DaysToPort</td>                             
                                             </tr>
                                         }
                                     </tbody>

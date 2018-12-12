@@ -3,6 +3,7 @@ using ERPExportSales.Entities;
 using ERPExportSales.Framework;
 using ERPExportSales.Services;
 using ERPExportSales.Web.Core;
+using ERPExportSales.Web.Filter;
 using ERPExportSales.Web.Models;
 using System;
 using System.Collections.Generic;
@@ -132,6 +133,37 @@ namespace ERPExportSales.Web.Controllers
                 LoggerHelper.Info("{'IP':'" + ip + "','Name':'" + model.LoginName + "','UserType':" + userType + ",'Date:'" + DateTime.Now + "','Msg':" + result.Message + "}");
                 return View(model);
             }
+        }
+        [AuthorizeUser]
+        public ActionResult ChangePassword()
+        {
+            ChangedPasswordViewModel model = new ChangedPasswordViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        [AuthorizeUser]
+        public JsonResult ChangePassword(ChangedPasswordViewModel model)
+        {
+            BizResult<bool> result = new BizResult<bool>();
+            if (ModelState.IsValid)
+            {
+                if (model == null)
+                {
+                    result.Result = false;
+                    result.Message = "Mode is null";
+                    return Json(result);
+                }
+                var user = SessionHelper.Get<UserViewModel>("User");
+                if (user == null)
+                {
+                    result.Result = false;
+                    result.Message = "User is null";
+                    return Json(result);
+                }
+                result = customerService.ChangePassword(user.LoginName, model.OldPassword, model.NewPassword, model.ConfirmPassword);
+            }
+            return Json(result);
         }
 
         public ActionResult Logout()

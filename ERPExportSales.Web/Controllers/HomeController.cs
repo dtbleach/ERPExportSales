@@ -99,10 +99,10 @@ namespace ERPExportSales.Web.Controllers
             IList<Order> orders = new List<Order>();
             if (userType == 1)
             {
-                orders = exportSalesService.GetOrdersByEmployeeName(model.UserModel.UserName,model.UserModel.DepID, 50, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo,model.QueryModel.Customer);
+                orders = exportSalesService.GetOrdersByEmployeeName(model.UserModel.UserName,model.UserModel.DepID,15, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo,model.QueryModel.Customer);
             }else if (userType == 2)
             {
-                orders = exportSalesService.GetOrdersByCustomerID(model.UserModel.ID, 50, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo);
+                orders = exportSalesService.GetOrdersByCustomerID(model.UserModel.ID,15, pageNum, model.QueryModel.PONo, model.QueryModel.SCNo, model.QueryModel.InvoiceNo);
             }
             IList<OrderViewModel> orderList = new List<OrderViewModel>();
             foreach (var item in orders)

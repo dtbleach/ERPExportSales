@@ -10,6 +10,22 @@ namespace ERPExportSales.Web.Models
         public string Email { get; set; }
     }
 
+    public class ChangedPasswordViewModel
+    {
+        [Required(ErrorMessage = "OldPassword must be filled in")]
+        [DataType(DataType.Password)]
+        public string OldPassword { get; set; }
+
+        [Required(ErrorMessage = "NewPassword must be filled in")]
+        [StringLength(8,MinimumLength =8,ErrorMessage = "Must be 8 characters")]
+        [DataType(DataType.Password)]
+        public string NewPassword { get; set; }
+
+        [Required(ErrorMessage = "ConfirmPassword must be filled in")]
+        [Compare("NewPassword",ErrorMessage = "Please enter the same password")]
+        [DataType(DataType.Password)]
+        public string ConfirmPassword { get; set; }
+    }
 
     public class UserViewModel
     {

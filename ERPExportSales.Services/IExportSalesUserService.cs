@@ -9,7 +9,5 @@ namespace ERPExportSales.Services
     public interface IExportSalesUserService
     {
        BizResult<bool> Login(string loginName, string password,ref int userType);
-
-       BizResult<bool> Modify(string password, string confirmPassword, string loginName);
     }
 }

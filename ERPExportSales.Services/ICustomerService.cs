@@ -11,5 +11,7 @@ namespace ERPExportSales.Services
     {
         Customer GetCustomer(string userName);
         string GetCustomerSHAPassword(string userName);
+
+        BizResult<bool> ChangePassword(string loginName, string oldPassword, string newPassword, string confirmPassword);
     }
 }

@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/stylesheets/semantic.min.css")" />*@
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/bootstrap/dist/css/bootstrap.min.css")">
-    <link href="@Url.Content("~/Content/css/scroll.css")"  rel="stylesheet" />
+    @*<link href="@Url.Content("~/Content/css/scroll.css")"  rel="stylesheet" />*@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="@Url.Content("~/Scripts/bower_components/font-awesome/css/font-awesome.min.css")">
     <!-- Ionicons -->
@@ -32,6 +32,7 @@
     <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"></script>
     <!-- jQuery 3 -->
     <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap-growl.js")"></script>
     <!-- Bootstrap 3.3.7 -->
     <script src="@Url.Content("~/Scripts/bower_components/bootstrap/dist/js/bootstrap.min.js")"></script>
     <!-- DataTables -->
@@ -47,7 +48,7 @@
     <script src="@Url.Content("~/Scripts/echarts.js")"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     @*<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
-    <style type="text/css">
+    @*<style type="text/css">
         container {
             width: 1500px;
             max-width: none !important;
@@ -55,17 +56,16 @@
         html{
             overflow:scroll;
         }
-    </style>
+    </style>*@
     <script type="text/javascript">
         function linkout() {
             window.location.href = "/Account/Logout";
         }
     </script>
 </head>
-<body class="hold-transition skin-blue layout-top-nav" style="padding-top:0px">
-    <div class="wrapper">
-        <header class="main-header">
-           
+<body class="skin-blue layout-top-nav" style="height: auto; min-height: 100%;">
+    <div class="wrapper"  style="height: auto; min-height: 100%;">
+        <header class="main-header">     
             <nav class="navbar navbar-static-top">
                 <div class="pull-left" style="margin-left:250px">
                     <img alt="logo" src="@Url.Content("~/Content/img/logo.gif")" style="height:50px;width:200px">
@@ -85,7 +85,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="System setting"><i class="glyphicon glyphicon-asterisk"></i><span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Change password</a></li>
+                                    <li><a href="#"  id="hrefChangePassowrd">Change password</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -100,8 +100,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                     <span class="hidden-xs">Welcome,@ViewBag.NickName</span>       
-                                </a>
-                                
+                                </a>                        
                             </li>
                             <li><a href="#" data-toggle="modal" data-target="#modal-default">[ Logout ]</a></li>
                         </ul>
@@ -112,19 +111,17 @@
             </nav>
         </header>
         <!-- Full Width Column -->
-        <div class="content-wrapper">
-            <div class="container" style="width:1500px">
+        <div class="content-wrapper" style="min-height:1200px">
                 <!-- Main content -->
                 @RenderBody()
                 <!-- /.content -->
-            </div>
             <!-- /.container -->
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <div class="container">
                 <div class="pull-right hidden-xs">
-                    <b>Version</b> 1.0.0
+                    <b>Version</b>1.0.0
                 </div>
                 <strong>
                     Address:
@@ -138,13 +135,13 @@
                 <strong>
                     Email:
                 </strong>export@sfiec.com; sfc@sfiec.com
-
                 <div class="center hidden-xs">
                     <strong> Copyright:Shanghai Prime Machinery Co.,Ltd.</strong> All rights reserved.
                 </div>
             </div>
             <!-- /.container -->
         </footer>
+
     </div>
     <div class="modal fade" id="modal-default">
         <div class="modal-dialog">
@@ -167,6 +164,7 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
+    @{Html.RenderAction("ChangePassword","Account");}
     @RenderSection("scripts", required: false)
 </body>
 </html>

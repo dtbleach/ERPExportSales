@@ -60,23 +60,5 @@ namespace ERPExportSales.Services
             return result;
         }
 
-        public BizResult<bool> Modify(string oldPassword,string password, string confirmPassword, string loginName)
-        {
-            //BizResult<bool> result = new BizResult<bool>();
-            //var customer = customerRepository.Get(p => p.LoginName == loginName);
-            // if (customer != null)
-            //{
-            //    if (customer.Password == oldPassword)
-            //    {
-
-            //    }
-            //}
-            return null;
-        }
-
-        public BizResult<bool> Modify(string password, string confirmPassword, string loginName)
-        {
-            return null;
-        }
     }
 }
