@@ -44,6 +44,7 @@ namespace ERPExportSales.Services
                 case -2: bizResut.Result = false; bizResut.Message = "Incorrect account and password"; break;
                 case -3: bizResut.Result = false; bizResut.Message = "Failed to change password(-3)"; break;
             }
+            LoggerHelper.Info("{LoginName:'" + loginName + "',OldPassword:'" + oldPassword + "',NewPassword:'" + newPassword + "',ConfilePassword:'" + confirmPassword + "',Result:" + bizResut.Result + ",Msg:'" + bizResut.Message + "'}");
             return bizResut;
         }
 

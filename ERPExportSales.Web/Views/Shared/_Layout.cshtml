@@ -64,14 +64,14 @@
     </script>
 </head>
 <body class="skin-blue layout-top-nav" style="height: auto; min-height: 100%;">
-    <div class="wrapper"  style="height: auto; min-height: 100%;">
-        <header class="main-header">     
+    <div class="wrapper" style="height: auto; min-height: 100%;">
+        <header class="main-header">
             <nav class="navbar navbar-static-top">
                 <div class="pull-left" style="margin-left:250px">
                     <img alt="logo" src="@Url.Content("~/Content/img/logo.gif")" style="height:50px;width:200px">
                 </div>
                 <div class="container">
-                    <div class="navbar-header">                     
+                    <div class="navbar-header">
                         <a href="/Home/Index" class="navbar-brand"><b>Export Service  Platform</b></a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                             <i class="fa fa-bars"></i>
@@ -85,7 +85,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="System setting"><i class="glyphicon glyphicon-asterisk"></i><span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#"  id="hrefChangePassowrd">Change password</a></li>
+                                    <li><a href="#" id="hrefChangePassowrd">Change password</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -94,13 +94,16 @@
                     <!-- Navbar Right Menu -->
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#" id="current-time"></a>
+                            </li>
                             <!-- User Account Menu -->
                             <li class="dropdown user user-menu">
                                 <!-- Menu Toggle Button -->
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                    <span class="hidden-xs">Welcome,@ViewBag.NickName</span>       
-                                </a>                        
+                                    <span class="hidden-xs">Welcome,@ViewBag.NickName</span>
+                                </a>
                             </li>
                             <li><a href="#" data-toggle="modal" data-target="#modal-default">[ Logout ]</a></li>
                         </ul>
@@ -110,11 +113,12 @@
                 <!-- /.container-fluid -->
             </nav>
         </header>
+
         <!-- Full Width Column -->
-        <div class="content-wrapper" style="min-height:1200px">
-                <!-- Main content -->
-                @RenderBody()
-                <!-- /.content -->
+        <div class="content-wrapper">
+            <!-- Main content -->
+            @RenderBody()
+            <!-- /.content -->
             <!-- /.container -->
         </div>
         <!-- /.content-wrapper -->
@@ -141,8 +145,8 @@
             </div>
             <!-- /.container -->
         </footer>
-
     </div>
+
     <div class="modal fade" id="modal-default">
         <div class="modal-dialog">
             <div class="modal-content">

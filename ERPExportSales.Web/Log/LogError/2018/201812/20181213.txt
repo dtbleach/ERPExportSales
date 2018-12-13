@@ -1,0 +1,96 @@
+
+ 
+记录时间：2018-12-13 10:16:07,005 
+线程ID:[74] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-13 10:16:43,223 
+线程ID:[50] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-13 10:34:21,650 
+线程ID:[27] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-13 10:34:58,842 
+线程ID:[27] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-13 10:35:13,951 
+线程ID:[24] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-13 11:03:05,635 
+线程ID:[16] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-13 12:50:23,279 
+线程ID:[26] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43
+
+ 
+记录时间：2018-12-13 12:50:33,556 
+线程ID:[50] 
+日志级别：  ERROR 
+错误描述：预览PDF出错
+ 
+System.ArgumentNullException: 缓冲区不能为 null。
+参数名: buffer
+   在 System.IO.MemoryStream..ctor(Byte[] buffer, Boolean writable)
+   在 System.IO.MemoryStream..ctor(Byte[] buffer)
+   在 ERPExportSales.Web.Controllers.FilesController.GetPDF(String file) 位置 D:\Workspace\ERP\ERPExportSales\ERPExportSales.Web\Controllers\FilesController.cs:行号 43

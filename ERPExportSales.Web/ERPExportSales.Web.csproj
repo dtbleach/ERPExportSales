@@ -6686,6 +6686,7 @@
     <Content Include="Scripts\dist\js\pages\dashboard.js" />
     <Content Include="Scripts\dist\js\pages\dashboard2.js" />
     <Content Include="Scripts\echarts.js" />
+    <Content Include="Scripts\home\index.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\layout.js" />

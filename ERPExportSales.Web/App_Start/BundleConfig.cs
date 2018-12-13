@@ -25,6 +25,8 @@ namespace ERPExportSales.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                                "~/Content/style.css"));
+            bundles.Add(new ScriptBundle("~/bundles/home").Include(
+                            "~/Scripts/home/index.js"));
         }
     }
 }

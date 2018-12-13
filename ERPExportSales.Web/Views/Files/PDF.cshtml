@@ -1,17 +1,17 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="row">
+    <section class="content">
 
-<section class="content">
+        <div id="loadingDiv" style="display:none" class="form-inline">
+            <img src="@Url.Content("~/Content/img/loading.gif")" /><h3>Loading...</h3>
+        </div>
+        <div id="pdfContent" class="col-xs-12" style="height:1080px">
+        </div>
 
-    <div id="loadingDiv" style="display:none" class="form-inline">
-        <img src="@Url.Content("~/Content/img/loading.gif")" /><h3>Loading...</h3>
-    </div>
-    <div id="pdfContent" class="col-xs-12" style="height:1080px">
-    </div>
-
-</section>
-
+    </section>
+</div>
 @section Scripts{
     <script type="text/javascript">
         $("#loadingDiv").show();
