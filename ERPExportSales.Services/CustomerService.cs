@@ -41,7 +41,7 @@ namespace ERPExportSales.Services
                 case 0: bizResut.Result = false;bizResut.Message = "Failed to change password(0)"; break;
                 case 1: bizResut.Result = true; bizResut.Message = "Successful password change"; break;
                 case -1: bizResut.Result = false; bizResut.Message = "Please enter the same password"; break;
-                case -2: bizResut.Result = false; bizResut.Message = "Incorrect account number and password"; break;
+                case -2: bizResut.Result = false; bizResut.Message = "Incorrect account and password"; break;
                 case -3: bizResut.Result = false; bizResut.Message = "Failed to change password(-3)"; break;
             }
             return bizResut;

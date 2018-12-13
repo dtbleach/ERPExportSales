@@ -221,112 +221,7 @@
 
 
             // 根据配置项和数据显示图表
-            function drawUSDCNYLines(data) {
-                //$("#usdcnyDiv").css("width", "720px");
-                //$("#usdcnyDiv").css("height", "300px");
-                var myChart = echarts.init(document.getElementById('usdcnyDiv'));
-                myChart.showLoading();
-                myChart.setOption({
-                    title: {
-                        text: 'USDCNY',
-                        x: 'center'
-                    },
-                    tooltip: {
-                        trigger: 'axis'
-                    },
-                    grid: {
-                        left: 50,
-                        right: 40
-                    },
-                    xAxis: {
-                        data: data.map(function (item) {
-                            return item.PublishDate;
-                        }),
-                        inverse: true
-                    },
-                    yAxis: {
-                        name: 'RMB',
-                        min: 6
-                    },
-                    series: [
-                        {
-                            name: 'USDCNY',
-                            type: 'line',
-                            //markPoint: {
-                            //    data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
-                            //},
-                            data: data.map(function (item) {
-                                return item.Price;
-                            })
-                        }
-                        //, {
-                        //    name: '现汇买入',
-                        //    type: 'line',
-                        //    markPoint: {
-                        //        data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
-                        //    },
-                        //    data: data.map(function (item) {
-                        //        return item[0];
-                        //    })
-                        //}, {
-                        //    name: '现钞买入',
-                        //    type: 'line',
-                        //    markPoint: {
-                        //        data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
-                        //    },
-                        //    data: data.map(function (item) {
-                        //        return item[1];
-                        //    })
-                        //}
-                    ]
-                });
-                myChart.hideLoading();
-            }
-            function drawQ195Lines(data) {
-                //$("#q195Div").css("width", "720px");
-                //$("#q195Div").css("height","300px");
-                var myChart = echarts.init(document.getElementById('q195Div'));
-                myChart.setOption({
-                    title: {
-                        text: 'Q195',
-                        x: 'center'
-                    },
-                    tooltip: {
-                        trigger: 'axis'
-                    },
-                    legend: {
-                        top: 25,
-                        left: 'right',
-                        data: []
-                    },
-                    grid: {
-                        left: 50,
-                        right: 40
-                    },
-                    xAxis: {
-                        data: data.map(function (item) {
-                            return item.PublishDate;
-                        }),
-                        inverse: true
-                    },
-                    yAxis: {
-                        name: 'Price',
-                        min: 2500
-                    },
-                    series: [
-                        {
-                            name: 'Q195 Price',
-                            type: 'line',
-                            //markPoint: {
-                            //    data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
-                            //},
-                            data: data.map(function (item) {
-                                return item.Price;
-                            })
-                        }
-                    ]
-                });
-            }
+         
             var q195div = echarts.getInstanceByDom(document.getElementById("q195Div"));
             var usdcnyDiv = echarts.getInstanceByDom(document.getElementById("usdcnyDiv"));
             window.addEventListener("resize", function () {
@@ -337,20 +232,134 @@
                     usdcnyDiv.resize();
                 }
             });
-
-
             $("#hrefChangePassowrd").click(function () {
-                $("#modal-changepassword").modal("show");
+                var usertype=@Model.UserModel.UserType;
+                if(usertype==2){
+                    $("#OldPassword").val("");
+                    $("#NewPassword").val("");
+                    $("#ConfirmPassword").val("");
+                    $("#form-changepassword").validate().resetForm();
+                    $("#modal-changepassword").modal("show");
+                }else{
+                    $("#modal-changepassword-noshow").modal("show");
+                }
             })
-           
         })
+        function drawUSDCNYLines(data) {
+            //$("#usdcnyDiv").css("width", "720px");
+            //$("#usdcnyDiv").css("height", "300px");
+            var myChart = echarts.init(document.getElementById('usdcnyDiv'));
+            myChart.showLoading();
+            myChart.setOption({
+                title: {
+                    text: 'USDCNY',
+                    x: 'center'
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                grid: {
+                    left: 50,
+                    right: 40
+                },
+                xAxis: {
+                    data: data.map(function (item) {
+                        return item.PublishDate;
+                    }),
+                    inverse: true
+                },
+                yAxis: {
+                    name: 'RMB',
+                    min: 6
+                },
+                series: [
+                    {
+                        name: 'USDCNY',
+                        type: 'line',
+                        //markPoint: {
+                        //    data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
+                        //},
+                        data: data.map(function (item) {
+                            return item.Price;
+                        })
+                    }
+                    //, {
+                    //    name: '现汇买入',
+                    //    type: 'line',
+                    //    markPoint: {
+                    //        data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+                    //    },
+                    //    data: data.map(function (item) {
+                    //        return item[0];
+                    //    })
+                    //}, {
+                    //    name: '现钞买入',
+                    //    type: 'line',
+                    //    markPoint: {
+                    //        data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+                    //    },
+                    //    data: data.map(function (item) {
+                    //        return item[1];
+                    //    })
+                    //}
+                ]
+            });
+            myChart.hideLoading();
+        }
+        function drawQ195Lines(data) {
+            //$("#q195Div").css("width", "720px");
+            //$("#q195Div").css("height","300px");
+            var myChart = echarts.init(document.getElementById('q195Div'));
+            myChart.setOption({
+                title: {
+                    text: 'Q195',
+                    x: 'center'
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    top: 25,
+                    left: 'right',
+                    data: []
+                },
+                grid: {
+                    left: 50,
+                    right: 40
+                },
+                xAxis: {
+                    data: data.map(function (item) {
+                        return item.PublishDate;
+                    }),
+                    inverse: true
+                },
+                yAxis: {
+                    name: 'Price',
+                    min: 2500
+                },
+                series: [
+                    {
+                        name: 'Q195 Price',
+                        type: 'line',
+                        //markPoint: {
+                        //    data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
+                        //},
+                        data: data.map(function (item) {
+                            return item.Price;
+                        })
+                    }
+                ]
+            });
+        }
         function onBegin() {
-            $("#modal-changepassword-loading").modal("show");
+            $("#imgPLoading").show();
+            $("#btnPSubmit").removeClass("btn-primary");
+            $("#btnPSubmit").addClass("btn-gray");
+            $("#btnPSubmit").attr("disabled", true);
         }
         function onSuccess(data) {
             if (data.Result) {
-                alert("Successful password change,please login again !");
-                location.href = "/Account/Login";
+                $("#modal-changepassword-success").modal("show");
             } else {
                 alert(data.Message);
             }
@@ -359,7 +368,20 @@
             alert(error);
         }
         function onComplete() {
-            $("#modal-changepassword-loading").modal("hide");
+            $("#imgPLoading").hide();
+            $("#btnPSubmit").removeClass("btn-gray");
+            $("#btnPSubmit").addClass("btn-primary");
+            $("#btnPSubmit").removeAttr("disabled");
+        }
+        function confimRedirectLogin() {
+            location.href = "/Account/Login";
+        }
+        function closeChangePassword() {
+            $("#OldPassword").val("");
+            $("#NewPassword").val("");
+            $("#ConfirmPassword").val("");
+            $("#modal-changepassword").modal("hide");
+            $("#form-changepassword").validate().resetForm();
         }
     </script>
 }
