@@ -1,7 +1,8 @@
 ﻿using System.Threading.Tasks;
 using System.Security.Claims;
 using Microsoft.Owin.Security.OAuth;
-
+using Microsoft.Owin.Security;
+using System.Collections.Generic;
 
 namespace ERPExportSales.Web.Api
 {
@@ -35,5 +36,7 @@ namespace ERPExportSales.Web.Api
             context.Validated(identity);
 
         }
+
+   
     }
 }
