@@ -1,0 +1,106 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<div class="row">
+    <section class="content-header">
+        @*<h1>
+                Top Navigation
+                <small>Example 2.0</small>
+            </h1>*@
+        <ol class="breadcrumb" style="padding-right:150px">
+            <li><a href="/Crawler/Index">Home</a></li>
+            <li class="active">Order</li>
+        </ol>
+    </section>
+    <section class="content" style="padding-left:200px;padding-right:150px">
+        <form role="form" ng-app="myApp" ng-controller="formCtrl" class="form-horizontal" style="margin-top: 20px;"
+              name="myForm" novalidate>
+            <div class="col-xs-12">
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs" id="infoUl">
+                        <li class="active"><a href="#settings" data-toggle="tab" aria-expanded="true">查询</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="settings">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                        <div class="box-body box-profile">
+                                            <div class="box">
+                                                @*<div class="box-header">
+                                                        <h3 class="box-title">数据信息</h3>
+                                                    </div>*@
+                                                <!-- /.box-header -->
+                                                <div class="box-body">
+                                                    <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                                        <div class="row">
+                                                            <div class="col-md-12" id="">
+                                                                <div class="pull-left form-inline">
+                                                                    <div>
+   
+                                                                            <input type="text" class="form-control" style="width:800px;margin-left:300px" placeholder="多关键字用空格分开 例如：5782 8.8 M10*50 发黑" />
+                                                                            <button type="submit" class="btn btn-primary">查   询</button>
+                                         
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <div id="loadingDiv" style="display:none" class="form-inline">
+                                                                    <img src="@Url.Content("~/Content/img/loading.gif")" /><h3>Loading...</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                    </div>
+                                    <!-- /.box - body-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.tab - pane-->
+                        <!-- /.tab-pane -->
+                    </div>
+                    <!-- /.tab - pane-->
+
+     
+                <!-- /.tab-content -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+
+        </form>
+    </section>
+</div>
+@section Scripts{
+    <!--{Html.RegisterMvcPagerScriptResource();}-->
+    @Scripts.Render("~/bundles/home")
+    <script type="text/javascript">
+        Date.prototype.Format = function (fmt) { //author: meizz
+            var o = {
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds(), //秒
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+                "S": this.getMilliseconds() //毫秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+        $(document).ready(function () {
+            setInterval(function () {
+                var now = (new Date().Format("MM/dd/yyyy hh:mm:ss")).toLocaleString();
+                $('#current-time').text(now);
+            }, 1000);
+        })
+    </script>
+}
+
+

@@ -1,0 +1,242 @@
+/*---------------------------------------------------Login------------------------------------------------------------*/
+#header{
+	height:80px;
+}
+#login-logo-left{
+	float:left;
+}
+#sfc-logo{
+	margin:40px 10px 0 0;
+}
+#sfc-logo a{
+	text-indent:-9999px;
+	display:block;
+	float:left;
+	width:290px;
+	height:70px;
+	background:url(../img/logo.gif) no-repeat 0 0;
+}
+
+div.login {
+	background:url(../img/in-3.gif) no-repeat;
+    
+    background-position: center;
+    background-size:100% 100%;
+	padding:100px 0;
+	color:#fff;
+	height:450px;
+}
+div.login h3.text-center {
+	color:#fff;
+	font-weight: 500;
+	font-family: 'Viga', sans-serif;
+}
+div.login p.text-center {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0px 0 80px;
+    color: #fff;
+}
+div.login .form-group { 
+	border: 1px solid rgba(99, 99, 99, 0);
+    border-radius: 0px;
+    height: 30px;
+    padding: 16px 12px;
+    font-size: 19px;
+    color: #FFFFFF;
+    outline: none;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.login-container{
+width: 100%;
+position:absolute;
+top:180px;
+left:210px;
+height:100%;
+}
+
+.login-info{
+  float: right;
+  width: 23%;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.login-info h2 {
+  color: #fff;
+  font-family: 'FjallaOne-Regular';
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-info{
+	margin:2em 14em 0 0;
+}
+
+.login-info .checkbox input {
+	position: absolute;
+	left: -9999px;
+}
+
+.login-info.checkbox i {
+	border-color: #fff;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+
+.login-info.checkbox i:hover {
+	border-color:red;
+}
+
+.login-info  i:before {
+	background-color: #2da5da;	
+}
+
+.login-info  .rating label {
+	color: #ccc;
+	transition: color 0.3s;
+	-o-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+}
+
+.login-info  .checkbox input + i:after {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+
+.login-info .checkbox input + i:after {
+	content:url(../img/tick.png);
+	top: 0px;
+    left: 0px;
+	width: 15px;
+	height: 15px;
+}
+
+.login-info  .checkbox {
+	float: left;
+}
+
+.login-info .checkbox {
+	padding-left: 40px;
+	font-size: 14px;
+	color:#fff;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.login-info  .checkbox {
+	position: relative;
+	display: block;
+    margin: 0px 0;
+}
+
+.login-info  .checkbox i {
+	position: absolute;
+	top:0px;
+	left:5px;
+	display: block;
+	width:22px;
+	height:22px;
+	outline: none;
+	border:1px solid #969696;
+	background:#fff;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+}
+
+.login-info  .checkbox input + i:after {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+
+.login-info .checkbox input + i:after {
+	color: #2da5da;
+}
+
+.login-info .rating input:checked ~ label {
+	color: #2da5da;	
+}
+.login-info .checkbox input:checked + i:after {
+	opacity: 1;
+}
+
+.login-info input[type="submit"] {
+  font-family: 'FjallaOne-Regular';
+    border: none;
+    outline: none;
+    color: #fff;
+  padding: 5px 23px;
+    font-size: 20px;
+    -webkit-appearance: none;
+    background:dodgerblue;
+    margin-top:20px;
+}
+
+.login-info input[type="submit"]:hover {
+  background: #fff;
+  color:#37B7E5;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+input::-webkit-input-placeholder {
+color:#fff!important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color:#fff!important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color:#fff!important;  
+}
+ 
+input:-ms-input-placeholder {  
+color:#fff!important;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
