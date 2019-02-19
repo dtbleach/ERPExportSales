@@ -6,7 +6,7 @@
         @Ajax.ActionLink("Next", "OrderQuery", "Home", new { pageNum = ViewBag.PageNum + 1, IsBtnQuery = false }, new AjaxOptions { HttpMethod = "Post", UpdateTargetId = "divOrders", OnBegin = "$('#divOrders').fadeOut('slow')", OnComplete = "$('#divOrders').fadeIn('slow')", LoadingElementId = "loadingDiv" }, new { @class = "btn btn-default" })
     </div>
 
-    <table id="tbOrders" class="table table-border table-bordered table-bg table-hover table-sort" style="table-layout: fixed;" role="grid">
+    <table id="tbOrders" class="table table-border table-bordered table-bg table-hover table-sort table-striped" style="word-break:break-all; word-wrap:break-all;" role="grid">
         <thead>
             <tr role="row">
                 <th class="col-xs-2">Customer</th>
@@ -27,8 +27,8 @@
             @foreach (var item in Model.OrderList)
             {
                 <tr role="row">
-                    <td style="word-wrap:break-word;word-break:break-all;">@item.Customer</td>
-                    <td style="word-wrap:break-word;word-break:break-all;">@item.PONo</td>
+                    <td>@item.Customer</td>
+                    <td>@item.PONo</td>
                     @if (item.SCNo != null && !item.SCNo.Equals(""))
                     {
                         <td>@Html.ActionLink(item.SCNo, "PDF", "Files", new { file = item.SCNoHref }, new { target = "_blank" })</td>

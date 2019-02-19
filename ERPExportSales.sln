@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Entities", "ERPExportSales.Entities\ERPExportSales.Entities.csproj", "{E25D3C86-92D8-4C3D-BA71-A00A42BD949A}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Tests", "ERPExportSales.Tests\ERPExportSales.Tests.csproj", "{735B5A45-4B9B-4F70-825F-A843CB89F1D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Services", "ERPExportSales.Services\ERPExportSales.Services.csproj", "{6C55C7D2-9DEB-430C-AFDB-1625FDAEE7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Web.Api", "ERPExportSales.Web.Api\ERPExportSales.Web.Api.csproj", "{A65B52DD-039C-413A-AD3A-2743939A65F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,8 +65,15 @@ Global
 		{6C55C7D2-9DEB-430C-AFDB-1625FDAEE7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C55C7D2-9DEB-430C-AFDB-1625FDAEE7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C55C7D2-9DEB-430C-AFDB-1625FDAEE7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65B52DD-039C-413A-AD3A-2743939A65F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65B52DD-039C-413A-AD3A-2743939A65F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65B52DD-039C-413A-AD3A-2743939A65F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65B52DD-039C-413A-AD3A-2743939A65F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA66A46B-5439-456B-8AA6-2E47CB41F842}
 	EndGlobalSection
 EndGlobal
