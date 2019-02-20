@@ -27,47 +27,70 @@
                             <div class="row">
                                 <div class="col-md-12">
 
-                                        <div class="box-body box-profile">
-                                            <div class="box">
-                                                @*<div class="box-header">
-                                                        <h3 class="box-title">数据信息</h3>
-                                                    </div>*@
-                                                <!-- /.box-header -->
-                                                <div class="box-body">
-                                                    <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-                                                        <div class="row">
-                                                            <div class="col-md-12" id="">
-                                                                <div class="pull-left form-inline">
-                                                                    <div>
-   
-                                                                            <input type="text" class="form-control" style="width:800px;margin-left:300px" placeholder="多关键字用空格分开 例如：5782 8.8 M10*50 发黑" />
-                                                                            <button type="submit" class="btn btn-primary">查   询</button>
-                                         
-                                                                    </div>
+                                    <div class="box-body box-profile">
+                                        <div class="box">
+                                            @*<div class="box-header">
+                                                    <h3 class="box-title">数据信息</h3>
+                                                </div>*@
+                                            <!-- /.box-header -->
+                                            <div class="box-body">
+                                                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                                    <div class="row">
+                                                        <div class="col-md-12" id="">
+                                                            <div class="pull-left form-inline">
+                                                                <div>
 
-
+                                                                    <input type="text" id="txtKey" class="form-control" style="width:800px;margin-left:300px" placeholder="多关键字用空格分开 例如：5782 8.8 M10*50 发黑" />
+                                                                    <input type="button" class="btn btn-primary" value="查   询" onclick="search();" />
                                                                 </div>
-                                                                <div id="loadingDiv" style="display:none" class="form-inline">
-                                                                    <img src="@Url.Content("~/Content/img/loading.gif")" /><h3>Loading...</h3>
+
+
+                                                            </div>
+                                                            <div class="pull-right">
+                                                                <ul class="pagination"></ul>
+                                                            </div>
+                                                            <div id="divOrders">
+                                                                <table id="tbOrders" class="table table-border table-bordered table-bg table-hover table-sort table-striped" style="word-break:break-all; word-wrap:break-all;" role="grid">
+                                                                    <thead>
+                                                                        <tr role="row">
+                                                                            <th></th>
+                                                                            <th>品名</th>
+                                                                            <th>分类</th>
+                                                                            <th>品牌</th>
+                                                                            <th>规格</th>
+                                                                            <th>材质</th>
+                                                                            <th>等级</th>
+                                                                            <th>表面处理</th>
+                                                                            <th>仓库</th>
+                                                                            <th>库存</th>
+                                                                            <th>装箱信息</th>
+                                                                            <th>价格</th>
+                                                                            <th>数据来源</th>
+                                                                            <th>数据时间点</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody id="tbOrdersBody"></tbody>
+                                                                </table>
+                                                                <div class="pull-right">
+                                                                    <ul class="pagination"></ul>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- /.box-body -->
                                         </div>
+                                        <!-- /.box-body -->
                                     </div>
-                                    <!-- /.box - body-->
                                 </div>
+                                <!-- /.box - body-->
                             </div>
                         </div>
-                        <!-- /.tab - pane-->
-                        <!-- /.tab-pane -->
                     </div>
                     <!-- /.tab - pane-->
-
-     
+                    <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab - pane-->
                 <!-- /.tab-content -->
             </div>
             <!-- /.nav-tabs-custom -->
@@ -75,6 +98,7 @@
         </form>
     </section>
 </div>
+
 @section Scripts{
     <!--{Html.RegisterMvcPagerScriptResource();}-->
     @Scripts.Render("~/bundles/home")
@@ -100,6 +124,123 @@
                 $('#current-time').text(now);
             }, 1000);
         })
+        var currPage = 1;
+        function search() {
+            render();  // 渲染页面函数
+        }
+        var getContent = function (params, callback) {
+            $.ajax({
+                url: "/Crawler/GetContent",
+                type: "post",
+                dataType: "json",
+                data: params,
+                beforeSend: function (XMLHttpRequest) {
+                    //alert('远程调用开始...'); 
+                    $("#modal-default").modal('show');
+                }, 
+                complete: function (XMLHttpRequest, textStatus) {
+                    // alert('远程调用成功，状态文本值：'+textStatus); 
+                    $("#modal-default").modal('hide');
+                }, 
+                success: function (response) {
+                    callback && callback(response);
+                }
+            });
+        }
+        var render = function () {
+            var index = (currPage - 1) * 25;
+            getContent({
+                id: $("#txtKey").val(),
+                pageIndex: index
+            }, function (data) {
+                var html = '';
+                data = $.parseJSON(data);
+                data = $.parseJSON(data);
+                var content=data.Data
+                $.each(content, function (i) {
+                    html += "<tr>";
+                    html += "<td>";
+                    html += "<img  src=\"http://" + content[i].Img + "\" style=\"width:68px;length:68px\"/>"
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].ProductName;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].Catalog;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].Brand;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].Spec;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].Material;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].Level;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].SurfaceColor;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].Store;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].Stock;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].Package;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].Price;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].DataSource;
+                    html += "</td>";
+                    html += "<td>";
+                    html += content[i].UpdateTime;
+                    html += "</td>";
+                    html += "</tr>";
+                });
+                $("#tbOrdersBody").html(html);
+                //setPaginator(data.page, Math.ceil(data.total / data.size), render);
+                setPaginator(currPage, Math.ceil(data.Total / 25), render);
+            });
+        };
+        var setPaginator = function (pageCurr, pageSum, callback) {
+            $('.pagination').bootstrapPaginator({ // 这个方法调用时，自动在.pagination添加分页li
+                /*当前使用的是3版本的bootstrap*/
+                bootstrapMajorVersion: 3,
+                /*配置的字体大小是小号*/
+                size: 'normal',
+                /*当前页*/
+                currentPage: pageCurr,
+                /*一共多少页*/
+                totalPages: pageSum,
+                /*页面上最多显示几个含数字的分页按钮*/
+                numberOfPages: 20,
+                /*设置显示的样式，默认是箭头	*/
+                itemTexts: function (type, page, current) {
+                    switch (type) {
+                        case "first":
+                            return "首页";
+                        case "prev":
+                            return "上一页";
+                        case "next":
+                            return "下一页";
+                        case "last":
+                            return "末页  " + current + "/" + pageSum;
+                        case "page":
+                            return page;
+                    }
+                },
+                onPageClicked: function (event, originalEvent, type, page) {
+                    currPage = page; // 注意currPage的作用域
+                    callback && callback();
+                }
+            });
+        }
     </script>
 }
 

@@ -24,6 +24,9 @@ namespace ERPExportSales.Web.Api.Models
         [Text(Name = "分类")]
         public string Catalog { get; set; }
 
+        [Text(Name = "等级")]
+        public string Level { get; set; }
+
         [Text(Name = "仓库")]
         public string Store { get; set; }
 
