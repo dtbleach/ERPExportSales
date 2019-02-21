@@ -10,8 +10,8 @@
                 <small>Example 2.0</small>
             </h1>*@
         <ol class="breadcrumb" style="padding-right:150px">
-            <li><a href="/Crawler/Index">Home</a></li>
-            <li class="active">Order</li>
+            <li><a href="/Crawler/Index">首页</a></li>
+            <li class="active">查询</li>
         </ol>
     </section>
     <section class="content" style="padding-left:200px;padding-right:150px">
@@ -33,52 +33,50 @@
                                                     <h3 class="box-title">数据信息</h3>
                                                 </div>*@
                                             <!-- /.box-header -->
-                                            <div class="box-body">
-                                                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-                                                    <div class="row">
-                                                        <div class="col-md-12" id="">
-                                                            <div class="pull-left form-inline">
-                                                                <div>
+                                            <div class="col-md-6 center">
+                                                <div class="box-body ">
 
-                                                                    <input type="text" id="txtKey" class="form-control" style="width:800px;margin-left:300px" placeholder="多关键字用空格分开 例如：5782 8.8 M10*50 发黑" />
-                                                                    <input type="button" class="btn btn-primary" value="查   询" onclick="search();" />
-                                                                </div>
-
-
-                                                            </div>
-                                                            <div class="pull-right">
-                                                                <ul class="pagination"></ul>
-                                                            </div>
-                                                            <div id="divOrders">
-                                                                <table id="tbOrders" class="table table-border table-bordered table-bg table-hover table-sort table-striped" style="word-break:break-all; word-wrap:break-all;" role="grid">
-                                                                    <thead>
-                                                                        <tr role="row">
-                                                                            <th></th>
-                                                                            <th>品名</th>
-                                                                            <th>分类</th>
-                                                                            <th>品牌</th>
-                                                                            <th>规格</th>
-                                                                            <th>材质</th>
-                                                                            <th>等级</th>
-                                                                            <th>表面处理</th>
-                                                                            <th>仓库</th>
-                                                                            <th>库存</th>
-                                                                            <th>装箱信息</th>
-                                                                            <th>价格</th>
-                                                                            <th>数据来源</th>
-                                                                            <th>数据时间点</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody id="tbOrdersBody"></tbody>
-                                                                </table>
-                                                                <div class="pull-right">
-                                                                    <ul class="pagination"></ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="input-group input-group-sm">
+                                                        <input type="text" class="form-control input-lg" id="txtKey" style="font-size:18px;height:44px" placeholder="多关键字用空格分开 例如：5782 8.8 M10*50 发黑">
+                                                        <span class="input-group-btn">
+                                                            <button type="button" class="btn btn-primary btn-flat" style="font-size:18px;height:44px" id="btnSearch" onclick="search();">Go!</button>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="box-body">
+
+                                                <div class="pull-right">
+                                                    <ul class="pagination"></ul>
+                                                </div>
+                                                <div id="divOrders">
+                                                    <table id="tbOrders" class="table table-border table-bordered table-bg table-hover table-sort table-striped" style="word-break:break-all; word-wrap:break-all;" role="grid">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th></th>
+                                                                <th>品名</th>
+                                                                <th>分类</th>
+                                                                <th>品牌</th>
+                                                                <th>规格</th>
+                                                                <th>材质</th>
+                                                                <th>等级</th>
+                                                                <th>表面处理</th>
+                                                                <th>仓库</th>
+                                                                <th>库存</th>
+                                                                <th>装箱信息</th>
+                                                                <th>价格</th>
+                                                                <th>数据来源</th>
+                                                                <th>数据时间点</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="tbOrdersBody"></tbody>
+                                                    </table>
+                                                    <div class="pull-right">
+                                                        <ul class="pagination"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                         <!-- /.box-body -->
                                     </div>
@@ -124,6 +122,7 @@
                 $('#current-time').text(now);
             }, 1000);
         })
+
         var currPage = 1;
         function search() {
             render();  // 渲染页面函数
@@ -135,13 +134,13 @@
                 dataType: "json",
                 data: params,
                 beforeSend: function (XMLHttpRequest) {
-                    //alert('远程调用开始...'); 
+                    //alert('远程调用开始...');
                     $("#modal-default").modal('show');
-                }, 
+                },
                 complete: function (XMLHttpRequest, textStatus) {
-                    // alert('远程调用成功，状态文本值：'+textStatus); 
+                    // alert('远程调用成功，状态文本值：'+textStatus);
                     $("#modal-default").modal('hide');
-                }, 
+                },
                 success: function (response) {
                     callback && callback(response);
                 }
@@ -153,10 +152,20 @@
                 id: $("#txtKey").val(),
                 pageIndex: index
             }, function (data) {
+                if (data.length == 0 || data == undefined) {
+                    $("#tbOrdersBody").html("<tr><td colspan='14' align='center'>没有找到您查询的数据</td></tr>");
+                    $('.pagination').html('');
+                    return;
+                }
                 var html = '';
                 data = $.parseJSON(data);
                 data = $.parseJSON(data);
-                var content=data.Data
+                if (data.Total == 0) {
+                    $("#tbOrdersBody").html("<tr><td colspan='14' align='center'>没有找到您查询的数据</td></tr>");
+                    $('.pagination').html('');
+                    return;
+                }
+                var content = data.Data
                 $.each(content, function (i) {
                     html += "<tr>";
                     html += "<td>";

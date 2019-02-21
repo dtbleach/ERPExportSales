@@ -19,13 +19,31 @@ namespace ERPExportSales.Web.Api.Controllers
         public string Get(string id,int from)
         {
             var client = ClientHelper.getInstance();
-            var modList = client.Search<Resource>(s => s          
-                .Query(q => q.MultiMatch(m => m.Fields(fd => fd.Fields(f => f.Keyword))
-                                .Query(id)))
-                                .From(from)
-                                .Size(25));
-            string jsonTxt = "{\"Total\":" + modList.Total + ",\"Data\":";
-            var list = modList.Hits.Select(p => p.Source).ToList();
+            string json = string.Empty;
+            if (string.IsNullOrEmpty(id))
+            {
+                var modList = client.Search<Resource>(s => s
+         .Query(q => q.MultiMatch(m => m.Fields(fd => fd.Fields(f => f.Keyword))
+                         .Query(id)))
+                         .From(from)
+                         .Size(25));
+                json = GetResutJson(modList);
+            }
+            else
+            {
+                var modList = client.Search<Resource>(s => s.Query(q => q.Bool(t => t.Must(m => m.Match(o => o.Field(f => f.Keyword).
+                Query(id).Operator(Operator.And))
+     ))).From(from).Size(25));
+                json = GetResutJson(modList);
+            }
+
+            return json;  
+        }
+
+        private string GetResutJson(ISearchResponse<Resource> model)
+        {        
+            string jsonTxt = "{\"Total\":" + model.Total + ",\"Data\":";
+            var list = model.Hits.Select(p => p.Source).ToList();
             DataContractJsonSerializer json = new DataContractJsonSerializer(list.GetType());
             string szJson = "";
             using (MemoryStream stream = new MemoryStream())
