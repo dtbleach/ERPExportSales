@@ -15,8 +15,6 @@
         </ol>
     </section>
     <section class="content" style="padding-left:200px;padding-right:150px">
-        <form role="form" ng-app="myApp" ng-controller="formCtrl" class="form-horizontal" style="margin-top: 20px;"
-              name="myForm" novalidate>
             <div class="col-xs-12">
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs" id="infoUl">
@@ -92,8 +90,6 @@
                 <!-- /.tab-content -->
             </div>
             <!-- /.nav-tabs-custom -->
-
-        </form>
     </section>
 </div>
 
@@ -122,7 +118,11 @@
                 $('#current-time').text(now);
             }, 1000);
         })
-
+        $(document).keydown(function (event) {
+            if (event.keyCode == 13) {
+                $('#btnSearch').triggerHandler('click');
+            }
+        });
         var currPage = 1;
         function search() {
             render();  // 渲染页面函数
@@ -148,8 +148,12 @@
         }
         var render = function () {
             var index = (currPage - 1) * 25;
+            var str = $("#txtKey").val();
+            if (str == "多关键字用空格分开 例如：5782 8.8 M10*50 发黑") {
+                str = "";
+            }
             getContent({
-                id: $("#txtKey").val(),
+                id:str,
                 pageIndex: index
             }, function (data) {
                 if (data.length == 0 || data == undefined) {
@@ -250,6 +254,7 @@
                 }
             });
         }
+        
     </script>
 }
 
