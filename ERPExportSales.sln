@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Web.Api", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPExportSales.Crawler.Web", "ERPExportSales.Crawler.Web\ERPExportSales.Crawler.Web.csproj", "{B1B4F6AB-CCC7-4A45-BFAD-74F1B12E42F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{DC78EEF8-8963-49EB-B4CD-D40C6239E10F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{207FD76C-6733-40B0-A0EA-A9AE14020231}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{B1B4F6AB-CCC7-4A45-BFAD-74F1B12E42F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1B4F6AB-CCC7-4A45-BFAD-74F1B12E42F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1B4F6AB-CCC7-4A45-BFAD-74F1B12E42F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC78EEF8-8963-49EB-B4CD-D40C6239E10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC78EEF8-8963-49EB-B4CD-D40C6239E10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC78EEF8-8963-49EB-B4CD-D40C6239E10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC78EEF8-8963-49EB-B4CD-D40C6239E10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207FD76C-6733-40B0-A0EA-A9AE14020231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207FD76C-6733-40B0-A0EA-A9AE14020231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207FD76C-6733-40B0-A0EA-A9AE14020231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207FD76C-6733-40B0-A0EA-A9AE14020231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

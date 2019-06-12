@@ -8,7 +8,6 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Web;
 using System.Web.Http;
-using System.Web.Mvc;
 
 namespace ERPExportSales.Web.Api.Controllers
 {
@@ -40,6 +39,33 @@ namespace ERPExportSales.Web.Api.Controllers
             return json;  
         }
 
+        
+        [System.Web.Http.Authorize]
+        [Route("api/search/chart")]
+        [HttpPost]
+        // GET: api/Search/
+        public string Chart(string id)
+        {
+            var client = ClientHelper.getInstance();
+            string json = string.Empty;
+            if (string.IsNullOrEmpty(id))
+            {
+                var modList = client.Search<Resource>(s => s
+         .Query(q => q.MultiMatch(m => m.Fields(fd => fd.Fields(f => f.Keyword))
+                         .Query(id))));
+                json = GetResutJson(modList);
+            }
+            else
+            {
+                var modList = client.Search<Resource>(s => s.Query(q => q.Bool(t => t.Must(m => m.Match(o => o.Field(f => f.Keyword).
+                Query(id).Operator(Operator.And))
+     ))));
+                json = GetResutJson(modList);
+            }
+
+            return json;
+        }
+
         private string GetResutJson(ISearchResponse<Resource> model)
         {        
             string jsonTxt = "{\"Total\":" + model.Total + ",\"Data\":";
@@ -54,6 +80,7 @@ namespace ERPExportSales.Web.Api.Controllers
             jsonTxt = jsonTxt + szJson + "}";
             return jsonTxt;
         }
+
         [System.Web.Http.Authorize]
         public long Get(string id)
         {

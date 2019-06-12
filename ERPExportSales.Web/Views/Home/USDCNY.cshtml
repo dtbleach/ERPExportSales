@@ -25,3 +25,62 @@
     </div>
     <!-- /.box-body -->
 </div>
+
+<script type="text/javascript">
+    function drawUSDCNYLines(myChart, data) {
+    myChart.setOption({
+        title: {
+            text: 'USDCNY',
+            x: 'center'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        grid: {
+            left: 50,
+            right: 40
+        },
+        xAxis: {
+            data: data.map(function (item) {
+                return item.PublishDate;
+            }),
+            inverse: true
+        },
+        yAxis: {
+            name: 'RMB',
+            min: 6
+        },
+        series: [
+            {
+                name: 'USDCNY',
+                type: 'line',
+                //markPoint: {
+                //    data: [{ type: 'min', name: '最小值', symbolSize: 70 }]
+                //},
+                data: data.map(function (item) {
+                    return item.Price;
+                })
+            }
+            //, {
+            //    name: '现汇买入',
+            //    type: 'line',
+            //    markPoint: {
+            //        data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+            //    },
+            //    data: data.map(function (item) {
+            //        return item[0];
+            //    })
+            //}, {
+            //    name: '现钞买入',
+            //    type: 'line',
+            //    markPoint: {
+            //        data: [{ type: 'max', name: '最大值', symbolSize: 70 }]
+            //    },
+            //    data: data.map(function (item) {
+            //        return item[1];
+            //    })
+            //}
+        ]
+    });
+}
+</script>

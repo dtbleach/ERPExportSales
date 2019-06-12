@@ -45,8 +45,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.3.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Windsor.4.1.1\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
     <Reference Include="Elasticsearch.Net, Version=6.0.0.0, Culture=neutral, PublicKeyToken=96c599bbe3e70f5d, processorArchitecture=MSIL">
       <HintPath>..\packages\Elasticsearch.Net.6.5.0\lib\net461\Elasticsearch.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
@@ -91,6 +103,7 @@
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Web.Cors, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Cors.5.0.0\lib\net45\System.Web.Cors.dll</HintPath>
     </Reference>
@@ -192,6 +205,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\Bootstrap.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -224,10 +238,20 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\ChartController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\ApiControllerInstaller.cs" />
+    <Compile Include="Infrastructure\ControllerInstaller.cs" />
+    <Compile Include="Infrastructure\RepositoriesInstaller.cs" />
+    <Compile Include="Infrastructure\ServiceConfigurationInstaller.cs" />
+    <Compile Include="Infrastructure\ServicesInstaller.cs" />
+    <Compile Include="Infrastructure\WindsorControllerFactory.cs" />
+    <Compile Include="Infrastructure\WindsorDependencyResolver.cs" />
+    <Compile Include="Infrastructure\WindsorDependencyScope.cs" />
+    <Compile Include="Models\ChartViewModel.cs" />
     <Compile Include="Models\ClientHelper.cs" />
     <Compile Include="Models\Resource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -322,6 +346,32 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERPExportSales.Configuration\ERPExportSales.Configuration.csproj">
+      <Project>{bdf29957-a7cc-4704-8565-12c902504851}</Project>
+      <Name>ERPExportSales.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERPExportSales.Core\ERPExportSales.Core.csproj">
+      <Project>{9a07cf78-2aee-4407-b1a8-d86551108188}</Project>
+      <Name>ERPExportSales.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERPExportSales.Entities\ERPExportSales.Entities.csproj">
+      <Project>{e25d3c86-92d8-4c3d-ba71-a00a42bd949a}</Project>
+      <Name>ERPExportSales.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERPExportSales.Framework\ERPExportSales.Framework.csproj">
+      <Project>{72842d55-5aa9-4634-a981-df3ee68f8a01}</Project>
+      <Name>ERPExportSales.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERPExportSales.Repositories\ERPExportSales.Repositories.csproj">
+      <Project>{615fa5bc-08a6-4e69-ae56-5ab4bab3604f}</Project>
+      <Name>ERPExportSales.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERPExportSales.Services\ERPExportSales.Services.csproj">
+      <Project>{6c55c7d2-9deb-430c-afdb-1625fdaee7fc}</Project>
+      <Name>ERPExportSales.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

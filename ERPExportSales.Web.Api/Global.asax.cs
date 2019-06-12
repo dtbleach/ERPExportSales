@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Castle.Windsor;
+using ERPExportSales.Web.Api.Infrastructure;
+using ERPExportSales.Web.API.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,6 +21,8 @@ namespace ERPExportSales.Web.Api
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            GlobalConfiguration.Configuration.DependencyResolver = new WindsorDependencyResolver(Bootstrap.IocContainer.Kernel);
+            ControllerBuilder.Current.SetControllerFactory(new WindsorControllerFactory(Bootstrap.IocContainer.Kernel));
         }
     }
 }
