@@ -3,7 +3,8 @@ using System.Web.Http;
 using Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
-
+using Castle.Windsor;
+using Castle.Windsor.Installer;
 
 [assembly: OwinStartup(typeof(ERPExportSales.Web.Api.Startup))]
 namespace ERPExportSales.Web.Api
@@ -12,9 +13,10 @@ namespace ERPExportSales.Web.Api
     {
         public void Configuration(IAppBuilder app)
         {
+            IWindsorContainer container = new WindsorContainer().Install(FromAssembly.This());
             HttpConfiguration config = new HttpConfiguration();
             ConfigureOAuth(app);
-            WebApiConfig.Register(config);
+          //  WebApiConfig.Register(config, container);
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
             app.UseWebApi(config);
         }

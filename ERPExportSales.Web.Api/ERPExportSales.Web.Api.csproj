@@ -60,6 +60,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -240,20 +243,29 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ChartController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\SFCController.cs" />
+    <Compile Include="Filter\WebApiInfoFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\ApiControllerInstaller.cs" />
     <Compile Include="Infrastructure\ControllerInstaller.cs" />
+    <Compile Include="Infrastructure\IocWindsorCompositionRoot.cs" />
+    <Compile Include="Infrastructure\IocWindsorDependencyResolver.cs" />
+    <Compile Include="Infrastructure\IocWindsorDependencyScope.cs" />
     <Compile Include="Infrastructure\RepositoriesInstaller.cs" />
     <Compile Include="Infrastructure\ServiceConfigurationInstaller.cs" />
     <Compile Include="Infrastructure\ServicesInstaller.cs" />
     <Compile Include="Infrastructure\WindsorControllerFactory.cs" />
-    <Compile Include="Infrastructure\WindsorDependencyResolver.cs" />
-    <Compile Include="Infrastructure\WindsorDependencyScope.cs" />
     <Compile Include="Models\ChartViewModel.cs" />
     <Compile Include="Models\ClientHelper.cs" />
+    <Compile Include="Models\DecompressionHandler.cs" />
+    <Compile Include="Models\LogEncapsulation.cs" />
+    <Compile Include="Models\LoggerHelper.cs" />
+    <Compile Include="Models\MyJsonResult.cs" />
+    <Compile Include="Models\Net.cs" />
     <Compile Include="Models\Resource.cs" />
+    <Compile Include="Models\SysLogInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RefreshTokenProvider.cs" />
     <Compile Include="SimpleAuthorizationServerProvider.cs" />
@@ -292,6 +304,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="log4net.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

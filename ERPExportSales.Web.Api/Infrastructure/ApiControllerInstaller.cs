@@ -5,13 +5,14 @@ using System.Web.Http;
 
 namespace ERPExportSales.Web.API.Infrastructure
 {
-    public class ApiControllerInstaller : IWindsorInstaller
+    public class ApiControllersInstaller : IWindsorInstaller
     {
-        public void Install(IWindsorContainer container, IConfigurationStore store)
+        public void Install(Castle.Windsor.IWindsorContainer container,
+        Castle.MicroKernel.SubSystems.Configuration.IConfigurationStore store)
         {
             container.Register(Classes.FromThisAssembly()
-                                .BasedOn<ApiController>()
-                                .LifestyleTransient());
+            .BasedOn<ApiController>()
+            .LifestylePerWebRequest());
         }
     }
 }

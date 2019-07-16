@@ -38,5 +38,33 @@ namespace ERPExportSales.Web.Api.Controllers
             }
             return Json(list, JsonRequestBehavior.AllowGet);
         }
+
+        public JsonResult GetUSDCNY()
+        {
+            IList<ChartViewModel> list = new List<ChartViewModel>();
+            var listUSDCNY = chartService.GetAllUSDCNY();
+            if (listUSDCNY != null && listUSDCNY.Count > 0)
+            {
+                foreach (var item in listUSDCNY)
+                {
+                    var usdcny = ConvertHelper.Trans<USDCNY, ChartViewModel>(item);
+                    list.Add(usdcny);
+                }
+            }
+            return Json(list);
+        }
+
+        public JsonResult GetNewUSDCNY()
+        {
+            var usdcny = chartService.GetNewUSDCNY();
+            return Json(usdcny);
+        }
+
+        public JsonResult GetNewQ195()
+        {
+            var q195 = chartService.GetNewQ195();
+            q195.PublishDate = DateTime.Parse(q195.PublishDate).ToString("yyyy-MM-dd");
+            return Json(q195);
+        }
     }
 }
