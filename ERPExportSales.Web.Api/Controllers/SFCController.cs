@@ -76,33 +76,7 @@ namespace ERPExportSales.Web.Api.Controllers
             return new MyJsonResult(q195);// json(q195);
         }
 
-        //[HttpGet]
-        //[Route("fg")]
-        //public MyJsonResult Freight()
-        //{
-        //    int userType = 0;
-        //    int.TryParse(user.UserType, out userType);
-        //    IList<VExportSalesOceanFreight> freights = new List<VExportSalesOceanFreight>();
-        //    if (userType == 1)
-        //    {
-        //        freights = exportSalesService.GetExportSalesOceanFreightByEmployee(user.UserName);
-        //    }
-        //    else if (userType == 2)
-        //    {
-        //        freights = exportSalesService.GetExportSalesOceanFreightByCustomerID(user.ID);
-        //    }
 
-        //    IList<ExportSalesOceanFreightViewModel> list = new List<ExportSalesOceanFreightViewModel>();
-        //    if (freights != null && freights.Count > 0)
-        //    {
-        //        foreach (var item in freights)
-        //        {
-        //            var freight = ConvertHelper.Trans<VExportSalesOceanFreight, ExportSalesOceanFreightViewModel>(item);
-        //            list.Add(freight);
-        //        }
-        //    }
-        //    return PartialView(freights);
-        //}
 
         [HttpGet]
         [Route("ph")]
@@ -113,5 +87,13 @@ namespace ERPExportSales.Web.Api.Controllers
             return new MyJsonResult(holiday);
         }
 
+        [HttpGet]
+        [Route("of")]
+        public MyJsonResult OceanFreight()
+        {
+            var of = exportSalesService.GetOceanFreight();
+
+            return new MyJsonResult(of);
+        }
     }
 }

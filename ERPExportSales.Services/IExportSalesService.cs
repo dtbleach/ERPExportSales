@@ -9,6 +9,7 @@ namespace ERPExportSales.Services
 {
     public interface IExportSalesService
     {
+        IList<VSFCOceanFreight> GetOceanFreight();
         IList<VExportSalesOceanFreight> GetExportSalesOceanFreightByCustomerID(int customerID);
         IList<VExportSalesOceanFreight> GetExportSalesOceanFreightByEmployee(string name);
         IList<VPublicHoliday> GetPublicHoliday();

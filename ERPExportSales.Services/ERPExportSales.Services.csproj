@@ -64,7 +64,9 @@
     <Compile Include="IExportSalesUserService.cs" />
     <Compile Include="IIPWhiteListService.cs" />
     <Compile Include="IPWhiteListService.cs" />
+    <Compile Include="IVSFCOceanFreightService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VSFCOceanFreightService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

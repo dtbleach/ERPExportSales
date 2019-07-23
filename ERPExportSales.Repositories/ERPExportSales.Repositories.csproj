@@ -70,6 +70,7 @@
     <Compile Include="USDCNYRepository.cs" />
     <Compile Include="VExportSalesOceanFreightRepository.cs" />
     <Compile Include="VPublicHolidayRepository.cs" />
+    <Compile Include="VSFCOceanFreightRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

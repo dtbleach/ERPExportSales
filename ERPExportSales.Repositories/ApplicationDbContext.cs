@@ -97,5 +97,7 @@ namespace ERPExportSales.Repositories
 
         public DbSet<USDCNY> USDCNYEntities { get; set; }
 
+        public DbSet<VSFCOceanFreight> VSFCOceanFreightEntities { get; set; }
+
     }
 }

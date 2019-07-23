@@ -15,6 +15,7 @@ namespace ERPExportSales.Services
 {
     public class ExportSalesService : IExportSalesService
     {
+        public IVSFCOceanFreightRepository iVSFCOceanFreightRepository;
 
         public IVExportSalesOceanFreightRepository vExportSalesOceanFreightRepository;
 
@@ -33,7 +34,7 @@ namespace ERPExportSales.Services
         public IUnitOfWork unitOfWork;
 
         public ExportSalesService(IDatabaseFactory databaseFactory, IUnitOfWork unitOfWork, IVExportSalesOceanFreightRepository vExportSalesOceanFreightRepository, IVPublicHolidayRepository vPublicHolidayRepository, IIPWhiteListRepository ipWhiteListRepository, IOrderRepository orderRepository, IEmployeeRepository employeeRepository,
-            ICustomerRepository customerRepository)
+            ICustomerRepository customerRepository, IVSFCOceanFreightRepository iVSFCOceanFreightRepository)
         {
             this.databaseFactory = databaseFactory;
             this.unitOfWork = unitOfWork;
@@ -43,6 +44,7 @@ namespace ERPExportSales.Services
             this.orderRepository = orderRepository;
             this.employeeRepository = employeeRepository;
             this.customerRepository = customerRepository;
+            this.iVSFCOceanFreightRepository = iVSFCOceanFreightRepository;
         }
 
         public IList<VExportSalesOceanFreight> GetExportSalesOceanFreightByCustomerID(int customerID)
@@ -194,6 +196,18 @@ namespace ERPExportSales.Services
             // totalCount = (int)paramTotalRecord.Value;
             return orders != null ? orders.ToList() : null;
 
+        }
+
+        public IList<VSFCOceanFreight> GetOceanFreight()
+        {
+            try
+            {
+                return iVSFCOceanFreightRepository.GetAll().OrderBy(p => p.Port).ToList();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

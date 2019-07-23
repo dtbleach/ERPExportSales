@@ -54,6 +54,10 @@ namespace ERPExportSales.Web.Api.Infrastructure
                .ImplementedBy<Q195Repository>()
                .LifestyleTransient());
 
+            container.Register(Component.For<IVSFCOceanFreightRepository>()
+               .ImplementedBy<VSFCOceanFreightRepository>()
+               .LifestyleTransient());
+
         }
     }
 }

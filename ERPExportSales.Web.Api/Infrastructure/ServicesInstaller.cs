@@ -43,6 +43,9 @@ namespace ERPExportSales.Web.API.Infrastructure
               .ImplementedBy<IPWhiteListService>()
               .LifestylePerWebRequest());
 
+            container.Register(Component.For<IVSFCOceanFreightService>()
+             .ImplementedBy<VSFCOceanFreightService>()
+             .LifestylePerWebRequest());
         }
     }
 }
