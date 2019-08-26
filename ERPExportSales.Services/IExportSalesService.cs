@@ -16,5 +16,7 @@ namespace ERPExportSales.Services
         bool RequestIPWhiteList(string ip);
         IList<Order> GetOrdersByEmployeeName(string name, int depId,int pageSize, int pageNum, string pono, string scno, string invoiceno,string customer);
         IList<Order> GetOrdersByCustomerID(int customerID, int pageSize, int pageNum, string pono, string scno, string invoiceno);
+
+        int SendEmail(string from, string to, string title, string content);
     }
 }

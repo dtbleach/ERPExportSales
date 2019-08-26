@@ -23,8 +23,8 @@ namespace ERPExportSales.Repositories
         [Function(FunctionType.NonComposableScalarValuedFunction, "f外销_登陆校验", Schema = dbo)]
         [return: Parameter(DbType = "int")]
         public int ExportSales_Login(
-            [Parameter(DbType = "varchar",Name = "登录名")]string loginName,
-            [Parameter(DbType = "varchar",Name = "密码")]string password)
+            [Parameter(DbType = "varchar", Name = "登录名")]string loginName,
+            [Parameter(DbType = "varchar", Name = "密码")]string password)
         {
             ObjectParameter loginNameParameter = new ObjectParameter("登录名", loginName);
             ObjectParameter passwordParameter = new ObjectParameter("密码", password);
@@ -37,12 +37,12 @@ namespace ERPExportSales.Repositories
         /// <param name="loginName">用户名</param>
         /// <param name="password">密码</param>
         /// <returns></returns>
-        public LoginStatus ExportSales_Login_ReturnUserType(string loginName,string password)
+        public LoginStatus ExportSales_Login_ReturnUserType(string loginName, string password)
         {
 
             SqlParameter loginNameParameter = new SqlParameter("登录名", loginName);
             SqlParameter passwordParameter = new SqlParameter("密码", password);
-            var login=this.Database.SqlQuery<LoginStatus>("select * from dbo.f外销_登陆校验_多返回值(@登录名,@密码)", loginNameParameter, passwordParameter).SingleOrDefault();
+            var login = this.Database.SqlQuery<LoginStatus>("select * from dbo.f外销_登陆校验_多返回值(@登录名,@密码)", loginNameParameter, passwordParameter).SingleOrDefault();
             return login;
         }
 
@@ -61,5 +61,26 @@ namespace ERPExportSales.Repositories
             return this.ObjectContext().ExecuteFunction<int>("f获取员工级别", nameParameter).SingleOrDefault();
         }
 
+
+        public int SendEmail(string from, string to, string title, string content, int fid, int returnFlag)
+        {
+            fid = 0;
+            returnFlag = 1;
+
+            SqlParameter[] sqlp = new SqlParameter[]
+            {
+                new SqlParameter("@fID",fid),
+                 new SqlParameter("@发件人",from),
+                  new SqlParameter("@收件人",to),
+                   new SqlParameter("@标题",title),
+                    new SqlParameter("@内容",content),
+                     new SqlParameter("@返回标识值",returnFlag)
+            };
+            var s=this.Database.ExecuteSqlCommand("exec p邮件生成 @fID output,@发件人,@收件人,@标题,@内容,@返回标识值", sqlp);
+            return s;
+        }
+
     }
+
+
 }

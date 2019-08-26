@@ -20,7 +20,7 @@ namespace ERPExportSales.Services
         {
             try
             {
-                return iVSFCOceanFreightRepository.GetAll().OrderBy(p => p.Port).ToList();
+                return iVSFCOceanFreightRepository.GetAll().OrderBy(p => p.Continent).ToList();
             }catch(Exception ex)
             {
                 return null;

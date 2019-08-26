@@ -262,6 +262,7 @@
     <Compile Include="Models\ChartViewModel.cs" />
     <Compile Include="Models\ClientHelper.cs" />
     <Compile Include="Models\DecompressionHandler.cs" />
+    <Compile Include="Models\Email.cs" />
     <Compile Include="Models\LogEncapsulation.cs" />
     <Compile Include="Models\LoggerHelper.cs" />
     <Compile Include="Models\MyJsonResult.cs" />

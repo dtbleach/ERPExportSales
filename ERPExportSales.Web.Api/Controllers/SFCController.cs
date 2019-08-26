@@ -95,5 +95,15 @@ namespace ERPExportSales.Web.Api.Controllers
 
             return new MyJsonResult(of);
         }
+
+        [HttpPost]
+        [Route("sm")]
+        public MyJsonResult SendEmail(Email email)
+        {
+            var of = exportSalesService.SendEmail(email.from, email.to, email.title, email.content);
+
+            return new MyJsonResult(of);
+        }
+
     }
 }

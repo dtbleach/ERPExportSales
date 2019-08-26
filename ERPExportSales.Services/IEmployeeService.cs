@@ -12,5 +12,7 @@ namespace ERPExportSales.Services
         string GetEmployeeSHAPassword(string userName);
 
         Employee GetEmployee(string userName);
+
+
     }
 }

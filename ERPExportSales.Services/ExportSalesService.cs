@@ -202,12 +202,26 @@ namespace ERPExportSales.Services
         {
             try
             {
-                return iVSFCOceanFreightRepository.GetAll().OrderBy(p => p.Port).ToList();
+                return iVSFCOceanFreightRepository.GetAll().OrderBy(p => p.Continent).ThenBy(p=>p.Country).ToList();
             }
             catch (Exception ex)
             {
                 return null;
             }
+        }
+
+        public int SendEmail(string from, string to, string title, string content)
+        {
+            var db = databaseFactory.Get();
+            int fid = 0;
+            try
+            {
+                fid = db.SendEmail(from, to, title, content, 0, 1);
+            }catch(Exception ex)
+            {
+                return 0;
+            }
+            return fid;
         }
     }
 }

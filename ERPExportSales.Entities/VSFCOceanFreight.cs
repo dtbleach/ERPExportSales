@@ -21,7 +21,16 @@ namespace ERPExportSales.Entities
         [Column("Freight")]
         public decimal Freight { get; set; }
 
-        [Column("Days to port")]
-        public int DaysToPort { get; set; }
+        //[Column("Days to port")]
+        //public int DaysToPort { get; set; }
+
+        [Column("Country")]
+        public string Country { get; set; }
+
+        //[Column("Schedule")]
+        //public string Schedule { get; set; }
+
+        [Column("Continent")]
+        public string Continent { get; set; }
     }
 }

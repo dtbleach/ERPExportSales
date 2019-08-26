@@ -58,6 +58,7 @@
     <Compile Include="Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Q195.cs" />
+    <Compile Include="StoreResult.cs" />
     <Compile Include="USDCNY.cs" />
     <Compile Include="VPublicHoliday.cs" />
     <Compile Include="VExportSalesOceanFreight.cs" />
